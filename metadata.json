@@ -1,0 +1,8 @@
+{
+  "name": "Satya Sanatan Dham",
+  "description": "सत्य सनातन धाम — सेवा • संस्कार • सनातन। एक आध्यात्मिक, सांस्कृतिक और सेवा-आधारित पावन संस्था। ग्राम–पासुन, मौदहा, जनपद–हमीरपुर, उत्तर प्रदेश–210507",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

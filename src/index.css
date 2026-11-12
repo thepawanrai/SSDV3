@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif Devanagari", serif;
+  --font-sans: "Noto Sans Devanagari", "Inter", sans-serif;
+  
+  --color-ssd-maroon: #5B2A1B;
+  --color-ssd-maroon-dark: #3E1B10;
+  --color-ssd-maroon-light: #793A27;
+  
+  --color-ssd-saffron: #D86318;
+  --color-ssd-saffron-dark: #B34909;
+  --color-ssd-saffron-light: #F08035;
+  
+  --color-ssd-gold: #C49033;
+  --color-ssd-gold-light: #DFB25A;
+  --color-ssd-gold-dark: #996C1B;
+  
+  --color-ssd-cream: #F8FAFC;
+  --color-ssd-card: #FFFFFF;
+  --color-ssd-cream-dark: #F1F5F9;
+  
+  --color-ssd-forest: #265B33;
+  --color-ssd-forest-dark: #194023;
+  --color-ssd-forest-light: #3D7A4D;
+  
+  --color-ssd-earth: #1E293B;
+  --color-ssd-sand: #E2E8F0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle heritage line ornament */
+.border-pattern {
+  background-image: repeating-linear-gradient(45deg, #5B2A1B 0, #5B2A1B 2px, transparent 0, transparent 8px);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: running;
+}
+
+/* Google Translate Overrides: keep website clean without default banner/frame */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.skiptranslate:not(.custom-translate) {
+  display: none !important;
+}
