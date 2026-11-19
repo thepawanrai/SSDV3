@@ -12,7 +12,6 @@ import {
   Copy,
   Check,
   Users,
-  Sparkles,
   ArrowRight,
   Info,
   ChevronDown,
@@ -22,6 +21,7 @@ import {
   QrCode
 } from 'lucide-react';
 import { submitToWeb3Forms } from '../utils/web3forms';
+import { DynamicUpiQr } from '../components/DynamicUpiQr';
 
 interface TreePlantationViewProps {
   onOpenDonate?: (sevaId?: string, amount?: number) => void;
@@ -166,7 +166,6 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
               </span>
             </div>
             <div className="flex items-center space-x-2.5">
-              <Sparkles className="w-4 h-4 text-[#E5C158] flex-shrink-0" />
               <span>
                 <strong>पावन अवसर:</strong> {siteConfig.treeCampaign.occasion}
               </span>
@@ -524,18 +523,29 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
             </button>
           </div>
 
-          {/* Official UPI QR Scan Card */}
+          {/* Official Dynamic UPI QR Scan Card */}
           <div className="p-5 bg-[#FAF7F2] rounded-2xl border border-[#DFB25A]/60 flex flex-col items-center text-center justify-between space-y-2.5">
             <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 bg-[#FEF3C7] text-[#92400E] rounded-full text-xs font-bold">
               <QrCode className="w-3.5 h-3.5 text-[#92400E]" />
-              <span>स्कैन कर भुगतान करें (UPI QR)</span>
+              <span>स्कैन कर भुगतान करें ({selectedTrees} वृक्ष सेवा)</span>
             </div>
-            <div className="p-2 bg-white rounded-xl border border-[#E7D7C4] shadow-2xs">
-              <img
-                src={siteConfig.payment.qrCodeUrl}
-                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
-                className="w-32 h-32 object-contain mx-auto"
-              />
+            <DynamicUpiQr
+              amount={currentAmount}
+              sevaName={`Tree Plantation ${selectedTrees} Trees`}
+              sizeClass="w-32 h-32"
+              compact
+            />
+            <div className="w-full pt-1 flex items-center justify-center space-x-1.5 text-[11px]">
+              <span className="font-mono font-bold text-[#194023] bg-[#E8F5E9] px-2 py-0.5 rounded border border-[#2E7D32]/30">
+                {siteConfig.payment.upiId}
+              </span>
+              <button
+                type="button"
+                onClick={() => handleCopy(siteConfig.payment.upiId, 'upi')}
+                className="px-2 py-0.5 bg-white border border-[#CBD5E1] rounded text-[10px] font-semibold text-[#5B2A1B] hover:bg-[#ECE4D6] cursor-pointer"
+              >
+                {copiedField === 'upi' ? 'कॉपी हुआ!' : 'कॉपी'}
+              </button>
             </div>
             <p className="text-[11px] font-bold text-[#5B2A1B]">
               {siteConfig.payment.accountHolder} • PhonePe / GPay / Paytm

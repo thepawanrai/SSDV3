@@ -1,6 +1,6 @@
 import React from 'react';
 import { siteConfig } from '../config/siteData';
-import { Calendar, MapPin, Sparkles, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 
 interface EventsViewProps {
   onNavigate: (tab: string) => void;
@@ -65,8 +65,7 @@ export const EventsView: React.FC<EventsViewProps> = ({ onNavigate, onOpenDonate
             </div>
           </div>
 
-          <div className="lg:col-span-4 bg-[#FAF7F2] p-5 rounded-xl border border-[#E7D7C4] text-center space-y-2">
-            <Sparkles className="w-8 h-8 text-[#DFB25A] mx-auto" />
+          <div className="lg:col-span-4 bg-[#FAF7F2] p-5 rounded-xl border border-[#E7D7C4] text-center space-y-2 flex flex-col justify-center">
             <p className="font-serif font-bold text-base text-[#5B2A1B]">
               पावन सहभागिता आमंत्रण
             </p>

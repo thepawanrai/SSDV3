@@ -16,6 +16,7 @@ import {
   QrCode
 } from 'lucide-react';
 import { submitToWeb3Forms } from '../utils/web3forms';
+import { DynamicUpiQr } from '../components/DynamicUpiQr';
 
 export const SevaDetailPage: React.FC = () => {
   const { sevaId } = useParams<{ sevaId: string }>();
@@ -313,19 +314,35 @@ export const SevaDetailPage: React.FC = () => {
               </button>
             </div>
 
-            {/* Satya Sanatan Dham Official UPI QR Card */}
-            <div className="p-3 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/40 text-center space-y-2 sm:col-span-3">
+            {/* Satya Sanatan Dham Dynamic Amount UPI QR Card */}
+            <div className="p-4 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/40 text-center space-y-3 sm:col-span-3">
               <div className="flex items-center justify-center space-x-1.5 text-xs font-bold text-[#5B2A1B]">
                 <QrCode className="w-3.5 h-3.5 text-[#C18C3B]" />
-                <span>स्कैन करके भुगतान करें (आधिकारिक UPI QR)</span>
+                <span>स्कैन करके भुगतान करें (सेवा राशि के अनुसार ऑटो-सेट UPI QR)</span>
               </div>
-              <div className="inline-block p-2.5 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs">
-                <img
-                  src={siteConfig.payment.qrCodeUrl}
-                  alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
-                  className="w-36 h-36 object-contain mx-auto rounded"
+
+              <div className="max-w-xs mx-auto flex items-center justify-center space-x-2">
+                <label className="text-xs font-semibold text-stone-600 whitespace-nowrap">
+                  सेवा राशि (₹):
+                </label>
+                <div className="relative flex-1">
+                  <span className="absolute left-2.5 top-1.5 text-xs font-bold text-stone-500">₹</span>
+                  <input
+                    type="number"
+                    value={customAmount}
+                    onChange={(e) => setCustomAmount(e.target.value)}
+                    className="w-full pl-6 pr-2 py-1 bg-white border border-[#CBD5E1] rounded text-xs font-bold text-[#5B2A1B]"
+                  />
+                </div>
+              </div>
+
+              <div className="inline-block p-3 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs">
+                <DynamicUpiQr
+                  amount={customAmount}
+                  sevaName={seva.englishName || seva.id}
+                  sizeClass="w-36 h-36"
                 />
-                <p className="mt-1.5 text-xs font-bold font-serif text-[#194023]">
+                <p className="mt-2 text-xs font-bold font-serif text-[#194023]">
                   सत्य सनातन धाम ({siteConfig.payment.accountHolder})
                 </p>
                 <p className="text-[10px] font-mono text-stone-600">

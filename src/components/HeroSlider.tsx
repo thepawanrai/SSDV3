@@ -211,11 +211,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
 
   return (
     <section
-      className={`relative flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-[#1C0B06] ${
-        current.id === 'temple'
-          ? 'sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]'
-          : 'min-h-[540px] sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]'
-      }`}
+      className="relative flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-[#1C0B06] min-h-[560px] sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -230,11 +226,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
         return (
           <div
             key={slide.id}
-            className={`transition-opacity duration-1000 ease-in-out ${
-              isTempleSlide && current.id === 'temple'
-                ? 'relative aspect-[16/9] sm:aspect-auto sm:absolute sm:inset-0 z-0'
-                : 'absolute inset-0 z-0'
-            } ${
+            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
               isActive ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
           >
@@ -250,27 +242,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
               }}
             />
 
-            {/* Mobile Nav Arrows inside temple image area when temple slide is active */}
-            {isTempleSlide && isActive && (
-              <div className="sm:hidden">
-                <button
-                  type="button"
-                  onClick={prevSlide}
-                  className="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/45 hover:bg-black/75 text-white border border-white/25 backdrop-blur-sm flex items-center justify-center transition-all cursor-pointer"
-                  aria-label="पिछली स्लाइड"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <button
-                  type="button"
-                  onClick={nextSlide}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/45 hover:bg-black/75 text-white border border-white/25 backdrop-blur-sm flex items-center justify-center transition-all cursor-pointer"
-                  aria-label="अगली स्लाइड"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </div>
-            )}
+            {/* Image click zoom supported cleanly */}
           </div>
         );
       })}
@@ -279,19 +251,17 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       <div
         className={`absolute inset-0 z-10 pointer-events-none transition-all duration-700 ${
           current.id === 'temple'
-            ? 'hidden sm:block bg-gradient-to-t from-black/75 via-transparent to-transparent'
+            ? 'bg-gradient-to-t from-black/75 via-transparent to-transparent'
             : 'bg-gradient-to-t from-black/90 via-black/45 to-black/20'
         }`}
       ></div>
 
 
-      {/* Previous & Next Navigation Arrows (Always visible on desktop, and on non-temple mobile slides) */}
+      {/* Previous & Next Navigation Arrows */}
       <button
         type="button"
         onClick={prevSlide}
-        className={`${
-          current.id === 'temple' ? 'hidden sm:flex' : 'flex'
-        } absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg`}
+        className="flex absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
         aria-label="पिछली स्लाइड"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -300,9 +270,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       <button
         type="button"
         onClick={nextSlide}
-        className={`${
-          current.id === 'temple' ? 'hidden sm:flex' : 'flex'
-        } absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg`}
+        className="flex absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
         aria-label="अगली स्लाइड"
       >
         <ChevronRight className="w-6 h-6" />
@@ -311,13 +279,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       {/* Slide Content Box: 
           On the temple slide: Text is removed so the magnificent temple architecture and top flag are showcased clearly without obstruction.
           On the 6 Mahabhiyan slides: Crisp, non-messy informative details are displayed cleanly. */}
-      <div
-        className={`relative z-20 w-full ${
-          current.id === 'temple'
-            ? 'bg-gradient-to-b from-[#1C0B06] to-[#2D1209] sm:bg-none py-5 sm:pb-8 sm:pt-16'
-            : 'pb-6 sm:pb-8 pt-16'
-        }`}
-      >
+      <div className="relative z-20 w-full pb-6 sm:pb-8 pt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-3 sm:space-y-4">
           {current.id === 'temple' ? (
             /* Temple Main Slide: Unobstructed view of temple image & top flag, with clean compact CTAs */

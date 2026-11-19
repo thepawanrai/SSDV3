@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../../config/siteData';
 import { ShieldCheck, ArrowRight, CheckCircle2, Heart } from 'lucide-react';
+import { DynamicUpiQr } from '../../components/DynamicUpiQr';
 
 interface AnnadaanAbhiyanViewProps {
   onOpenDonate: (sevaId?: string, amount?: number) => void;
 }
 
 export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpenDonate }) => {
+  const [selectedQrAmount, setSelectedQrAmount] = useState<number>(2500);
   const annaTiers = [
     {
       id: 'anna-daan-11-devotees',
@@ -180,7 +182,10 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
 
               <div className="pt-5">
                 <button
-                  onClick={() => onOpenDonate(tier.id, tier.amount)}
+                  onClick={() => {
+                    setSelectedQrAmount(tier.amount);
+                    onOpenDonate(tier.id, tier.amount);
+                  }}
                   className="w-full py-2.5 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] text-xs font-bold rounded-md transition-colors shadow-xs cursor-pointer text-center"
                 >
                   सहयोग करें (₹{tier.amount.toLocaleString('en-IN')})
@@ -217,15 +222,32 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
                 <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.ifsc}</strong>
               </div>
             </div>
-            <div className="p-3 bg-white rounded-xl border border-[#DFB25A]/70 text-center flex-shrink-0 shadow-2xs">
-              <img
-                src={siteConfig.payment.qrCodeUrl}
-                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
-                className="w-28 h-28 object-contain mx-auto"
+            <div className="p-3 bg-white rounded-xl border border-[#DFB25A]/70 text-center flex-shrink-0 shadow-2xs space-y-2 max-w-[230px]">
+              <div className="flex flex-wrap justify-center gap-1">
+                {annaTiers.map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    onClick={() => setSelectedQrAmount(t.amount)}
+                    className={`px-1.5 py-0.5 text-[10px] font-bold rounded cursor-pointer transition-colors ${
+                      selectedQrAmount === t.amount
+                        ? 'bg-[#5B2A1B] text-[#DFB25A]'
+                        : 'bg-[#FAF7F2] text-[#5B2A1B] border border-[#E7D7C4] hover:bg-[#F2ECE1]'
+                    }`}
+                  >
+                    ₹{t.amount.toLocaleString('en-IN')}
+                  </button>
+                ))}
+              </div>
+              <DynamicUpiQr
+                amount={selectedQrAmount}
+                sevaName="Annadaan Mahabhiyan"
+                sizeClass="w-28 h-28"
+                compact
               />
-              <span className="block text-[10px] font-bold text-[#5B2A1B] mt-1">
-                UPI QR स्कैन कर सहयोग करें
-              </span>
+              <div className="text-[10px] font-mono font-bold text-[#194023] bg-[#E2EEDF] px-2 py-0.5 rounded border border-[#265B33]/30">
+                UPI: {siteConfig.payment.upiId}
+              </div>
             </div>
           </div>
           <p className="text-[11px] text-stone-600 leading-relaxed">

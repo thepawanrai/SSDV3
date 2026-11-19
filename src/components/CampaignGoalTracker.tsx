@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   Target,
   Users,
-  Sparkles,
   TreeDeciduous,
   Building2,
   HeartHandshake,
@@ -310,7 +309,6 @@ export const CampaignGoalTracker: React.FC<CampaignGoalTrackerProps> = ({
             </span>
             <div className="font-serif text-xl sm:text-2xl font-bold text-[#D97706] flex items-center gap-1.5">
               <span>{percentage}%</span>
-              <Sparkles className="w-4 h-4 text-[#D97706]" />
             </div>
             <span className="text-[11px] text-amber-800 font-semibold block">
               लक्ष्य के अत्यंत निकट
@@ -396,7 +394,6 @@ export const CampaignGoalTracker: React.FC<CampaignGoalTrackerProps> = ({
         <div className="p-4 rounded-xl bg-[#FAF7F2] border border-[#E7D7C4] flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-1">
             <div className="flex items-center space-x-1.5 text-xs font-bold text-[#5B2A1B]">
-              <Sparkles className="w-4 h-4 text-[#C59B27]" />
               <span>संकल्प पूर्णता में आपका पावन सहयोग:</span>
             </div>
             <p className="text-xs text-stone-600 leading-relaxed font-sans max-w-xl">

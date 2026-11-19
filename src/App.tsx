@@ -12,6 +12,7 @@ import { Lightbox } from './components/Lightbox';
 import { MobileStickyBar } from './components/MobileStickyBar';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BackgroundAudioPlayer } from './components/BackgroundAudioPlayer';
+import { SocialProofToast } from './components/SocialProofToast';
 import { LanguageProvider } from './context/LanguageContext';
 import { AudioProvider } from './context/AudioContext';
 
@@ -296,6 +297,9 @@ function AppLayout() {
 
       {/* Background Audio Player with Autoplay & Floating Bottom-Right Toggle */}
       <BackgroundAudioPlayer />
+
+      {/* Rotating Verified Hindi Social Proof Notifications */}
+      <SocialProofToast suspended={paymentModalOpen || lightboxOpen} />
     </div>
   );
 }

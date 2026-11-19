@@ -12,7 +12,6 @@ import {
   Heart,
   Printer,
   Share2,
-  Sparkles,
   FileText,
   AlertCircle,
   X,
@@ -1101,10 +1100,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                   {isSubmitting ? (
                     <span>पंजीकरण किया जा रहा है...</span>
                   ) : (
-                    <>
-                      <Sparkles className="w-5 h-5 text-[#DFB25A]" />
-                      <span>निःशुल्क सेवादार पंजीकरण पूर्ण करें</span>
-                    </>
+                    <span>निःशुल्क सेवादार पंजीकरण पूर्ण करें</span>
                   )}
                 </button>
                 <p className="text-[11px] text-gray-500 mt-2">

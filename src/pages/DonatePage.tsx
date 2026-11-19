@@ -4,6 +4,7 @@ import { siteConfig, sevasData } from '../config/siteData';
 import { ShieldCheck, Heart, Copy, Check, CheckCircle2, ArrowRight, QrCode } from 'lucide-react';
 import { CampaignGoalTracker } from '../components/CampaignGoalTracker';
 import { submitToWeb3Forms } from '../utils/web3forms';
+import { DynamicUpiQr } from '../components/DynamicUpiQr';
 
 export const DonatePage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -251,12 +252,12 @@ export const DonatePage: React.FC = () => {
                   <span>स्कैन करके भुगतान करें (आधिकारिक UPI QR)</span>
                 </div>
                 <div className="inline-block p-2.5 bg-white rounded-xl border border-[#E7D7C4] shadow-xs">
-                  <img
-                    src={siteConfig.payment.qrCodeUrl}
-                    alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
-                    className="w-40 h-40 object-contain mx-auto"
+                  <DynamicUpiQr
+                    amount={amount}
+                    sevaName={currentSevaObj?.englishName || selectedSeva}
+                    sizeClass="w-40 h-40"
                   />
-                  <p className="mt-1.5 text-xs font-bold font-serif text-[#5B2A1B]">
+                  <p className="mt-2 text-xs font-bold font-serif text-[#5B2A1B]">
                     {siteConfig.payment.accountHolder} (सत्य सनातन धाम)
                   </p>
                   <p className="text-[11px] font-mono text-[#194023] font-semibold mt-0.5">

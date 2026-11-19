@@ -8,7 +8,6 @@ import {
   CheckCircle2,
   Heart,
   MessageSquareHeart,
-  Sparkles,
   MapPin,
   Calendar,
   X,
@@ -392,7 +391,6 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
                   {/* Seva attribution if available */}
                   {currentItem.sevaContributed && (
                     <div className="pt-3 border-t border-[#FAF0E4] flex items-center gap-1.5 text-xs text-[#793A27]">
-                      <Sparkles className="w-3.5 h-3.5 text-[#DFB25A] shrink-0" />
                       <span className="font-semibold">सहयोग:</span>
                       <span className="font-sans">{currentItem.sevaContributed}</span>
                     </div>
@@ -461,7 +459,6 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 
                   {secondaryItem.sevaContributed && (
                     <div className="pt-3 border-t border-[#E7D7C4]/60 flex items-center gap-1.5 text-xs text-[#793A27]">
-                      <Sparkles className="w-3.5 h-3.5 text-[#DFB25A] shrink-0" />
                       <span className="font-semibold">सहयोग:</span>
                       <span className="font-sans">{secondaryItem.sevaContributed}</span>
                     </div>

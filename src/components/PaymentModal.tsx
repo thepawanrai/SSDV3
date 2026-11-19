@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { siteConfig, sevasData } from '../config/siteData';
 import { X, Copy, Check, ShieldCheck, Heart, Upload, ArrowRight, QrCode } from 'lucide-react';
 import { submitToWeb3Forms } from '../utils/web3forms';
+import { DynamicUpiQr } from './DynamicUpiQr';
 
 interface PaymentModalProps {
   isOpen: boolean;
@@ -23,6 +24,23 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
   const [customAmount, setCustomAmount] = useState<string>(
     preselectedAmount ? preselectedAmount.toString() : '500'
   );
+
+  useEffect(() => {
+    if (isOpen) {
+      const nextSevaId = preselectedSevaId || 'vriksharopan-seva';
+      setSelectedSeva(nextSevaId);
+      if (preselectedAmount && preselectedAmount > 0) {
+        setCustomAmount(preselectedAmount.toString());
+      } else {
+        const matched = sevasData.find((s) => s.id === nextSevaId);
+        if (matched?.amount) {
+          setCustomAmount(matched.amount.toString());
+        }
+      }
+      setActiveTab('details');
+      setSubmitted(false);
+    }
+  }, [isOpen, preselectedSevaId, preselectedAmount]);
 
   // Form State
   const [fullName, setFullName] = useState('');
@@ -198,12 +216,17 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                           {s.hindiName} {s.amountDisplay ? `(${s.amountDisplay})` : ''}
                         </option>
                       ))}
+                      {!sevasData.some((s) => s.id === selectedSeva) && (
+                        <option value={selectedSeva}>
+                          चयनित विशेष सेवा {customAmount ? `(₹${Number(customAmount).toLocaleString('en-IN')})` : ''}
+                        </option>
+                      )}
                     </select>
 
-                    <div className="mt-3 flex items-center space-x-3">
+                    <div className="mt-3 space-y-2">
                       <div className="flex-1">
                         <label className="block text-xs font-medium text-stone-600 mb-1">
-                          सहयोग राशि (Contribution Amount ₹)
+                          सहयोग राशि (Contribution Amount ₹) — QR राशि स्वतः अपडेट होगी
                         </label>
                         <div className="relative">
                           <span className="absolute left-3 top-2.5 text-stone-500 font-bold">₹</span>
@@ -215,6 +238,23 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                             placeholder="राशि दर्ज करें"
                           />
                         </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-1.5">
+                        {['501', '1001', '2100', '5100', '11000', '21000'].map((preset) => (
+                          <button
+                            key={preset}
+                            type="button"
+                            onClick={() => setCustomAmount(preset)}
+                            className={`px-2 py-1 text-[11px] font-semibold rounded transition-colors cursor-pointer ${
+                              customAmount === preset
+                                ? 'bg-[#5B2A1B] text-white'
+                                : 'bg-white text-stone-700 border border-[#E7D7C4] hover:bg-[#F2ECE1]'
+                            }`}
+                          >
+                            ₹{Number(preset).toLocaleString('en-IN')}
+                          </button>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -324,11 +364,11 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center gap-4 bg-white p-3.5 rounded-lg border border-[#E7D7C4]">
-                          <div className="p-2 bg-white rounded-lg border border-[#DFB25A]/50 shadow-2xs flex-shrink-0">
-                            <img
-                              src={siteConfig.payment.qrCodeUrl}
-                              alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
-                              className="w-36 h-36 object-contain"
+                          <div className="flex-shrink-0">
+                            <DynamicUpiQr
+                              amount={customAmount}
+                              sevaName={currentSevaObj?.englishName || selectedSeva}
+                              sizeClass="w-36 h-36"
                             />
                           </div>
                           <div className="space-y-2 text-center sm:text-left flex-1">

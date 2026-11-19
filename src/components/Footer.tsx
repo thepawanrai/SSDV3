@@ -328,6 +328,9 @@ export const Footer: React.FC = () => {
                 <p className="text-[11px]">
                   <strong>IFSC:</strong> <code className="text-[#DFB25A] font-mono">{siteConfig.payment.ifsc}</code>
                 </p>
+                <p className="text-[11px]">
+                  <strong>UPI ID:</strong> <code className="text-[#DFB25A] font-mono">{siteConfig.payment.upiId}</code>
+                </p>
                 <div className="pt-1.5 mt-1 border-t border-[#5B2A1B]/70 flex items-center gap-2.5">
                   <div className="bg-white p-1 rounded border border-[#DFB25A]/70 flex-shrink-0">
                     <img

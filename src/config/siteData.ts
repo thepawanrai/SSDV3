@@ -83,7 +83,7 @@ export const siteConfig = {
     accountType: "Current / Trust Account",
     branch: "PURANA BUS STAND, MAUDAHA MARATHIPUR 210507",
     ifsc: "SBIN0001136",
-    upiId: "45657691676@sbi",
+    upiId: "9453160074@ptsbi",
     qrCodeUrl: "/assets/aistudio/image_f5775c7a.png",
     qrNotice: "सत्य सनातन धाम के आधिकारिक UPI QR कोड को PhonePe, Google Pay, Paytm या BHIM ऐप से स्कैन करके सीधे सेवा राशि समर्पित करें।",
     disclaimer: "यह अधिकृत बैंक खाता 'सत्य सनातन धाम' के नाम पर State Bank of India में संचालित है।",

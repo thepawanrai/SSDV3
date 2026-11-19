@@ -10,7 +10,6 @@ import {
   BookOpen,
   MapPin,
   Calendar,
-  Sparkles,
   ExternalLink,
 } from 'lucide-react';
 
