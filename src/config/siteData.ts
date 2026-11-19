@@ -50,8 +50,8 @@ export const siteConfig = {
   englishName: "Satya Sanatan Dham",
   tagline: "सेवा • संस्कार • सनातन",
   englishTagline: "Sewa • Sanskar • Sanatan",
-  logo: "/ssd-logo-new.png",
-  logoUrl: "https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png",
+  logo: "/ssd-logo-transparent.png",
+  logoUrl: "https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png",
   heroHeadline: "सेवा से संस्कार,\nसंस्कार से सनातन",
   heroSupporting: "सत्य सनातन धाम एक ऐसा आध्यात्मिक और सेवा-आधारित प्रयास है, जहाँ सेवा, संस्कार और सनातन मूल्यों के माध्यम से समाज, प्रकृति और आने वाली पीढ़ियों के लिए सार्थक प्रयास किया जा रहा है।",
   
@@ -69,7 +69,7 @@ export const siteConfig = {
   contact: {
     phones: ["+91 94525 45662", "+91 94531 60074", "+91 93354 18041"],
     primaryPhone: "+91 94525 45662",
-    whatsappNumber: "919453160074",
+    whatsappNumber: "919335418041",
     email: "sewa@satyasanatandham.org",
     mainWebsite: "https://www.satyasanatandham.org/",
     campaignWebsite: "https://abhiyan.satyasanatandham.org/"
@@ -84,8 +84,8 @@ export const siteConfig = {
     branch: "PURANA BUS STAND, MAUDAHA MARATHIPUR 210507",
     ifsc: "SBIN0001136",
     upiId: "45657691676@sbi",
-    qrCodeUrl: "/Astha Singh UPI QR.png",
-    qrNotice: "नया आधिकारिक UPI QR कोड शीघ्र उपलब्ध कराया जाएगा। कृपया सीधे बैंक खाता संख्या व IFSC द्वारा NEFT / RTGS / IMPS / NetBanking से सेवा राशि समर्पित करें।",
+    qrCodeUrl: "/assets/aistudio/image_f5775c7a.png",
+    qrNotice: "सत्य सनातन धाम के आधिकारिक UPI QR कोड को PhonePe, Google Pay, Paytm या BHIM ऐप से स्कैन करके सीधे सेवा राशि समर्पित करें।",
     disclaimer: "यह अधिकृत बैंक खाता 'सत्य सनातन धाम' के नाम पर State Bank of India में संचालित है।",
     web3formsAccessKey: "400e28fe-032b-42ee-993a-2ebbd4d17640",
     web3formsEndpoint: "https://api.web3forms.com/submit"
@@ -96,28 +96,28 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/satyasanatan.dham",
     youtube: "https://www.youtube.com/@satyasanatandhamorg",
     telegram: "https://t.me/satyasanatandhamorg",
-    whatsapp: "https://wa.me/919452545662"
+    whatsapp: "https://wa.me/919335418041"
   },
 
   leadership: [
     {
-      role: "संस्थापक / अध्यक्ष",
-      name: "चन्द्रेश दास",
-      description: "सत्य सनातन धाम न्यास के संस्थापक एवं मुख्य आध्यात्मिक मार्गदर्शक।",
+      role: "संस्थापक सदस्य एवं राष्ट्रीय संरक्षक, राष्ट्रीय अध्यक्ष",
+      name: "चंद्रेश दास",
+      description: "सत्य सनातन धाम के संस्थापक सदस्य, राष्ट्रीय संरक्षक एवं राष्ट्रीय अध्यक्ष।",
       image: "/assets/leadership/chandresh_das.png",
       remoteImage: "https://plain-apac-prod-public.komododecks.com/202611/06/Tmr2OPR7ddvyszug6bFL/image.png"
     },
     {
-      role: "अध्यक्ष",
+      role: "संस्थापक सदस्य, राष्ट्रीय उपाध्यक्ष",
       name: "राम श्री माताजी",
-      description: "सत्य सनातन धाम न्यास की पावन अध्यक्ष एवं मातृवत आध्यात्मिक संरक्षण व मार्गदर्शन।",
+      description: "सत्य सनातन धाम की संस्थापक सदस्य एवं राष्ट्रीय उपाध्यक्ष।",
       image: "/assets/leadership/ram_shri_mataji.png",
       remoteImage: "https://plain-apac-prod-public.komododecks.com/202611/06/WGEQqLHpHvvOiwhpNMU3/image.png"
     },
     {
-      role: "सचिव एवं कोषाध्यक्ष",
-      name: "आस्था देवी दासी",
-      description: "संस्था के प्रशासनिक, वित्तीय एवं सेवा प्रबंधन का निष्ठापूर्वक दायित्व।",
+      role: "संस्थापक सदस्य, राष्ट्रीय संरक्षक, राष्ट्रीय सचिव एवं कोषाध्यक्ष",
+      name: "आस्था माताजी",
+      description: "सत्य सनातन धाम की संस्थापक सदस्य, राष्ट्रीय संरक्षक, राष्ट्रीय सचिव एवं कोषाध्यक्ष।",
       image: "/assets/leadership/astha_devi_dasi.png",
       remoteImage: "https://plain-apac-prod-public.komododecks.com/202611/06/XZbZU3JzRxB7MEPxo4tq/image.png"
     }
@@ -1124,8 +1124,8 @@ export const galleryItems: GalleryItem[] = [
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
     description: "नागर शैली में निर्मित मुख्य शिखर, भव्य प्रवेश मेहराब एवं अष्टकोणीय नक्षत्र फव्वारा — अधिकृत वास्तविक छायाचित्र।",
-    assetKey: "images/temple/temple-main-1.png",
-    assetUrl: "/images/temple/temple-main-1.png"
+    assetKey: "images/temple/temple-main-hero.jpg",
+    assetUrl: "/images/temple/temple-main-hero.jpg"
   },
   {
     id: "img-temple-view-2",
@@ -1187,8 +1187,8 @@ export const galleryItems: GalleryItem[] = [
     category: "seva",
     categoryHindi: "पहचान",
     description: "उर्ध्व पुण्ड्र तिलक, चरण कमल, त्रि-स्तरीय पीठिका एवं सूर्य मंडल का पावन प्रतीक।",
-    assetKey: "SSD Logo.png",
-    assetUrl: "/SSD Logo.png"
+    assetKey: "ssd-logo-transparent.png",
+    assetUrl: "/ssd-logo-transparent.png"
   },
   {
     id: "img-plantation-1",

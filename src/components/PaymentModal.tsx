@@ -87,11 +87,11 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-full bg-white p-0.5 flex-shrink-0 flex items-center justify-center">
               <img
-                src="/ssd-logo-new.png"
+                src="/ssd-logo-transparent.png"
                 alt="Logo"
                 className="w-full h-full object-contain"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                  (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
                 }}
               />
             </div>
@@ -309,19 +309,63 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                         </button>
                       </div>
 
-                      {/* Direct Bank Transfer Row */}
-                      <div className="p-4 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/50 space-y-2">
-                        <div className="flex items-center space-x-2 text-[#5B2A1B]">
-                          <ShieldCheck className="w-4 h-4 text-[#265B33]" />
-                          <h4 className="font-serif font-bold text-sm">
-                            सीधा बैंक अंतरण (Direct Bank Transfer)
-                          </h4>
+                      {/* Official UPI QR Code Card */}
+                      <div className="p-4 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/60 space-y-3">
+                        <div className="flex items-center justify-between flex-wrap gap-2">
+                          <div className="flex items-center space-x-2 text-[#5B2A1B]">
+                            <QrCode className="w-4 h-4 text-[#265B33]" />
+                            <h4 className="font-serif font-bold text-sm">
+                              स्कैन करके भुगतान करें (आधिकारिक UPI QR कोड)
+                            </h4>
+                          </div>
+                          <span className="text-[11px] font-semibold text-[#194023] bg-[#E2EEDF] px-2 py-0.5 rounded border border-[#265B33]/30">
+                            PhonePe / GPay / Paytm / BHIM
+                          </span>
                         </div>
-                        <p className="text-xs text-stone-600 leading-relaxed font-sans">
-                          उपरोक्त अधिकृत खाता संख्या (<strong className="font-mono text-[#5B2A1B]">{siteConfig.payment.accountNumber}</strong>) एवं IFSC (<strong className="font-mono text-[#5B2A1B]">{siteConfig.payment.ifsc}</strong>) का उपयोग कर अपने बैंक ऐप, नेट बैंकिंग, अथवा किसी भी बैंकिंग माध्यम से NEFT / RTGS / IMPS द्वारा सीधे सेवा राशि समर्पित करें।
-                        </p>
-                        <div className="p-2.5 bg-[#FEF3C7] rounded border border-[#DFB25A]/60 text-xs text-[#92400E] font-medium">
-                          📢 <strong>सूचना:</strong> नया आधिकारिक UPI QR कोड शीघ्र ही यहाँ उपलब्ध कराया जाएगा।
+
+                        <div className="flex flex-col sm:flex-row items-center gap-4 bg-white p-3.5 rounded-lg border border-[#E7D7C4]">
+                          <div className="p-2 bg-white rounded-lg border border-[#DFB25A]/50 shadow-2xs flex-shrink-0">
+                            <img
+                              src={siteConfig.payment.qrCodeUrl}
+                              alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                              className="w-36 h-36 object-contain"
+                            />
+                          </div>
+                          <div className="space-y-2 text-center sm:text-left flex-1">
+                            <div>
+                              <p className="font-serif font-bold text-sm text-[#5B2A1B]">
+                                {siteConfig.payment.accountHolder} (सत्य सनातन धाम)
+                              </p>
+                              <p className="text-xs text-stone-600 leading-relaxed mt-0.5">
+                                किसी भी UPI ऐप से यह QR कोड स्कैन कर सीधे सेवा राशि समर्पित करें, अथवा खाता संख्या व IFSC से NEFT / RTGS / IMPS करें।
+                              </p>
+                            </div>
+                            <div className="flex items-center justify-between p-2 bg-[#E2EEDF] rounded border border-[#265B33]/30">
+                              <div className="text-left">
+                                <span className="text-[10px] text-[#194023] block font-medium">UPI ID:</span>
+                                <span className="font-mono text-xs font-bold text-[#194023]">
+                                  {siteConfig.payment.upiId}
+                                </span>
+                              </div>
+                              <button
+                                type="button"
+                                onClick={() => handleCopy(siteConfig.payment.upiId, 'upi')}
+                                className="px-2.5 py-1 bg-white border border-[#265B33]/40 rounded text-[11px] font-semibold text-[#194023] hover:bg-[#FAF7F2] transition-colors inline-flex items-center space-x-1 cursor-pointer"
+                              >
+                                {copiedField === 'upi' ? (
+                                  <>
+                                    <Check className="w-3 h-3 text-green-600" />
+                                    <span>कॉपी हुआ!</span>
+                                  </>
+                                ) : (
+                                  <>
+                                    <Copy className="w-3 h-3" />
+                                    <span>कॉपी करें</span>
+                                  </>
+                                )}
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

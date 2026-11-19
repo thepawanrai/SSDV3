@@ -77,7 +77,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onOpenLightbox }) => {
                   className={`w-full h-full ${
                     item.category === 'plan' || item.category === 'satellite'
                       ? 'object-contain bg-stone-100 p-2'
-                      : 'object-cover'
+                      : 'object-cover object-top'
                   } group-hover:scale-105 transition-transform duration-300`}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `/${item.assetKey}`;

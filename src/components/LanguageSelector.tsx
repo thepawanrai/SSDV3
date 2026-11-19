@@ -73,9 +73,9 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ variant = 'h
             aria-hidden="true"
           >
             {/* Back speech bubble with 'A' */}
-            <rect x="1" y="1" width="15" height="13" rx="2" fill="#FAF7F2" stroke="#DFB25A" strokeWidth="1.2" />
-            <path d="M3 14L1 18V14H3Z" fill="#FAF7F2" stroke="#DFB25A" strokeWidth="1.2" strokeLinejoin="round" />
-            <text x="8.5" y="10.5" textAnchor="middle" fill="#3E1B10" fontSize="9" fontWeight="800" fontFamily="Inter, sans-serif">A</text>
+            <rect x="1" y="1" width="15" height="13" rx="2" fill="#3E1B10" stroke="#DFB25A" strokeWidth="1.2" />
+            <path d="M3 14L1 18V14H3Z" fill="#3E1B10" stroke="#DFB25A" strokeWidth="1.2" strokeLinejoin="round" />
+            <text x="8.5" y="10.5" textAnchor="middle" fill="#DFB25A" fontSize="9" fontWeight="800" fontFamily="Inter, sans-serif">A</text>
 
             {/* Front overlapping speech bubble with Devanagari 'क' */}
             <rect x="11" y="7" width="16" height="13" rx="2" fill="#2E120A" stroke="#DFB25A" strokeWidth="1.3" />
@@ -106,9 +106,9 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ variant = 'h
               aria-hidden="true"
             >
               {/* Back speech bubble with 'A' */}
-              <rect x="1" y="1" width="15" height="13" rx="2" fill="#FAF7F2" stroke="#DFB25A" strokeWidth="1.2" />
-              <path d="M3 14L1 18V14H3Z" fill="#FAF7F2" stroke="#DFB25A" strokeWidth="1.2" strokeLinejoin="round" />
-              <text x="8.5" y="10.5" textAnchor="middle" fill="#3E1B10" fontSize="9" fontWeight="800" fontFamily="Inter, sans-serif">A</text>
+              <rect x="1" y="1" width="15" height="13" rx="2" fill="#3E1B10" stroke="#DFB25A" strokeWidth="1.2" />
+              <path d="M3 14L1 18V14H3Z" fill="#3E1B10" stroke="#DFB25A" strokeWidth="1.2" strokeLinejoin="round" />
+              <text x="8.5" y="10.5" textAnchor="middle" fill="#DFB25A" fontSize="9" fontWeight="800" fontFamily="Inter, sans-serif">A</text>
 
               {/* Front overlapping speech bubble with Devanagari 'क' */}
               <rect x="11" y="7" width="16" height="13" rx="2" fill="#2E120A" stroke="#DFB25A" strokeWidth="1.3" />

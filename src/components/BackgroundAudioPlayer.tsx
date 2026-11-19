@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Music } from 'lucide-react';
 import { LanguageSelector } from './LanguageSelector';
 import { useAudio } from '../context/AudioContext';
@@ -6,11 +6,25 @@ import { useAudio } from '../context/AudioContext';
 export const BackgroundAudioPlayer: React.FC = () => {
   const { isPlaying, toggleAudio } = useAudio();
   const [showTooltip, setShowTooltip] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      {/* Floating Bottom-Right Controls: Multilingual circular button on top of the Audio circular button */}
-      <div className="fixed bottom-20 sm:bottom-6 right-3 sm:right-6 z-50 flex flex-col items-end space-y-3">
+      {/* Floating Header-Position Controls (Shifted up from footer position to top-right below sticky header) */}
+      <div
+        className={`fixed right-3 sm:right-6 z-30 flex flex-col items-end space-y-2.5 sm:space-y-3 transition-all duration-300 ${
+          isScrolled ? 'top-[76px] sm:top-[82px]' : 'top-[112px] sm:top-[118px]'
+        }`}
+      >
         {/* Multilingual Circular Button */}
         <LanguageSelector variant="circular" />
 

@@ -197,22 +197,34 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
             <ShieldCheck className="w-5 h-5 text-[#265B33]" />
             <span>अधिकृत संस्था बैंक खाता विवरण (Official Trust Account)</span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">खाता धारक (Account Name):</span>
-              <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.accountHolder}</strong>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs flex-1 w-full">
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">खाता धारक (Account Name):</span>
+                <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.accountHolder}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">बैंक (Bank):</span>
+                <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.bank}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">खाता संख्या (Account Number):</span>
+                <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.accountNumber}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">IFSC कोड:</span>
+                <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.ifsc}</strong>
+              </div>
             </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">बैंक (Bank):</span>
-              <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.bank}</strong>
-            </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">खाता संख्या (Account Number):</span>
-              <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.accountNumber}</strong>
-            </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">IFSC कोड:</span>
-              <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.ifsc}</strong>
+            <div className="p-3 bg-white rounded-xl border border-[#DFB25A]/70 text-center flex-shrink-0 shadow-2xs">
+              <img
+                src={siteConfig.payment.qrCodeUrl}
+                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                className="w-28 h-28 object-contain mx-auto"
+              />
+              <span className="block text-[10px] font-bold text-[#5B2A1B] mt-1">
+                UPI QR स्कैन कर सहयोग करें
+              </span>
             </div>
           </div>
           <p className="text-[11px] text-stone-600 leading-relaxed">

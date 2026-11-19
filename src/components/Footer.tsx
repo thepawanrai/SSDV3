@@ -46,11 +46,11 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-full bg-white p-1 flex-shrink-0 flex items-center justify-center shadow-xs">
                 <img
-                  src="/ssd-logo-new.png"
+                  src="/ssd-logo-transparent.png"
                   alt="Satya Sanatan Dham Logo"
                   className="w-full h-full object-contain"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                    (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
                   }}
                 />
               </div>
@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#3E1B10] via-[#5B2A1B] to-[#481E13] text-[#DFB25A] border-2 border-[#DFB25A] shadow-md shadow-[#3E1B10]/40 hover:shadow-lg hover:border-[#FAF7F2] hover:text-[#FAF7F2] hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center cursor-pointer group focus:outline-none focus:ring-2 focus:ring-[#DFB25A]"
-                  title="WhatsApp - +91 94525 45662"
+                  title="WhatsApp - +91 93354 18041"
                   aria-label="WhatsApp"
                 >
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-current drop-shadow-xs transition-transform group-hover:scale-110" viewBox="0 0 24 24">
@@ -254,9 +254,12 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-xs text-[#FAF7F2]/80 font-sans">
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-[#DFB25A] flex-shrink-0 mt-0.5" />
-                <p className="leading-relaxed">
-                  {siteConfig.address.hindiFull}
-                </p>
+                <div>
+                  <span className="text-[11px] text-[#DFB25A] font-semibold block">पता (Address):</span>
+                  <p className="leading-relaxed">
+                    {siteConfig.address.hindiFull}
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-1.5 pt-1">
@@ -318,16 +321,28 @@ export const Footer: React.FC = () => {
                 <br />
                 <strong>शाखा:</strong> {siteConfig.payment.branch}
               </p>
-              <div className="p-2 bg-[#1A0A05] rounded border border-[#5B2A1B] space-y-1">
+              <div className="p-2 bg-[#1A0A05] rounded border border-[#5B2A1B] space-y-1.5">
                 <p className="text-[11px]">
                   <strong>खाता संख्या:</strong> <code className="text-[#DFB25A] font-mono">{siteConfig.payment.accountNumber}</code>
                 </p>
                 <p className="text-[11px]">
                   <strong>IFSC:</strong> <code className="text-[#DFB25A] font-mono">{siteConfig.payment.ifsc}</code>
                 </p>
-                <p className="text-[10px] text-[#DFB25A] pt-0.5 font-sans">
-                  * नया आधिकारिक UPI QR कोड शीघ्र उपलब्ध कराया जाएगा। सीधे A/C व IFSC से NEFT / RTGS / IMPS द्वारा सेवा समर्पित करें।
-                </p>
+                <div className="pt-1.5 mt-1 border-t border-[#5B2A1B]/70 flex items-center gap-2.5">
+                  <div className="bg-white p-1 rounded border border-[#DFB25A]/70 flex-shrink-0">
+                    <img
+                      src={siteConfig.payment.qrCodeUrl}
+                      alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <div className="text-[10px] leading-snug">
+                    <p className="font-bold text-[#DFB25A]">आधिकारिक UPI QR कोड</p>
+                    <p className="text-[#FAF7F2]/80 mt-0.5">
+                      GPay, PhonePe, Paytm या BHIM से स्कैन कर सीधे सेवा समर्पित करें।
+                    </p>
+                  </div>
+                </div>
               </div>
               <p className="text-[10px] text-[#FAF7F2]/60 leading-tight italic pt-1">
                 * {siteConfig.payment.disclaimer}

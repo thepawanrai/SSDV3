@@ -41,7 +41,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       title: 'श्री श्री राधा कृष्ण बिहारी जी मंदिर',
       subtitle: '२५,००० वर्ग फीट का भव्य नागर शैली पाषाण संकुल',
       desc: 'राजस्थान के बंसी पहाड़पुर लाल बलुआ पत्थर, परंपरागत नागर शिखर, अष्टकोणीय नक्षत्र फव्वारा एवं १०८ नक्काशीदार स्तंभों से सुसज्जित दिव्य धाम।',
-      image: '/1.png',
+      image: '/images/temple/temple-main-hero.jpg',
       fallbackImage: '/assets/temple-hero.jpg',
       primaryCta: {
         label: 'सेवा करें',
@@ -211,7 +211,11 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
 
   return (
     <section
-      className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[720px] flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-stone-950"
+      className={`relative flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-[#1C0B06] ${
+        current.id === 'temple'
+          ? 'sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]'
+          : 'min-h-[540px] sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]'
+      }`}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -222,41 +226,72 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       {/* Background Images with smooth Crossfade */}
       {slides.map((slide, index) => {
         const isActive = index === currentSlide;
+        const isTempleSlide = slide.id === 'temple';
         return (
           <div
             key={slide.id}
-            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
+            className={`transition-opacity duration-1000 ease-in-out ${
+              isTempleSlide && current.id === 'temple'
+                ? 'relative aspect-[16/9] sm:aspect-auto sm:absolute sm:inset-0 z-0'
+                : 'absolute inset-0 z-0'
+            } ${
               isActive ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
           >
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover object-center cursor-pointer transform scale-100 hover:scale-[1.01] transition-transform duration-700"
+              className={`w-full h-full object-cover ${
+                isTempleSlide ? 'object-top' : 'object-center'
+              } cursor-pointer transform scale-100 hover:scale-[1.01] transition-transform duration-700`}
               onClick={() => onOpenLightbox(slide.image, slide.title, slide.subtitle, slide.desc)}
               onError={(e) => {
                 (e.target as HTMLImageElement).src = slide.fallbackImage;
               }}
             />
+
+            {/* Mobile Nav Arrows inside temple image area when temple slide is active */}
+            {isTempleSlide && isActive && (
+              <div className="sm:hidden">
+                <button
+                  type="button"
+                  onClick={prevSlide}
+                  className="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/45 hover:bg-black/75 text-white border border-white/25 backdrop-blur-sm flex items-center justify-center transition-all cursor-pointer"
+                  aria-label="पिछली स्लाइड"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  type="button"
+                  onClick={nextSlide}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/45 hover:bg-black/75 text-white border border-white/25 backdrop-blur-sm flex items-center justify-center transition-all cursor-pointer"
+                  aria-label="अगली स्लाइड"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
         );
       })}
 
-      {/* Clean Vignette & Readability Gradient Overlay: subtle gradient on temple slide to showcase image clearly, readable gradient on info slides */}
+      {/* Clean Vignette & Readability Gradient Overlay: subtle bottom-only gradient on temple slide so flag and temple stay bright and clear */}
       <div
         className={`absolute inset-0 z-10 pointer-events-none transition-all duration-700 ${
           current.id === 'temple'
-            ? 'bg-gradient-to-t from-black/70 via-black/10 to-transparent'
+            ? 'hidden sm:block bg-gradient-to-t from-black/75 via-transparent to-transparent'
             : 'bg-gradient-to-t from-black/90 via-black/45 to-black/20'
         }`}
       ></div>
 
 
-      {/* Previous & Next Navigation Arrows */}
+      {/* Previous & Next Navigation Arrows (Always visible on desktop, and on non-temple mobile slides) */}
       <button
         type="button"
         onClick={prevSlide}
-        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md flex items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
+        className={`${
+          current.id === 'temple' ? 'hidden sm:flex' : 'flex'
+        } absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg`}
         aria-label="पिछली स्लाइड"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -265,32 +300,40 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       <button
         type="button"
         onClick={nextSlide}
-        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md flex items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
+        className={`${
+          current.id === 'temple' ? 'hidden sm:flex' : 'flex'
+        } absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg`}
         aria-label="अगली स्लाइड"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
 
       {/* Slide Content Box: 
-          On the temple slide: Text is removed so the magnificent temple architecture is showcased clearly without obstruction.
+          On the temple slide: Text is removed so the magnificent temple architecture and top flag are showcased clearly without obstruction.
           On the 6 Mahabhiyan slides: Crisp, non-messy informative details are displayed cleanly. */}
-      <div className="relative z-20 w-full pb-6 sm:pb-8 pt-16">
+      <div
+        className={`relative z-20 w-full ${
+          current.id === 'temple'
+            ? 'bg-gradient-to-b from-[#1C0B06] to-[#2D1209] sm:bg-none py-5 sm:pb-8 sm:pt-16'
+            : 'pb-6 sm:pb-8 pt-16'
+        }`}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-3 sm:space-y-4">
           {current.id === 'temple' ? (
-            /* Temple Main Slide: Unobstructed view of temple image, with clean compact badge & CTAs */
-            <div className="space-y-3 pt-8 sm:pt-14">
+            /* Temple Main Slide: Unobstructed view of temple image & top flag, with clean compact CTAs */
+            <div className="space-y-3 sm:pt-14">
               {/* Action Buttons: Clean 'सेवा करें' (no emoji) & 'मंदिर दर्शन' */}
-              <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-3">
                 <Link
                   to={current.primaryCta.to || '/donate'}
-                  className="px-7 py-3 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] font-bold text-sm sm:text-base rounded-md transition-all shadow-xl hover:shadow-2xl cursor-pointer border border-[#DFB25A]/60 transform hover:-translate-y-0.5 inline-flex items-center justify-center"
+                  className="px-6 sm:px-7 py-2.5 sm:py-3 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] font-bold text-sm sm:text-base rounded-md transition-all shadow-xl hover:shadow-2xl cursor-pointer border border-[#DFB25A]/60 transform hover:-translate-y-0.5 inline-flex items-center justify-center"
                 >
                   <span>{current.primaryCta.label}</span>
                 </Link>
 
                 <Link
                   to={current.secondaryCta.to}
-                  className="px-6 py-3 bg-white/95 hover:bg-white text-[#3E1B10] font-semibold text-sm sm:text-base rounded-md transition-all border border-white/40 backdrop-blur-md cursor-pointer inline-flex items-center justify-center shadow-lg"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 bg-white/95 hover:bg-white text-[#3E1B10] font-semibold text-sm sm:text-base rounded-md transition-all border border-white/40 backdrop-blur-md cursor-pointer inline-flex items-center justify-center shadow-lg"
                 >
                   <span>{current.secondaryCta.label}</span>
                   <ArrowRight className="w-4 h-4 ml-2 text-[#5B2A1B]" />

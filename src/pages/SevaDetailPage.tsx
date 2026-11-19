@@ -132,11 +132,11 @@ export const SevaDetailPage: React.FC = () => {
 
             <div className="w-20 h-20 rounded-full bg-white p-2 border border-[#E7D7C4] flex items-center justify-center shadow-xs">
               <img
-                src="/ssd-logo-new.png"
+                src="/ssd-logo-transparent.png"
                 alt="Satya Sanatan Dham Crest"
                 className="w-full h-full object-contain"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                  (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
                 }}
               />
             </div>
@@ -313,20 +313,20 @@ export const SevaDetailPage: React.FC = () => {
               </button>
             </div>
 
-            {/* Astha Singh Official UPI QR Card */}
-            <div className="p-3 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/40 text-center space-y-2">
+            {/* Satya Sanatan Dham Official UPI QR Card */}
+            <div className="p-3 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/40 text-center space-y-2 sm:col-span-3">
               <div className="flex items-center justify-center space-x-1.5 text-xs font-bold text-[#5B2A1B]">
                 <QrCode className="w-3.5 h-3.5 text-[#C18C3B]" />
-                <span>स्कैन करके भुगतान करें (UPI QR)</span>
+                <span>स्कैन करके भुगतान करें (आधिकारिक UPI QR)</span>
               </div>
-              <div className="inline-block p-2 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs">
+              <div className="inline-block p-2.5 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs">
                 <img
-                  src="/Astha Singh UPI QR.png"
-                  alt="आस्था सिंह UPI QR Code"
-                  className="w-32 h-32 object-contain mx-auto rounded"
+                  src={siteConfig.payment.qrCodeUrl}
+                  alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                  className="w-36 h-36 object-contain mx-auto rounded"
                 />
-                <p className="mt-1 text-[11px] font-bold text-[#194023]">
-                  श्रीमती आस्था सिंह (सचिव एवं कोषाध्यक्ष)
+                <p className="mt-1.5 text-xs font-bold font-serif text-[#194023]">
+                  सत्य सनातन धाम ({siteConfig.payment.accountHolder})
                 </p>
                 <p className="text-[10px] font-mono text-stone-600">
                   {siteConfig.payment.upiId}

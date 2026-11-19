@@ -10,7 +10,7 @@ interface TempleViewProps {
 
 const originalTempleImages = [
   {
-    src: '/images/temple/temple-main-1.png',
+    src: '/images/temple/temple-main-hero.jpg',
     fallbackSrc: '/1.png',
     title: 'श्री श्री राधा कृष्ण बिहारी जी मंदिर — मुख्य शिखर एवं प्रांगण (View 1)',
     badge: 'मुख्य शिखर एवं अग्र भाग (View 1)',
@@ -82,12 +82,12 @@ export const TempleView: React.FC<TempleViewProps> = ({ onOpenLightbox }) => {
       {/* Main Locked Temple Image Architecture Display */}
       <div className="rounded-2xl overflow-hidden border-4 border-white shadow-2xl bg-stone-900 relative group">
         <img
-          src="/1.png"
+          src="/images/temple/temple-main-hero.jpg"
           alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर - वास्तविक स्थापत्य"
-          className="w-full h-80 sm:h-[480px] object-cover object-center cursor-pointer group-hover:scale-101 transition-transform duration-300"
+          className="w-full aspect-[16/9] max-h-[680px] object-cover object-top cursor-pointer group-hover:scale-101 transition-transform duration-300"
           onClick={() =>
             onOpenLightbox(
-              '/1.png',
+              '/images/temple/temple-main-hero.jpg',
               'श्री श्री राधा कृष्ण बिहारी जी मंदिर',
               'मुख्य मंदिर स्थापत्य एवं प्रवेश द्वार',
               'नागर शैली में निर्मित भव्य शिखर, कलात्मक मेहराबदार द्वार एवं अष्टकोणीय नक्षत्र फव्वारा'

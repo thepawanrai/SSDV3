@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
   ];
 
   const constantMessage =
-    'हरे कृष्ण महामंत्र : हरे कृष्ण हरे कृष्ण, कृष्ण कृष्ण हरे हरे। हरे राम हरे राम, राम राम हरे हरे॥   •   सत्य सनातन धाम के प्रमुख उद्देश्य भारतवर्ष में प्रत्येक राज्य में प्रत्येक जिले में एक भव्य मंदिर स्थापित करना है।   •   वसुधैव कुटुम्बकम् : सत्य सनातन धाम का मुख्य उद्देश्य है कि सत्य सनातनियों के सहयोग से पूरे विश्व पटल पर प्रत्येक राज्य के जिले-स्तर पर श्री श्री राधा कृष्ण बिहारी जी का भव्य मंदिर 7 से 10 एकड़ की स्थापना करना।';
+    'हरे कृष्ण महामंत्र : हरे कृष्ण हरे कृष्ण, कृष्ण कृष्ण हरे हरे। हरे राम हरे राम, राम राम हरे हरे॥  • वसुधैव कुटुम्बकम् : सत्य सनातन धाम का मुख्य उद्देश्य है कि सत्य सनातनियों के सहयोग से पूरे विश्व पटल पर प्रत्येक राज्य के जिले-स्तर पर श्री श्री राधा कृष्ण बिहारी जी का भव्य मंदिर 7 से 10 एकड़ की स्थापना करना।';
 
   return (
     <>
@@ -75,12 +75,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
           >
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 flex items-center justify-center transition-transform group-hover:scale-105">
               <img
-                src="/ssd-logo-new.png"
+                src="/ssd-logo-transparent.png"
                 alt="Satya Sanatan Dham Official Crest"
                 className="w-full h-full object-contain"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
-                    'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                    'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
                 }}
               />
             </div>

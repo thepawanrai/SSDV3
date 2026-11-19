@@ -374,12 +374,12 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 <div className="bg-[#481E13] text-[#FAF7F2] p-4 sm:p-5 border-b-2 border-[#DFB25A] flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     <img
-                      src="/ssd-logo-new.png"
+                      src="/ssd-logo-transparent.png"
                       alt="Satya Sanatan Dham Crest"
                       className="w-12 h-12 rounded-full bg-white p-0.5 border border-[#DFB25A]"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
-                          'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                          'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
                       }}
                     />
                     <div>

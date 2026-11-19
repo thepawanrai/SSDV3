@@ -63,7 +63,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
       <section className="relative bg-gradient-to-b from-[#1C0B06] via-[#2F140A] to-[#1C0B06] text-[#FAF7F2] py-14 sm:py-20 border-b border-[#DFB25A]/30 overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none mix-blend-overlay">
           <img
-            src="/1.png"
+            src="/images/temple/temple-main-hero.jpg"
             alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर"
             className="w-full h-full object-cover"
           />
@@ -139,10 +139,10 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="rounded-xl overflow-hidden border border-[#E7D7C4] shadow-xs group bg-stone-100">
             <img
-              src="/1.png"
+              src="/images/temple/temple-main-hero.jpg"
               alt="मुख्य मंदिर सम्मुख दर्शन"
-              className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-              onClick={() => onOpenLightbox && onOpenLightbox('/1.png', 'मुख्य मंदिर सम्मुख दर्शन', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर')}
+              className="w-full aspect-[16/9] object-cover object-top group-hover:scale-105 transition-transform duration-500 cursor-pointer"
+              onClick={() => onOpenLightbox && onOpenLightbox('/images/temple/temple-main-hero.jpg', 'मुख्य मंदिर सम्मुख दर्शन', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर')}
             />
             <div className="p-3 text-center text-xs font-semibold text-[#5B2A1B] bg-white">
               मुख्य मंदिर सम्मुख शिखर दर्शन
@@ -230,26 +230,38 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
             <ShieldCheck className="w-5 h-5 text-[#265B33]" />
             <span>अधिकृत संस्था बैंक खाता विवरण (Official Trust Account)</span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">खाता धारक (Account Name):</span>
-              <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.accountHolder}</strong>
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs flex-1 w-full">
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">खाता धारक (Account Name):</span>
+                <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.accountHolder}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">बैंक (Bank):</span>
+                <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.bank}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">खाता संख्या (Account Number):</span>
+                <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.accountNumber}</strong>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
+                <span className="text-stone-500 block">IFSC कोड:</span>
+                <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.ifsc}</strong>
+              </div>
             </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">बैंक (Bank):</span>
-              <strong className="text-[#5B2A1B] text-sm">{siteConfig.payment.bank}</strong>
-            </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">खाता संख्या (Account Number):</span>
-              <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.accountNumber}</strong>
-            </div>
-            <div className="p-3 bg-white rounded-lg border border-[#E7D7C4]">
-              <span className="text-stone-500 block">IFSC कोड:</span>
-              <strong className="text-[#5B2A1B] text-sm font-mono">{siteConfig.payment.ifsc}</strong>
+            <div className="p-3 bg-white rounded-xl border border-[#DFB25A]/70 text-center flex-shrink-0 shadow-2xs">
+              <img
+                src={siteConfig.payment.qrCodeUrl}
+                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                className="w-28 h-28 object-contain mx-auto"
+              />
+              <span className="block text-[10px] font-bold text-[#5B2A1B] mt-1">
+                UPI QR स्कैन कर सहयोग करें
+              </span>
             </div>
           </div>
           <p className="text-[11px] text-stone-600 leading-relaxed">
-            * शिला अथवा वर्ग फीट सेवा के उपरांत यजमान का नाम मंदिर के पाषाण अभिलेख पट्टिका में अंकित कराने हेतु कृपया विवरण संस्था को व्हाट्सएप (+91 94531 60074) पर अवश्य भेजें।
+            * शिला अथवा वर्ग फीट सेवा के उपरांत यजमान का नाम मंदिर के पाषाण अभिलेख पट्टिका में अंकित कराने हेतु कृपया विवरण संस्था को व्हाट्सएप (+91 93354 18041) पर अवश्य भेजें।
           </p>
         </div>
       </section>

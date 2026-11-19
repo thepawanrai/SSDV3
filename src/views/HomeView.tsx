@@ -638,12 +638,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="space-y-3">
               <div className="rounded-xl overflow-hidden border border-[#E7D7C4] shadow-md bg-stone-100 group">
                 <img
-                  src="/1.png"
+                  src="/images/temple/temple-main-hero.jpg"
                   alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर अग्र दृश्य"
-                  className="w-full h-72 sm:h-80 object-cover cursor-pointer group-hover:scale-102 transition-transform duration-300"
+                  className="w-full aspect-[16/9] object-cover object-top cursor-pointer group-hover:scale-102 transition-transform duration-300"
                   onClick={() =>
                     onOpenLightbox(
-                      '/1.png',
+                      '/images/temple/temple-main-hero.jpg',
                       'श्री श्री राधा कृष्ण बिहारी जी मंदिर',
                       'मंदिर का मुख्य अग्र भाग एवं शिखर',
                       'लाल बलुआ पत्थर (Dholpur/Bansi Pahadpur Sandstone) से निर्मित स्थापत्य'
@@ -1076,7 +1076,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </p>
             <div className="p-3.5 bg-white rounded-lg border border-[#E7D7C4] space-y-1.5 text-xs text-[#3E2B23]">
               <p>
-                <strong>सटीक पता:</strong> {siteConfig.address.hindiFull}
+                <strong>पता (Address):</strong> {siteConfig.address.hindiFull}
               </p>
               <p>
                 <strong>हेल्पलाइन:</strong> {siteConfig.contact.primaryPhone}

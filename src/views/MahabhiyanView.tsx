@@ -31,7 +31,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
       <section className="relative bg-gradient-to-b from-[#1C0B06] via-[#2D1209] to-[#1C0B06] text-[#FAF7F2] py-16 sm:py-24 border-b border-[#DFB25A]/30 overflow-hidden">
         <div className="absolute inset-0 opacity-15 pointer-events-none mix-blend-overlay">
           <img
-            src="/1.png"
+            src="/images/temple/temple-main-hero.jpg"
             alt="सत्य सनातन धाम महाअभियान"
             className="w-full h-full object-cover"
           />
@@ -302,10 +302,10 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <div className="lg:col-span-5 bg-white p-6 flex flex-col justify-center">
             <div className="rounded-2xl overflow-hidden border border-[#E7D7C4] shadow-xs group">
               <img
-                src="/1.png"
+                src="/images/temple/temple-main-hero.jpg"
                 alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर"
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-                onClick={() => onOpenLightbox && onOpenLightbox('/1.png', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर', '२५,००० वर्ग फीट संकुल')}
+                className="w-full aspect-[16/9] object-cover object-top group-hover:scale-105 transition-transform duration-500 cursor-pointer"
+                onClick={() => onOpenLightbox && onOpenLightbox('/images/temple/temple-main-hero.jpg', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर', '२५,००० वर्ग फीट संकुल')}
               />
             </div>
             <div className="mt-3 p-3 bg-[#FAF7F2] rounded-lg border border-[#E7D7C4] text-center">

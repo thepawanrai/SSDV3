@@ -58,11 +58,11 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenDonate }) => {
         <div className="lg:col-span-5 bg-[#FAF0E4] p-6 rounded-xl border border-[#E7D7C4] space-y-4">
           <div className="w-14 h-14 rounded-full bg-white p-2 mx-auto flex items-center justify-center shadow-xs">
             <img
-              src="/ssd-logo-new.png"
+              src="/ssd-logo-transparent.png"
               alt="Logo"
               className="w-full h-full object-contain"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202610/24/DcMNjyETiSwyzv6bkik0/image.png';
+                (e.target as HTMLImageElement).src = 'https://plain-apac-prod-public.komododecks.com/202611/19/r4WwktR5EXpYPHaku7rn/image.png';
               }}
             />
           </div>
@@ -129,13 +129,13 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenDonate }) => {
                   )}
                 </div>
 
-                <div className="space-y-1">
-                  <span className="inline-block text-[11px] sm:text-xs text-[#793A27] bg-[#FAF0E4] border border-[#DFB25A]/40 font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
-                    {person.role}
-                  </span>
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#5B2A1B] leading-normal pt-1">
+                <div className="space-y-1.5 w-full">
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#5B2A1B] leading-normal">
                     {person.name}
                   </h3>
+                  <div className="inline-block text-[11px] sm:text-xs text-[#793A27] bg-[#FAF0E4] border border-[#DFB25A]/50 font-bold px-3 py-1 rounded-lg leading-snug">
+                    {person.role}
+                  </div>
                 </div>
               </div>
 
@@ -164,9 +164,9 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenDonate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div className="rounded-xl overflow-hidden border border-[#E7D7C4] shadow-sm bg-stone-100 group">
             <img
-              src="/1.png"
+              src="/images/temple/temple-main-hero.jpg"
               alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर स्थापत्य"
-              className="w-full h-64 sm:h-72 object-cover group-hover:scale-102 transition-transform duration-300"
+              className="w-full aspect-[16/9] object-cover object-top group-hover:scale-102 transition-transform duration-300"
             />
             <div className="p-3 bg-[#FAF7F2] text-xs font-semibold text-[#5B2A1B] text-center border-t border-[#E7D7C4]">
               मुख्य मंदिर अग्र भाग, शिखर एवं नक्षत्र फव्वारा (नागर शैली)
@@ -177,7 +177,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onOpenDonate }) => {
             <img
               src="/Temple Masterplan.png"
               alt="आधिकारिक वास्तु मास्टरप्लान"
-              className="w-full h-64 sm:h-72 object-contain bg-white p-2 group-hover:scale-102 transition-transform duration-300"
+              className="w-full aspect-[16/9] object-contain bg-white p-2 group-hover:scale-102 transition-transform duration-300"
             />
             <div className="p-3 bg-[#FAF7F2] text-xs font-semibold text-[#5B2A1B] text-center border-t border-[#E7D7C4]">
               २५,००० वर्ग फीट का आधिकारिक वास्तु मास्टरप्लान (100' x 250')

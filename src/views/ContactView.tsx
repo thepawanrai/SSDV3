@@ -70,7 +70,7 @@ export const ContactView: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E7D7C4] shadow-xs space-y-6">
             <h2 className="font-serif font-bold text-xl text-[#5B2A1B]">
-              कार्यालय एवं संपर्क विवरण
+              पता एवं संपर्क विवरण
             </h2>
 
             {/* Address */}
@@ -78,7 +78,7 @@ export const ContactView: React.FC = () => {
               <MapPin className="w-5 h-5 text-[#5B2A1B] flex-shrink-0 mt-0.5" />
               <div>
                 <strong className="block text-[#5B2A1B] font-serif text-sm">
-                  स्थायी पता (Office Address):
+                  पता (Address):
                 </strong>
                 <p className="mt-1 leading-relaxed">
                   {siteConfig.address.hindiFull}
@@ -156,13 +156,13 @@ export const ContactView: React.FC = () => {
             </p>
             <div className="pt-2 flex items-center space-x-3 bg-white p-2.5 rounded-lg border border-[#E7D7C4]">
               <img
-                src="/Astha Singh UPI QR.png"
-                alt="आस्था सिंह UPI QR Code"
-                className="w-16 h-16 object-contain rounded border border-stone-200"
+                src={siteConfig.payment.qrCodeUrl}
+                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                className="w-20 h-20 object-contain rounded border border-stone-200 p-0.5 bg-white"
               />
               <div className="text-[11px] text-[#5B2A1B]">
-                <strong className="block font-serif">श्रीमती आस्था सिंह</strong>
-                <span className="text-stone-500 block text-[10px]">UPI QR कोड (PhonePe / GPay / Paytm)</span>
+                <strong className="block font-serif text-xs">सत्य सनातन धाम</strong>
+                <span className="text-stone-600 block text-[10px] mt-0.5">आधिकारिक UPI QR कोड (PhonePe / GPay / Paytm)</span>
               </div>
             </div>
             <p className="text-[11px] text-stone-500 italic pt-1">

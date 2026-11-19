@@ -245,22 +245,27 @@ export const DonatePage: React.FC = () => {
                 </button>
               </div>
 
-              <div className="p-3 bg-slate-50 rounded-xl border border-[#DFB25A]/50 text-center space-y-2">
+              <div className="p-3.5 bg-[#FAF7F2] rounded-xl border border-[#DFB25A]/60 text-center space-y-2.5 font-sans">
                 <div className="flex items-center justify-center space-x-1.5 text-xs font-bold text-[#5B2A1B]">
-                  <ShieldCheck className="w-4 h-4 text-[#265B33]" />
-                  <span>सीधा बैंक अंतरण (Direct Bank Transfer)</span>
+                  <QrCode className="w-4 h-4 text-[#C18C3B]" />
+                  <span>स्कैन करके भुगतान करें (आधिकारिक UPI QR)</span>
                 </div>
-                <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-left text-xs space-y-1">
-                  <p className="font-semibold text-[#5B2A1B]">
-                    NEFT / RTGS / IMPS / NetBanking
+                <div className="inline-block p-2.5 bg-white rounded-xl border border-[#E7D7C4] shadow-xs">
+                  <img
+                    src={siteConfig.payment.qrCodeUrl}
+                    alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                    className="w-40 h-40 object-contain mx-auto"
+                  />
+                  <p className="mt-1.5 text-xs font-bold font-serif text-[#5B2A1B]">
+                    {siteConfig.payment.accountHolder} (सत्य सनातन धाम)
                   </p>
-                  <p className="text-stone-600 text-[11px] leading-relaxed">
-                    उपरोक्त अधिकृत खाता संख्या एवं IFSC का उपयोग कर अपने बैंक ऐप, Google Pay, PhonePe अथवा नेटबैंकिंग से सीधे सेवा राशि प्रेषित करें।
+                  <p className="text-[11px] font-mono text-[#194023] font-semibold mt-0.5">
+                    {siteConfig.payment.upiId}
                   </p>
                 </div>
-                <div className="p-2 bg-[#FEF3C7] rounded border border-[#DFB25A]/60 text-[11px] text-[#92400E] font-medium">
-                  📢 नया आधिकारिक UPI QR कोड शीघ्र ही यहाँ उपलब्ध कराया जाएगा।
-                </div>
+                <p className="text-[11px] text-stone-600 leading-relaxed">
+                  PhonePe, Google Pay, Paytm या BHIM से स्कैन कर सीधे सेवा राशि समर्पित करें।
+                </p>
               </div>
             </div>
 

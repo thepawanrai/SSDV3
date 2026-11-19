@@ -524,25 +524,22 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
             </button>
           </div>
 
-          {/* Direct Bank Transfer & QR Notice Card */}
-          <div className="p-5 bg-[#FAF7F2] rounded-2xl border border-[#DFB25A]/50 flex flex-col justify-between space-y-3">
-            <div className="space-y-1.5">
-              <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 bg-[#FEF3C7] text-[#92400E] rounded-full text-xs font-bold">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#92400E]" />
-                <span>सीधा बैंक अंतरण (Bank Transfer)</span>
-              </div>
-              <h4 className="font-serif font-bold text-[#5B2A1B] text-sm">
-                NEFT / RTGS / IMPS / NetBanking
-              </h4>
-              <p className="text-xs text-stone-600 leading-relaxed">
-                किसी भी बैंक अथवा बैंकिंग ऐप से उपरोक्त खाता संख्या एवं IFSC का उपयोग कर सीधे सेवा राशि समर्पित करें।
-              </p>
+          {/* Official UPI QR Scan Card */}
+          <div className="p-5 bg-[#FAF7F2] rounded-2xl border border-[#DFB25A]/60 flex flex-col items-center text-center justify-between space-y-2.5">
+            <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 bg-[#FEF3C7] text-[#92400E] rounded-full text-xs font-bold">
+              <QrCode className="w-3.5 h-3.5 text-[#92400E]" />
+              <span>स्कैन कर भुगतान करें (UPI QR)</span>
             </div>
-            <div className="p-2.5 bg-white rounded-lg border border-[#E7D7C4] text-[11px] text-stone-600">
-              <p className="font-medium text-[#793A27]">
-                📢 <strong>सूचना:</strong> नया आधिकारिक UPI QR कोड शीघ्र उपलब्ध कराया जाएगा।
-              </p>
+            <div className="p-2 bg-white rounded-xl border border-[#E7D7C4] shadow-2xs">
+              <img
+                src={siteConfig.payment.qrCodeUrl}
+                alt="सत्य सनातन धाम आधिकारिक UPI QR कोड"
+                className="w-32 h-32 object-contain mx-auto"
+              />
             </div>
+            <p className="text-[11px] font-bold text-[#5B2A1B]">
+              {siteConfig.payment.accountHolder} • PhonePe / GPay / Paytm
+            </p>
           </div>
         </div>
 

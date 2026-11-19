@@ -77,7 +77,7 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenDonate }
           target="_blank"
           rel="noopener noreferrer"
           className="w-9 h-9 rounded-full bg-gradient-to-tr from-[#3E1B10] via-[#5B2A1B] to-[#481E13] text-[#DFB25A] border-2 border-[#DFB25A] shadow-md shadow-black/30 hover:border-white hover:text-white hover:scale-110 active:scale-90 transition-all flex items-center justify-center cursor-pointer group"
-          title="WhatsApp - +91 94525 45662"
+          title="WhatsApp - +91 93354 18041"
           aria-label="WhatsApp"
         >
           <svg className="w-4 h-4 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24">
