@@ -61,7 +61,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               श्री श्री राधा कृष्ण बिहारी जी मंदिर
             </div>
             <div className="text-[11px] text-stone-500 font-sans mt-0.5">
-              २५,००० वर्ग फीट परिसर
+              25,000 वर्ग फीट परिसर
             </div>
           </div>
 
@@ -70,10 +70,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
               महाअभियान
             </div>
             <div className="font-serif font-bold text-base sm:text-lg text-[#265B33] mt-0.5">
-              ११,००० वृक्षों का संकल्प
+              11,000 वृक्षों का संकल्प
             </div>
             <div className="text-[11px] text-stone-500 font-sans mt-0.5">
-              प्रथम चरण: १,१०० वृक्ष (११ अक्टू.)
+              प्रथम चरण: 1,100 वृक्ष (11 अक्टू.)
             </div>
           </div>
 
@@ -149,7 +149,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 }}
               />
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-                <p className="font-serif font-bold text-sm">२५,००० वर्ग फीट का पावन परिसर</p>
+                <p className="font-serif font-bold text-sm">25,000 वर्ग फीट का पावन परिसर</p>
                 <p className="text-xs text-[#DFB25A]">क्लिक करके बड़ा चित्र देखें (Lightbox)</p>
               </div>
             </div>
@@ -176,7 +176,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             {/* Pillar 1: सेवा */}
             <div className="bg-white rounded-xl p-7 border border-[#E7D7C4] shadow-xs space-y-4 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-lg bg-[#5B2A1B]/10 text-[#5B2A1B] flex items-center justify-center font-serif text-2xl font-bold">
-                १
+                1
               </div>
               <h3 className="font-serif text-2xl font-bold text-[#5B2A1B]">सेवा (Service)</h3>
               <p className="text-xs text-[#793A27] font-semibold uppercase tracking-wider">
@@ -197,7 +197,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             {/* Pillar 2: संस्कार */}
             <div className="bg-white rounded-xl p-7 border border-[#E7D7C4] shadow-xs space-y-4 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-lg bg-[#C49033]/15 text-[#996C1B] flex items-center justify-center font-serif text-2xl font-bold">
-                २
+                2
               </div>
               <h3 className="font-serif text-2xl font-bold text-[#5B2A1B]">संस्कार (Values)</h3>
               <p className="text-xs text-[#793A27] font-semibold uppercase tracking-wider">
@@ -218,7 +218,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             {/* Pillar 3: सनातन */}
             <div className="bg-white rounded-xl p-7 border border-[#E7D7C4] shadow-xs space-y-4 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-lg bg-[#265B33]/10 text-[#265B33] flex items-center justify-center font-serif text-2xl font-bold">
-                ३
+                3
               </div>
               <h3 className="font-serif text-2xl font-bold text-[#5B2A1B]">सनातन (Tradition)</h3>
               <p className="text-xs text-[#793A27] font-semibold uppercase tracking-wider">
@@ -251,7 +251,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <span>अभियान प्रारंभ — भव्य प्रगति पर</span>
                 </div>
                 <div className="inline-flex items-center px-2.5 py-1 rounded bg-black/30 border border-emerald-400/40 text-xs font-semibold text-emerald-200">
-                  <span>₹२.३६ लाख+ जनसहयोग प्राप्त</span>
+                  <span>₹2.36 लाख+ जनसहयोग प्राप्त</span>
                 </div>
               </div>
 
@@ -260,7 +260,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </h2>
 
               <p className="text-[#A3E635] font-serif text-lg font-medium">
-                ११,००० वृक्षों का पावन संकल्प • प्रथम चरण: १,१०० वृक्ष (सफलतापूर्वक संचालित)
+                11,000 वृक्षों का पावन संकल्प • प्रथम चरण: 1,100 वृक्ष (सफलतापूर्वक संचालित)
               </p>
 
               <div className="p-3 bg-[#112F19] rounded-lg border border-[#265B33] text-xs text-[#E2EEDF] space-y-1">
@@ -279,7 +279,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
 
               <p className="text-sm text-[#E2EEDF]/90 leading-relaxed font-sans">
-                प्रकृति की रक्षा, गोवंश एवं भावी पीढ़ियों के कल्याण हेतु सत्य सनातन धाम द्वारा वृक्षारोपण महाअभियान का शुभारंभ हो चुका है और यह विशाल स्तर पर अत्यंत उत्साहपूर्वक निरंतर प्रगति पर है। आप मात्र <strong className="text-[#A3E635] text-base">₹1,001</strong> में एक वृक्ष (५ वर्षों के संपूर्ण पोषण, खाद-पानी एवं संरक्षण सहित) समर्पित कर इस पावन महाअभियान के गौरवशाली सहभागी बन सकते हैं।
+                प्रकृति की रक्षा, गोवंश एवं भावी पीढ़ियों के कल्याण हेतु सत्य सनातन धाम द्वारा वृक्षारोपण महाअभियान का शुभारंभ हो चुका है और यह विशाल स्तर पर अत्यंत उत्साहपूर्वक निरंतर प्रगति पर है। आप मात्र <strong className="text-[#A3E635] text-base">₹1,001</strong> में एक वृक्ष (5 वर्षों के संपूर्ण पोषण, खाद-पानी एवं संरक्षण सहित) समर्पित कर इस पावन महाअभियान के गौरवशाली सहभागी बन सकते हैं।
               </p>
 
               {/* Tree Contribution Tiers */}
@@ -362,7 +362,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               युगांतकारी प्रकल्प
             </span>
             <h2 className="font-serif text-2xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal mt-1">
-              सत्य सनातन धाम के ६ महाअभियान
+              सत्य सनातन धाम के 6 महाअभियान
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 font-sans mt-0.5">
               प्रकृति, गोवंश, धर्म, शिक्षा एवं समाज के सर्वांगीण उत्थान हेतु समर्पित महाप्रकल्प
@@ -373,7 +373,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             to="/mahabhiyan"
             className="px-5 py-2.5 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] text-xs sm:text-sm font-bold rounded-md transition-colors inline-flex items-center space-x-1.5 self-start sm:self-auto cursor-pointer shadow-sm"
           >
-            <span>सभी ६ महाअभियान देखें</span>
+            <span>सभी 6 महाअभियान देखें</span>
             <ArrowRight className="w-4 h-4 text-[#DFB25A]" />
           </Link>
         </div>
@@ -383,13 +383,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#265B33]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#EAF5EC] text-[#194023] text-[11px] font-bold">
-                अभियान १ • पर्यावरण
+                अभियान 1 • पर्यावरण
               </span>
               <h3 className="font-serif text-xl font-bold text-[#194023]">
                 वृक्षारोपण महाअभियान
               </h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
-                ११,००० वृक्षों का पावन महासंकल्प। प्रति वृक्ष ₹१,००१ में ५ वर्षों का संपूर्ण पोषण एवं संरक्षण।
+                11,000 वृक्षों का पावन महासंकल्प। प्रति वृक्ष ₹1,001 में 5 वर्षों का संपूर्ण पोषण एवं संरक्षण।
               </p>
             </div>
             <div className="pt-2 flex items-center justify-between border-t border-[#E7D7C4]">
@@ -410,13 +410,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#E7D7C4] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#FAF0E4] text-[#793A27] text-[11px] font-bold">
-                अभियान २ • गोवंश
+                अभियान 2 • गोवंश
               </span>
               <h3 className="font-serif text-xl font-bold text-[#5B2A1B]">
                 गौ सेवा महाअभियान
               </h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
-                निराश्रित एवं वृद्ध देशी गायों के लिए सुरभि गौशाला, नित्य हरा चारा एवं २४ घंटे चिकित्सा सेवा।
+                निराश्रित एवं वृद्ध देशी गायों के लिए सुरभि गौशाला, नित्य हरा चारा एवं 24 घंटे चिकित्सा सेवा।
               </p>
             </div>
             <div className="pt-2 flex items-center justify-between border-t border-[#E7D7C4]">
@@ -437,13 +437,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#DFB25A]/50 shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#FEF3C7] text-[#92400E] text-[11px] font-bold">
-                अभियान ३ • धर्म धाम
+                अभियान 3 • धर्म धाम
               </span>
               <h3 className="font-serif text-xl font-bold text-[#5B2A1B]">
                 मंदिर निर्माण अभियान
               </h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
-                २५,००० वर्ग फीट बंसी पहाड़पुर सैंडस्टोन नागर शैली श्री श्री राधा कृष्ण बिहारी जी मंदिर संकुल निर्माण।
+                25,000 वर्ग फीट बंसी पहाड़पुर सैंडस्टोन नागर शैली श्री श्री राधा कृष्ण बिहारी जी मंदिर संकुल निर्माण।
               </p>
             </div>
             <div className="pt-2 flex items-center justify-between border-t border-[#E7D7C4]">
@@ -464,7 +464,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#E7D7C4] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#FAF0E4] text-[#793A27] text-[11px] font-bold">
-                अभियान ४ • प्रसादम
+                अभियान 4 • प्रसादम
               </span>
               <h3 className="font-serif text-xl font-bold text-[#5B2A1B]">
                 अन्नदान महाअभियान
@@ -491,7 +491,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#E7D7C4] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#E2EEDF] text-[#194023] text-[11px] font-bold">
-                अभियान ५ • शिक्षा
+                अभियान 5 • शिक्षा
               </span>
               <h3 className="font-serif text-xl font-bold text-[#5B2A1B]">
                 गुरुकुल अभियान
@@ -518,7 +518,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="bg-white rounded-2xl p-6 border border-[#E7D7C4] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2.5">
               <span className="inline-block px-2.5 py-0.5 rounded bg-[#FAF0E4] text-[#793A27] text-[11px] font-bold">
-                अभियान ६ • समाज सुधार
+                अभियान 6 • समाज सुधार
               </span>
               <h3 className="font-serif text-xl font-bold text-[#5B2A1B]">
                 नशा मुक्ति अभियान
@@ -562,7 +562,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             to="/seva"
             className="px-4 py-2 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] text-xs sm:text-sm font-bold rounded-md transition-colors inline-flex items-center space-x-1.5 self-start sm:self-auto cursor-pointer"
           >
-            <span>सभी ५०+ सेवाएँ देखें</span>
+            <span>सभी 50+ सेवाएँ देखें</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -629,7 +629,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               श्री श्री राधा कृष्ण बिहारी जी मंदिर
             </h2>
             <p className="text-sm text-stone-600 font-sans">
-              २५,००० वर्ग फीट के भूखंड पर नागर शैली एवं लाल बलुआ पत्थर से निर्मित हो रहा भव्य मंदिर संकुल।
+              25,000 वर्ग फीट के भूखंड पर नागर शैली एवं लाल बलुआ पत्थर से निर्मित हो रहा भव्य मंदिर संकुल।
             </p>
           </div>
 
@@ -656,7 +656,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <div className="flex items-center justify-between text-xs text-stone-600 px-1">
                 <span className="font-semibold text-[#5B2A1B]">
-                  मुख्य मंदिर संरचना: २,५०० वर्ग फीट
+                  मुख्य मंदिर संरचना: 2,500 वर्ग फीट
                 </span>
                 <span className="text-[#793A27]">अष्टकोणीय नक्षत्र फव्वारा व परिक्रमा पथ</span>
               </div>
@@ -684,9 +684,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <div className="flex items-center justify-between text-xs text-stone-600 px-1">
                 <span className="font-semibold text-[#5B2A1B]">
-                  भूखंड माप: १००' x २५०' (२५,००० वर्ग फीट)
+                  भूखंड माप: 100' x 250' (25,000 वर्ग फीट)
                 </span>
-                <span className="text-[#265B33] font-medium">उद्यान क्षेत्र: ~१५,००० वर्ग फीट</span>
+                <span className="text-[#265B33] font-medium">उद्यान क्षेत्र: ~15,000 वर्ग फीट</span>
               </div>
             </div>
           </div>
@@ -700,7 +700,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   '/images/temple/temple-main-2.png',
                   'मंदिर परिसर का विहंगम दृश्य (View 2)',
                   'मास्टर एरियल विहंगम दृष्टिकोण',
-                  '२५,००० वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास — अधिकृत छायाचित्र।'
+                  '25,000 वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास — अधिकृत छायाचित्र।'
                 )
               }
             >
@@ -816,16 +816,16 @@ export const HomeView: React.FC<HomeViewProps> = ({
               </p>
               <div className="space-y-2 pt-2 text-xs font-sans">
                 <div className="flex items-center justify-between p-2 bg-white rounded border border-[#E7D7C4]">
-                  <span>गोमाता का हरा चारा (१ दिन):</span>
-                  <span className="font-bold text-[#5B2A1B]">₹३,१००</span>
+                  <span>गोमाता का हरा चारा (1 दिन):</span>
+                  <span className="font-bold text-[#5B2A1B]">₹3,100</span>
                 </div>
                 <div className="flex items-center justify-between p-2 bg-white rounded border border-[#E7D7C4]">
                   <span>गोमाता का एक दिन का संपूर्ण भोजन:</span>
-                  <span className="font-bold text-[#5B2A1B]">₹५,१००</span>
+                  <span className="font-bold text-[#5B2A1B]">₹5,100</span>
                 </div>
                 <div className="flex items-center justify-between p-2 bg-white rounded border border-[#E7D7C4]">
-                  <span>गोमाता का औषधि उपचार (१ माह):</span>
-                  <span className="font-bold text-[#5B2A1B]">₹११,०००</span>
+                  <span>गोमाता का औषधि उपचार (1 माह):</span>
+                  <span className="font-bold text-[#5B2A1B]">₹11,000</span>
                 </div>
               </div>
             </div>

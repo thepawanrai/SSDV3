@@ -69,7 +69,7 @@ export const GauSevaAbhiyanView: React.FC<GauSevaAbhiyanViewProps> = ({ onOpenDo
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-md bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase">
-            <span>महाअभियान • प्रकल्प २</span>
+            <span>महाअभियान • प्रकल्प 2</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md">
@@ -97,7 +97,7 @@ export const GauSevaAbhiyanView: React.FC<GauSevaAbhiyanViewProps> = ({ onOpenDo
               to="/mahabhiyan"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-semibold text-sm rounded-md transition-all border border-white/20"
             >
-              ← सभी ६ महाअभियान देखें
+              ← सभी 6 महाअभियान देखें
             </Link>
           </div>
         </div>

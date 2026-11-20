@@ -109,7 +109,7 @@ export const siteConfig = {
     },
     {
       role: "संस्थापक सदस्य, राष्ट्रीय उपाध्यक्ष",
-      name: "राम श्री माताजी",
+      name: "रामश्री माताजी",
       description: "सत्य सनातन धाम की संस्थापक सदस्य एवं राष्ट्रीय उपाध्यक्ष।",
       image: "/assets/leadership/ram_shri_mataji.png",
       remoteImage: "https://plain-apac-prod-public.komododecks.com/202611/06/WGEQqLHpHvvOiwhpNMU3/image.png"
@@ -142,11 +142,11 @@ export const siteConfig = {
     },
     baseRatePerTree: 1001,
     tiers: [
-      { count: 1, amount: 1001, label: "१ वृक्ष", badge: "प्रारंभिक सेवा", treeCost: 501, maintenanceCost: 500, description: "१ पावन वृक्ष का रोपण एवं 5 वर्षों तक संपूर्ण संरक्षण" },
-      { count: 2, amount: 2001, label: "२ वृक्ष", badge: "शुभ संकल्प", treeCost: 1002, maintenanceCost: 999, description: "२ वृक्षों का रोपण एवं 5 वर्षों तक नियमित देखभाल" },
-      { count: 3, amount: 3001, label: "३ वृक्ष", badge: "सद्भावना सेवा", treeCost: 1503, maintenanceCost: 1498, description: "३ वृक्षों का रोपण व 5 वर्ष का संपूर्ण पोषण" },
-      { count: 4, amount: 4001, label: "४ वृक्ष", badge: "समृद्धि सेवा", treeCost: 2004, maintenanceCost: 1997, description: "४ वृक्षों का पावन योगदान व 5 वर्ष संरक्षण" },
-      { count: 5, amount: 5001, label: "५ वृक्ष", badge: "सर्वाधिक लोकप्रिय", treeCost: 2505, maintenanceCost: 2496, description: "५ फलदार/छायादार वृक्ष एवं 5 वर्ष तक पूर्ण संरक्षण", popular: true }
+      { count: 1, amount: 1001, label: "1 वृक्ष", badge: "प्रारंभिक सेवा", treeCost: 501, maintenanceCost: 500, description: "1 पावन वृक्ष का रोपण एवं 5 वर्षों तक संपूर्ण संरक्षण" },
+      { count: 2, amount: 2001, label: "2 वृक्ष", badge: "शुभ संकल्प", treeCost: 1002, maintenanceCost: 999, description: "2 वृक्षों का रोपण एवं 5 वर्षों तक नियमित देखभाल" },
+      { count: 3, amount: 3001, label: "3 वृक्ष", badge: "सद्भावना सेवा", treeCost: 1503, maintenanceCost: 1498, description: "3 वृक्षों का रोपण व 5 वर्ष का संपूर्ण पोषण" },
+      { count: 4, amount: 4001, label: "4 वृक्ष", badge: "समृद्धि सेवा", treeCost: 2004, maintenanceCost: 1997, description: "4 वृक्षों का पावन योगदान व 5 वर्ष संरक्षण" },
+      { count: 5, amount: 5001, label: "5 वृक्ष", badge: "सर्वाधिक लोकप्रिय", treeCost: 2505, maintenanceCost: 2496, description: "5 फलदार/छायादार वृक्ष एवं 5 वर्ष तक पूर्ण संरक्षण", popular: true }
     ],
     dedicationOccasions: [
       { id: "parents", icon: "❤️", label: "माता-पिता के नाम" },
@@ -1120,7 +1120,7 @@ export const sevasData: SevaItem[] = [
 export const galleryItems: GalleryItem[] = [
   {
     id: "img-temple-view-1",
-    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — मुख्य स्थापत्य दृश्य १",
+    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — मुख्य स्थापत्य दृश्य 1",
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
     description: "नागर शैली में निर्मित मुख्य शिखर, भव्य प्रवेश मेहराब एवं अष्टकोणीय नक्षत्र फव्वारा — अधिकृत वास्तविक छायाचित्र।",
@@ -1129,16 +1129,16 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-temple-view-2",
-    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — विहंगम वास्तु दृष्टिकोण २",
+    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — विहंगम वास्तु दृष्टिकोण 2",
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
-    description: "२५,००० वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास — अधिकृत छायाचित्र।",
+    description: "25,000 वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास — अधिकृत छायाचित्र।",
     assetKey: "images/temple/temple-main-2.png",
     assetUrl: "/images/temple/temple-main-2.png"
   },
   {
     id: "img-temple-view-3",
-    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — परिक्रमा एवं वाटिका दृश्य ३",
+    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — परिक्रमा एवं वाटिका दृश्य 3",
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
     description: "मंदिर पथ, हरियाली युक्त वाटिका, दीप स्तंभ एवं पत्थर से जड़ा हुआ चौड़ा परिक्रमा मार्ग।",
@@ -1147,7 +1147,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-temple-view-4",
-    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — नक्काशीदार जाली व स्तंभ दृश्य ४",
+    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — नक्काशीदार जाली व स्तंभ दृश्य 4",
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
     description: "भारतीय कारीगरी का उत्कृष्ट उदाहरण — लाल पत्थर पर जालीदार वातायन, नक्काशीदार मेहराब व अलंकृत स्तंभ।",
@@ -1156,7 +1156,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-temple-view-5",
-    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — प्रांगण एवं जलकुंड दृश्य ५",
+    title: "श्री श्री राधा कृष्ण बिहारी जी मंदिर — प्रांगण एवं जलकुंड दृश्य 5",
     category: "temple",
     categoryHindi: "मंदिर स्थापत्य",
     description: "भक्तों के विश्राम हेतु पत्थर की बेंचें, निरंतर प्रवाहित जल स्रोत एवं शांतिपूर्ण वातावरण।",
@@ -1168,7 +1168,7 @@ export const galleryItems: GalleryItem[] = [
     title: "आधिकारिक वास्तु मास्टरप्लान (Temple Masterplan)",
     category: "plan",
     categoryHindi: "मास्टरप्लान",
-    description: "१००' x २५०' (२५,००० वर्ग फीट) का अधिकृत साइट प्लान — मंदिर संरचना, उद्यान, फव्वारा, प्रवेश द्वार एवं मार्ग।",
+    description: "100' x 250' (25,000 वर्ग फीट) का अधिकृत साइट प्लान — मंदिर संरचना, उद्यान, फव्वारा, प्रवेश द्वार एवं मार्ग।",
     assetKey: "images/temple/temple-masterplan.png",
     assetUrl: "/images/temple/temple-masterplan.png"
   },
@@ -1177,7 +1177,7 @@ export const galleryItems: GalleryItem[] = [
     title: "सत्य सनातन धाम — उपग्रह मानचित्र (Tree Plantation & Temple Chhetra)",
     category: "satellite",
     categoryHindi: "उपग्रह क्षेत्र",
-    description: "ग्राम पासुन (मौदहा, हमीरपुर) में ११,००० वृक्षारोपण महाअभियान क्षेत्र एवं मंदिर निर्माण क्षेत्र का अधिकृत उपग्रह सीमांकन।",
+    description: "ग्राम पासुन (मौदहा, हमीरपुर) में 11,000 वृक्षारोपण महाअभियान क्षेत्र एवं मंदिर निर्माण क्षेत्र का अधिकृत उपग्रह सीमांकन।",
     assetKey: "images/temple/temple-satellite-chhetra.png",
     assetUrl: "/images/temple/temple-satellite-chhetra.png"
   },
@@ -1192,7 +1192,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-1",
-    title: "वृक्षारोपण महाअभियान — पावन पौधारोपण एवं धरा सेवा १",
+    title: "वृक्षारोपण महाअभियान — पावन पौधारोपण एवं धरा सेवा 1",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "ग्राम पासुन धाम परिसर में श्रद्धालुओं एवं कार्यकर्ताओं द्वारा फलदार व छायादार पौधे का रोपण — अधिकृत छायाचित्र।",
@@ -1201,16 +1201,16 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-2",
-    title: "वृक्षारोपण महाअभियान — समर्पित कार्यकर्ता व पर्यावरण प्रेमी २",
+    title: "वृक्षारोपण महाअभियान — समर्पित कार्यकर्ता व पर्यावरण प्रेमी 2",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
-    description: "११,००० वृक्षों के पावन महासंकल्प के अंतर्गत युवा स्वयंसेवकों का उत्साह एवं पौधरोपण — अधिकृत छायाचित्र।",
+    description: "11,000 वृक्षों के पावन महासंकल्प के अंतर्गत युवा स्वयंसेवकों का उत्साह एवं पौधरोपण — अधिकृत छायाचित्र।",
     assetKey: "images/plantation/plantation-2.jpg",
     assetUrl: "/images/plantation/plantation-2.jpg"
   },
   {
     id: "img-plantation-3",
-    title: "वृक्षारोपण महाअभियान — सामूहिक श्रमदान व पौधरोपण ३",
+    title: "वृक्षारोपण महाअभियान — सामूहिक श्रमदान व पौधरोपण 3",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "धरा को हरा-भरा बनाने हेतु संकल्पबद्ध सेवाभावी भक्तों द्वारा गड्ढे तैयार कर पौधे लगाने का दृश्य — अधिकृत छायाचित्र।",
@@ -1219,7 +1219,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-4",
-    title: "वृक्षारोपण महाअभियान — नव अंकुरित पौधे एवं संरक्षण ४",
+    title: "वृक्षारोपण महाअभियान — नव अंकुरित पौधे एवं संरक्षण 4",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "लगाए गए पौधों को सुरक्षित रखने हेतु ट्री-गार्ड व प्रारंभिक जल सिंचन व्यवस्था — अधिकृत छायाचित्र।",
@@ -1228,7 +1228,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-5",
-    title: "वृक्षारोपण महाअभियान — भूमि पूजन व सेवा संकल्प ५",
+    title: "वृक्षारोपण महाअभियान — भूमि पूजन व सेवा संकल्प 5",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "परिसर में वृक्षारोपण स्थल पर वैदिक मंगलाचरण एवं पौधरोपण की पावन शुरुआत — अधिकृत छायाचित्र।",
@@ -1237,16 +1237,16 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-6",
-    title: "वृक्षारोपण महाअभियान — जल सिंचन एवं पोषण सेवा ६",
+    title: "वृक्षारोपण महाअभियान — जल सिंचन एवं पोषण सेवा 6",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
-    description: "प्रत्येक पौधे की ५ वर्षों तक अनवरत देखभाल व जल प्रबंधन का सजीव दृश्य — अधिकृत छायाचित्र।",
+    description: "प्रत्येक पौधे की 5 वर्षों तक अनवरत देखभाल व जल प्रबंधन का सजीव दृश्य — अधिकृत छायाचित्र।",
     assetKey: "images/plantation/plantation-6.jpg",
     assetUrl: "/images/plantation/plantation-6.jpg"
   },
   {
     id: "img-plantation-7",
-    title: "वृक्षारोपण महाअभियान — मातृशक्ति व परिवारों का योगदान ७",
+    title: "वृक्षारोपण महाअभियान — मातृशक्ति व परिवारों का योगदान 7",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "मातृशक्ति द्वारा अपने परिजनों व पूर्वजों की स्मृति में पावन वृक्षारोपण — अधिकृत छायाचित्र।",
@@ -1255,7 +1255,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-8",
-    title: "वृक्षारोपण महाअभियान — सघन हरित पट्टी विस्तार ८",
+    title: "वृक्षारोपण महाअभियान — सघन हरित पट्टी विस्तार 8",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "धाम परिसर के चारों ओर हरितिमा विस्तार एवं प्राकृतिक संतुलन हेतु पौधरोपण — अधिकृत छायाचित्र।",
@@ -1264,7 +1264,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-9",
-    title: "वृक्षारोपण महाअभियान — छायादार एवं फलदार वृक्ष रोपण ९",
+    title: "वृक्षारोपण महाअभियान — छायादार एवं फलदार वृक्ष रोपण 9",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "नीम, पीपल, बरगद, आम, जामुन व आंवला के औषधीय एवं फलदार पौधों का संरक्षण — अधिकृत छायाचित्र।",
@@ -1273,7 +1273,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-10",
-    title: "वृक्षारोपण महाअभियान — ग्रामीण सहभागिता एवं उत्साह १०",
+    title: "वृक्षारोपण महाअभियान — ग्रामीण सहभागिता एवं उत्साह 10",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "स्थानीय ग्रामवासियों एवं संतों की प्रेरक उपस्थिति में पौधरोपण महायज्ञ — अधिकृत छायाचित्र।",
@@ -1282,7 +1282,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-11",
-    title: "वृक्षारोपण महाअभियान — प्राकृतिक वाटिका का निर्माण ११",
+    title: "वृक्षारोपण महाअभियान — प्राकृतिक वाटिका का निर्माण 11",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "सत्य सनातन धाम के हरित क्षेत्र में पंक्तिबद्ध पौधों का रोपण व परिक्रमा पथ — अधिकृत छायाचित्र।",
@@ -1291,7 +1291,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "img-plantation-12",
-    title: "वृक्षारोपण महाअभियान — हरित संकल्प एवं समर्पण १२",
+    title: "वृक्षारोपण महाअभियान — हरित संकल्प एवं समर्पण 12",
     category: "plantation",
     categoryHindi: "वृक्षारोपण अभियान",
     description: "धरा, पर्यावरण एवं गोमाता के संरक्षण का एक साथ पावन संकल्प — अधिकृत छायाचित्र।",
@@ -1331,12 +1331,12 @@ export const testimonialsData: Testimonial[] = [
     role: "समर्पित दानदाता",
     city: "कानपुर नगर",
     state: "उत्तर प्रदेश",
-    date: "अगस्त २०२६",
+    date: "अगस्त 2026",
     category: "donor",
     categoryHindi: "दानदाता",
-    highlight: "मंदिर निर्माण में १०० वर्ग फीट का योगदान देकर अलौकिक आत्मसंतोष प्राप्त हुआ।",
-    quote: "जब हमने ग्राम पासुन आकर श्री श्री राधा कृष्ण बिहारी जी मंदिर के २५,००० वर्ग फीट परिसर और लाल बलुआ पत्थर के शिल्प का दर्शन किया, तो मन श्रद्धा से भर गया। यहाँ दान की एक-एक पाई का पूरा हिसाब और पारदर्शिता है। बिहारी जी की कृपा से बुंदेलखंड में यह पावन धाम आने वाली पीढ़ियों के लिए आध्यात्मिक प्रकाश स्तंभ बनेगा।",
-    sevaContributed: "मंदिर निर्माण सेवा — १०० वर्ग फीट",
+    highlight: "मंदिर निर्माण में 100 वर्ग फीट का योगदान देकर अलौकिक आत्मसंतोष प्राप्त हुआ।",
+    quote: "जब हमने ग्राम पासुन आकर श्री श्री राधा कृष्ण बिहारी जी मंदिर के 25,000 वर्ग फीट परिसर और लाल बलुआ पत्थर के शिल्प का दर्शन किया, तो मन श्रद्धा से भर गया। यहाँ दान की एक-एक पाई का पूरा हिसाब और पारदर्शिता है। बिहारी जी की कृपा से बुंदेलखंड में यह पावन धाम आने वाली पीढ़ियों के लिए आध्यात्मिक प्रकाश स्तंभ बनेगा।",
+    sevaContributed: "मंदिर निर्माण सेवा — 100 वर्ग फीट",
     verifiedDonor: true
   },
   {
@@ -1346,12 +1346,12 @@ export const testimonialsData: Testimonial[] = [
     role: "दर्शनार्थी एवं पर्यावरण प्रेमी",
     city: "लखनऊ",
     state: "उत्तर प्रदेश",
-    date: "सितंबर २०२६",
+    date: "सितंबर 2026",
     category: "visitor",
     categoryHindi: "दर्शनार्थी",
-    highlight: "बुंदेलखंड की धरती पर ११,००० वृक्षों का यह महासंकल्प केवल हरियाली नहीं, जीवंत तपस्या है।",
-    quote: "धाम में आकर शांत व सात्त्विक वातावरण ने अंतःकरण को छू लिया। हमने स्वयं वृक्षारोपण क्षेत्र देखा कि किस प्रकार प्रत्येक पौधे की ५ वर्षों तक जल व खाद संरक्षण की ठोस योजना बनाई गई है। हर श्रद्धालु को एक बार यहाँ आकर इस दिव्य ऊर्जा को महसूस करना चाहिए।",
-    sevaContributed: "वृक्षारोपण महाअभियान — ११ वृक्ष",
+    highlight: "बुंदेलखंड की धरती पर 11,000 वृक्षों का यह महासंकल्प केवल हरियाली नहीं, जीवंत तपस्या है।",
+    quote: "धाम में आकर शांत व सात्त्विक वातावरण ने अंतःकरण को छू लिया। हमने स्वयं वृक्षारोपण क्षेत्र देखा कि किस प्रकार प्रत्येक पौधे की 5 वर्षों तक जल व खाद संरक्षण की ठोस योजना बनाई गई है। हर श्रद्धालु को एक बार यहाँ आकर इस दिव्य ऊर्जा को महसूस करना चाहिए।",
+    sevaContributed: "वृक्षारोपण महाअभियान — 11 वृक्ष",
     verifiedDonor: true
   },
   {
@@ -1361,7 +1361,7 @@ export const testimonialsData: Testimonial[] = [
     role: "आजीवन सेवा सहयोगी",
     city: "प्रयागराज",
     state: "उत्तर प्रदेश",
-    date: "जुलाई २०२६",
+    date: "जुलाई 2026",
     category: "donor",
     categoryHindi: "दानदाता",
     highlight: "सेवा, संस्कार और सनातन का ऐसा व्यावहारिक समन्वय मैंने कहीं अन्यत्र नहीं देखा।",
@@ -1376,12 +1376,12 @@ export const testimonialsData: Testimonial[] = [
     role: "वृक्ष मित्र व दानदाता",
     city: "नोएडा",
     state: "दिल्ली एनसीआर",
-    date: "सितंबर २०२६",
+    date: "सितंबर 2026",
     category: "donor",
     categoryHindi: "दानदाता",
-    highlight: "अपनी पुत्री के जन्मदिवस पर ५१ वृक्षों का रोपण प्रायोजित किया, धाम की पावती व सूचना अत्यंत संतोषजनक रही।",
+    highlight: "अपनी पुत्री के जन्मदिवस पर 51 वृक्षों का रोपण प्रायोजित किया, धाम की पावती व सूचना अत्यंत संतोषजनक रही।",
     quote: "हम जन्मदिन या विशेष अवसरों पर फिजूलखर्ची के स्थान पर प्रकृति सेवा करना चाहते थे। सत्य सनातन धाम के 'वृक्षारोपण महाअभियान' ने हमें सही मंच दिया। पारदर्शी बैंक खाता, अधिकृत पावती और लगातार प्रगति विवरण से संस्था के प्रति हमारा विश्वास दृढ़ हो गया।",
-    sevaContributed: "वृक्षारोपण महाअभियान — ५१ वृक्ष",
+    sevaContributed: "वृक्षारोपण महाअभियान — 51 वृक्ष",
     verifiedDonor: true
   },
   {
@@ -1391,7 +1391,7 @@ export const testimonialsData: Testimonial[] = [
     role: "स्थानीय दर्शनार्थी व सत्संगी",
     city: "मौदहा / बांदा",
     state: "उत्तर प्रदेश",
-    date: "अक्टूबर २०२६",
+    date: "अक्टूबर 2026",
     category: "visitor",
     categoryHindi: "दर्शनार्थी",
     highlight: "मौदहा तहसील के पासुन गाँव में ऐसा नागर शिखर मंदिर बनना पूरे बुंदेलखंड का गौरव है।",
@@ -1406,7 +1406,7 @@ export const testimonialsData: Testimonial[] = [
     role: "सेवाभावी स्वयंसेवक",
     city: "वाराणसी",
     state: "उत्तर प्रदेश",
-    date: "अगस्त २०२६",
+    date: "अगस्त 2026",
     category: "volunteer",
     categoryHindi: "स्वयंसेवक",
     highlight: "अन्नक्षेत्र और भंडारे में जो आत्मीयता व प्रेम भाव है, वही सनातन संस्कृति का मूल सार है।",

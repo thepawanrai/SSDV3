@@ -48,17 +48,17 @@ export const CAMPAIGN_GOALS: CampaignGoal[] = [
     targetAmount: 1101100, // 1,100 trees * 1001
     raisedAmount: 236800, // North of ₹2.36 lakh received till now
     targetUnits: '1,100 वृक्ष',
-    raisedUnits: '236+ वृक्ष (₹२.३६+ लाख प्राप्त)',
+    raisedUnits: '236+ वृक्ष (₹2.36+ लाख प्राप्त)',
     unitLabel: 'वृक्ष',
     donorsCount: 184,
     milestoneDate: '11 अक्टूबर 2026 (शारदीय नवरात्रि)',
     subtitle: '11,000 वृक्षों के पावन महासंकल्प का प्रथम चरण — 5 वर्षों के पोषण व संरक्षण सहित',
-    impactMessage: 'प्रथम चरण में अब तक ₹२.३६ लाख से अधिक (236+ वृक्ष) का पावन सहयोग प्राप्त हो चुका है! अभियान तीव्र गति से निरंतर प्रगति पर है। शेष वृक्षों के संकल्प हेतु आप भी सहभागी बनें।',
+    impactMessage: 'प्रथम चरण में अब तक ₹2.36 लाख से अधिक (236+ वृक्ष) का पावन सहयोग प्राप्त हो चुका है! अभियान तीव्र गति से निरंतर प्रगति पर है। शेष वृक्षों के संकल्प हेतु आप भी सहभागी बनें।',
     suggestedTiers: [
-      { amount: 1001, label: '१ वृक्ष (₹1,001)' },
-      { amount: 2001, label: '२ वृक्ष (₹2,001)' },
-      { amount: 5001, label: '५ वृक्ष (₹5,001)', highlight: true },
-      { amount: 11000, label: '११ वृक्ष (₹11,000)' }
+      { amount: 1001, label: '1 वृक्ष (₹1,001)' },
+      { amount: 2001, label: '2 वृक्ष (₹2,001)' },
+      { amount: 5001, label: '5 वृक्ष (₹5,001)', highlight: true },
+      { amount: 11000, label: '11 वृक्ष (₹11,000)' }
     ],
     accentGradient: 'from-[#194023] via-[#1F542E] to-[#112F19]',
     barGradient: 'from-emerald-500 via-green-500 to-[#194023]',
@@ -83,9 +83,9 @@ export const CAMPAIGN_GOALS: CampaignGoal[] = [
     impactMessage: 'प्रथम चरण में केवल 280 वर्ग फीट शिला सेवा शेष है। ठाकुर जी के गर्भगृह में अपने नाम की पावन शिला समर्पित करें।',
     suggestedTiers: [
       { amount: 2600, label: 'आधा वर्ग फीट (₹2,600)' },
-      { amount: 5100, label: '१ वर्ग फीट शिला (₹5,100)', highlight: true },
-      { amount: 11000, label: '२ वर्ग फीट (₹11,000)' },
-      { amount: 51000, label: '१० वर्ग फीट (₹51,000)' }
+      { amount: 5100, label: '1 वर्ग फीट शिला (₹5,100)', highlight: true },
+      { amount: 11000, label: '2 वर्ग फीट (₹11,000)' },
+      { amount: 51000, label: '10 वर्ग फीट (₹51,000)' }
     ],
     accentGradient: 'from-[#5B2A1B] via-[#7A3B27] to-[#3E1B10]',
     barGradient: 'from-amber-400 via-orange-500 to-[#5B2A1B]',
@@ -365,7 +365,7 @@ export const CampaignGoalTracker: React.FC<CampaignGoalTrackerProps> = ({
             {/* Target Flag at 100% */}
             <div className="absolute right-0 -top-7 flex items-center space-x-1 text-[11px] font-bold text-[#5B2A1B]">
               <Flag className="w-3.5 h-3.5 text-[#C59B27] fill-current" />
-              <span>१००% लक्ष्य</span>
+              <span>100% लक्ष्य</span>
             </div>
           </div>
 
@@ -376,11 +376,11 @@ export const CampaignGoalTracker: React.FC<CampaignGoalTrackerProps> = ({
               <span className="text-[9px] text-stone-500">संकल्प आरंभ</span>
             </div>
             <div className="border-l-2 border-amber-500 pl-1.5">
-              <span className="text-stone-700 font-bold block">२५%</span>
+              <span className="text-stone-700 font-bold block">25%</span>
               <span className="text-[9px] text-stone-500">प्रारंभिक आधार</span>
             </div>
             <div className="border-l-2 border-emerald-600 pl-1.5">
-              <span className="text-stone-700 font-bold block">५०%</span>
+              <span className="text-stone-700 font-bold block">50%</span>
               <span className="text-[9px] text-stone-500">अर्ध संकल्प पार</span>
             </div>
             <div className="text-right border-r-2 border-[#5B2A1B] pr-1.5">
@@ -432,7 +432,7 @@ export const CampaignGoalTracker: React.FC<CampaignGoalTrackerProps> = ({
               हालिया समर्पित सेवाधारी:
             </span>
             <span className="text-[11px] text-stone-600 truncate max-w-sm sm:max-w-md">
-              पीयूष सिंह (१ वृक्ष) • डॉ. अरविन्द पटेल (३ वृक्ष) • राजेश शर्मा (५ वृक्ष) • सुनीता वर्मा (२ वृक्ष)
+              पीयूष सिंह (1 वृक्ष) • डॉ. अरविन्द पटेल (3 वृक्ष) • राजेश शर्मा (5 वृक्ष) • सुनीता वर्मा (2 वृक्ष)
             </span>
           </div>
           <span className="text-[10px] text-stone-500 sm:text-right">

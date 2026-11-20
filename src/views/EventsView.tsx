@@ -33,11 +33,11 @@ export const EventsView: React.FC<EventsViewProps> = ({ onNavigate, onOpenDonate
           <div className="lg:col-span-8 space-y-3">
             <div className="inline-flex items-center space-x-2 text-xs font-bold text-[#265B33] bg-[#E2EEDF] px-3 py-1 rounded">
               <Calendar className="w-3.5 h-3.5 mr-1" />
-              <span>११ अक्टूबर २०२६ • शरद नवरात्रि</span>
+              <span>11 अक्टूबर 2026 • शरद नवरात्रि</span>
             </div>
 
             <h4 className="font-serif text-2xl font-bold text-[#5B2A1B]">
-              वृक्षारोपण महाअभियान (प्रथम चरण — १,१०० वृक्ष)
+              वृक्षारोपण महाअभियान (प्रथम चरण — 1,100 वृक्ष)
             </h4>
 
             <p className="text-xs sm:text-sm text-stone-600 font-sans leading-relaxed">

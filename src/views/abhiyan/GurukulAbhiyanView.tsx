@@ -13,14 +13,14 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
   const gurukulTiers = [
     {
       id: 'gurukul-vidyarthi-books',
-      title: '१ ब्रह्मचारी विद्यार्थी पाठ्यसामग्री व वस्त्र',
+      title: '1 ब्रह्मचारी विद्यार्थी पाठ्यसामग्री व वस्त्र',
       amount: 1100,
       description: 'धोती, कुर्ता, वैदिक पुस्तकें, लेखन सामग्री एवं आसन व्यवस्था।',
       popular: false,
     },
     {
       id: 'gurukul-vidyarthi-month',
-      title: '१ विद्यार्थी का मासिक संपूर्ण शिक्षण व आवास',
+      title: '1 विद्यार्थी का मासिक संपूर्ण शिक्षण व आवास',
       amount: 2500,
       description: 'वेद-वेदांग, संस्कृत, आधुनिक गणित एवं निःशुल्क आवास-भोजन।',
       popular: true,
@@ -41,7 +41,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
     },
     {
       id: 'gurukul-vidyarthi-annual',
-      title: '१ विद्यार्थी का संपूर्ण वार्षिक विद्यादान संकल्प',
+      title: '1 विद्यार्थी का संपूर्ण वार्षिक विद्यादान संकल्प',
       amount: 31000,
       description: 'वर्ष भर का संपूर्ण शिक्षण, भोजन, आवास, स्वास्थ्य व संस्कार।',
       popular: false,
@@ -61,7 +61,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
       <section className="relative bg-gradient-to-b from-[#1C0B06] via-[#2F140A] to-[#1C0B06] text-[#FAF7F2] py-14 sm:py-20 border-b border-[#DFB25A]/30 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-md bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase">
-            <span>महाअभियान • प्रकल्प ५</span>
+            <span>महाअभियान • प्रकल्प 5</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md">
@@ -90,7 +90,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
               to="/mahabhiyan"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-semibold text-sm rounded-md transition-all border border-white/20"
             >
-              ← सभी ६ महाअभियान देखें
+              ← सभी 6 महाअभियान देखें
             </Link>
           </div>
         </div>
@@ -110,7 +110,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
             <p className="text-[11px] text-stone-500 mt-0.5">समय की माँग के अनुरूप पाठ्यक्रम</p>
           </div>
           <div className="p-5 bg-white rounded-xl border border-[#E7D7C4] text-center shadow-xs">
-            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#5B2A1B]">१००% निःशुल्क</span>
+            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#5B2A1B]">100% निःशुल्क</span>
             <p className="text-xs font-semibold text-[#793A27] mt-1">शिक्षा, आवास व सात्विक भोजन</p>
             <p className="text-[11px] text-stone-500 mt-0.5">ग्रामीण बच्चों हेतु पूर्ण व्यवस्था</p>
           </div>

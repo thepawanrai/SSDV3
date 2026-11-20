@@ -20,7 +20,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
     },
     {
       id: 'nasha-mukti-counseling-camp',
-      title: '१ ग्रामीण नशा मुक्ति परामर्श शिविर',
+      title: '1 ग्रामीण नशा मुक्ति परामर्श शिविर',
       amount: 2100,
       description: 'गाँव में निःशुल्क स्वास्थ्य परीक्षण, मनोवैज्ञानिक काउंसलिंग एवं योग मार्गदर्शन शिविर।',
       popular: true,
@@ -43,7 +43,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
       id: 'nasha-mukti-model-village',
       title: 'एक संपूर्ण ग्राम नशा-मुक्त संकल्प अभियान',
       amount: 25000,
-      description: 'एक चयनित गाँव में सघन ३-मासिक अभियान चलाकर गाँव को व्यसनमुक्त बनाने का लक्ष्य।',
+      description: 'एक चयनित गाँव में सघन 3-मासिक अभियान चलाकर गाँव को व्यसनमुक्त बनाने का लक्ष्य।',
       popular: false,
     },
     {
@@ -61,7 +61,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
       <section className="relative bg-gradient-to-b from-[#1C0B06] via-[#2F140A] to-[#1C0B06] text-[#FAF7F2] py-14 sm:py-20 border-b border-[#DFB25A]/30 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-md bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase">
-            <span>महाअभियान • प्रकल्प ६</span>
+            <span>महाअभियान • प्रकल्प 6</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md">
@@ -89,7 +89,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
               to="/mahabhiyan"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-semibold text-sm rounded-md transition-all border border-white/20"
             >
-              ← सभी ६ महाअभियान देखें
+              ← सभी 6 महाअभियान देखें
             </Link>
           </div>
         </div>
@@ -130,7 +130,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
             <div className="p-4 bg-white rounded-xl border border-[#E7D7C4] space-y-2">
               <span className="w-7 h-7 rounded-full bg-[#DFB25A] text-[#3E1B10] flex items-center justify-center font-bold text-xs">
-                १
+                1
               </span>
               <h3 className="font-serif font-bold text-base text-[#5B2A1B]">जन-जागरण व शपथ</h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
@@ -139,7 +139,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
             </div>
             <div className="p-4 bg-white rounded-xl border border-[#E7D7C4] space-y-2">
               <span className="w-7 h-7 rounded-full bg-[#DFB25A] text-[#3E1B10] flex items-center justify-center font-bold text-xs">
-                २
+                2
               </span>
               <h3 className="font-serif font-bold text-base text-[#5B2A1B]">आयुर्वेद व योग उपचार</h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
@@ -148,7 +148,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
             </div>
             <div className="p-4 bg-white rounded-xl border border-[#E7D7C4] space-y-2">
               <span className="w-7 h-7 rounded-full bg-[#DFB25A] text-[#3E1B10] flex items-center justify-center font-bold text-xs">
-                ३
+                3
               </span>
               <h3 className="font-serif font-bold text-base text-[#5B2A1B]">सार्थक दिशा (खेल व सेवा)</h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">

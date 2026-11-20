@@ -39,8 +39,8 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       tabLabel: 'मुख्य मंदिर',
       tag: 'परम पावन अधिष्ठान',
       title: 'श्री श्री राधा कृष्ण बिहारी जी मंदिर',
-      subtitle: '२५,००० वर्ग फीट का भव्य नागर शैली पाषाण संकुल',
-      desc: 'राजस्थान के बंसी पहाड़पुर लाल बलुआ पत्थर, परंपरागत नागर शिखर, अष्टकोणीय नक्षत्र फव्वारा एवं १०८ नक्काशीदार स्तंभों से सुसज्जित दिव्य धाम।',
+      subtitle: '25,000 वर्ग फीट का भव्य नागर शैली पाषाण संकुल',
+      desc: 'राजस्थान के बंसी पहाड़पुर लाल बलुआ पत्थर, परंपरागत नागर शिखर, अष्टकोणीय नक्षत्र फव्वारा एवं 108 नक्काशीदार स्तंभों से सुसज्जित दिव्य धाम।',
       image: '/images/temple/temple-main-hero.jpg',
       fallbackImage: '/assets/temple-hero.jpg',
       primaryCta: {
@@ -54,15 +54,15 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'vriksharopan',
-      tabLabel: '१. वृक्षारोपण',
-      tag: 'महाअभियान १ • पर्यावरण एवं धरा संरक्षण',
-      title: '१. वृक्षारोपण महाअभियान',
-      subtitle: '११,००० वृक्षों का पावन संकल्प • प्रथम चरण: १,१०० वृक्ष (सक्रिय व प्रगतिशील)',
-      desc: 'प्रकृति एवं भावी पीढ़ियों के कल्याण हेतु महाअभियान प्रारंभ। प्रथम चरण में ₹२.३६ लाख+ जनसहयोग प्राप्त। मात्र ₹1,001 में ५ वर्ष संरक्षण सहित वृक्ष समर्पित करें।',
+      tabLabel: '1. वृक्षारोपण',
+      tag: 'महाअभियान 1 • पर्यावरण एवं धरा संरक्षण',
+      title: '1. वृक्षारोपण महाअभियान',
+      subtitle: '11,000 वृक्षों का पावन संकल्प • प्रथम चरण: 1,100 वृक्ष (सक्रिय व प्रगतिशील)',
+      desc: 'प्रकृति एवं भावी पीढ़ियों के कल्याण हेतु महाअभियान प्रारंभ। प्रथम चरण में ₹2.36 लाख+ जनसहयोग प्राप्त। मात्र ₹1,001 में 5 वर्ष संरक्षण सहित वृक्ष समर्पित करें।',
       image: '/Satelight Image of Satya Sanatan Dham.png',
       fallbackImage: '/assets/satellite-site.jpg',
       primaryCta: {
-        label: 'वृक्ष सेवा करें (₹१,००१)',
+        label: 'वृक्ष सेवा करें (₹1,001)',
         onClick: () => onOpenDonate('vriksharopan-seva', 1001)
       },
       secondaryCta: {
@@ -72,15 +72,15 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'gau-seva',
-      tabLabel: '२. गौ सेवा',
-      tag: 'महाअभियान २ • गावो विश्वस्य मातरः',
-      title: '२. गौ सेवा महाअभियान',
+      tabLabel: '2. गौ सेवा',
+      tag: 'महाअभियान 2 • गावो विश्वस्य मातरः',
+      title: '2. गौ सेवा महाअभियान',
       subtitle: 'सुरभि गौशाला — निराश्रित एवं देशी गोवंश का आजीवन वात्सल्यपूर्ण संवर्धन',
-      desc: 'गिर, साहीवाल जैसी पवित्र देशी नस्लों का पालन-पोषण। प्रतिदिन ताजा हरा चारा, दलिया, गुड़, खली तथा २४ घंटे पशु-चिकित्सा सेवा उपलब्ध है।',
+      desc: 'गिर, साहीवाल जैसी पवित्र देशी नस्लों का पालन-पोषण। प्रतिदिन ताजा हरा चारा, दलिया, गुड़, खली तथा 24 घंटे पशु-चिकित्सा सेवा उपलब्ध है।',
       image: '/2.png',
       fallbackImage: '/assets/temple-hero.jpg',
       primaryCta: {
-        label: 'गौ सेवा करें (₹२,१००)',
+        label: 'गौ सेवा करें (₹2,100)',
         onClick: () => onOpenDonate('gau-mata-seva', 2100)
       },
       secondaryCta: {
@@ -90,15 +90,15 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'mandir-nirman',
-      tabLabel: '३. मंदिर निर्माण',
-      tag: 'महाअभियान ३ • दिव्य अधिष्ठान निर्माण',
-      title: '३. मंदिर निर्माण अभियान',
+      tabLabel: '3. मंदिर निर्माण',
+      tag: 'महाअभियान 3 • दिव्य अधिष्ठान निर्माण',
+      title: '3. मंदिर निर्माण अभियान',
       subtitle: 'प्रत्येक राज्य व प्रत्येक जिले में एक भव्य मंदिर स्थापना का संकल्प',
       desc: 'श्री श्री राधा कृष्ण बिहारी जी मंदिर के गर्भगृह, सभामंडप एवं पाषाण स्तंभों के निर्माण में पावन शिला समर्पित कर अमर पुण्य के सहभागी बनें।',
       image: '/3.png',
       fallbackImage: '/1.png',
       primaryCta: {
-        label: 'पावन शिला सेवा (₹५,१००)',
+        label: 'पावन शिला सेवा (₹5,100)',
         onClick: () => onOpenDonate('mandir-nirman-seva', 5100)
       },
       secondaryCta: {
@@ -108,15 +108,15 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'annadaan',
-      tabLabel: '४. अन्नदान',
-      tag: 'महाअभियान ४ • प्रसादम एवं अक्षय भंडारा',
-      title: '४. अन्नदान महाअभियान',
+      tabLabel: '4. अन्नदान',
+      tag: 'महाअभियान 4 • प्रसादम एवं अक्षय भंडारा',
+      title: '4. अन्नदान महाअभियान',
       subtitle: '"अन्नं परब्रह्म" — सत्य सनातन धाम का नित्य अक्षय अन्नक्षेत्र',
       desc: 'तीर्थयात्रियों, साधु-संतों एवं असहायों को नित्य सम्मानपूर्वक शुद्ध सात्विक महाप्रसादम। कोई भी व्यक्ति धाम से भूखा न लौटे।',
       image: '/4.png',
       fallbackImage: '/1.png',
       primaryCta: {
-        label: 'अन्नदान सेवा (₹२,५००)',
+        label: 'अन्नदान सेवा (₹2,500)',
         onClick: () => onOpenDonate('anna-daan-seva', 2500)
       },
       secondaryCta: {
@@ -126,15 +126,15 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'gurukul',
-      tabLabel: '५. गुरुकुल',
-      tag: 'महाअभियान ५ • वैदिक शिक्षा व संस्कार',
-      title: '५. गुरुकुल अभियान',
+      tabLabel: '5. गुरुकुल',
+      tag: 'महाअभियान 5 • वैदिक शिक्षा व संस्कार',
+      title: '5. गुरुकुल अभियान',
       subtitle: '"सा विद्या या विमुक्तये" — वैदिक ऋचाओं एवं आधुनिक विज्ञान का संगम',
       desc: 'ग्रामीण व निर्धन विद्यार्थियों को निःशुल्क आवासीय शिक्षा, वेद, संस्कृत, नीतिशास्त्र एवं कंप्यूटर शिक्षा द्वारा चरित्र निर्माण एवं राष्ट्र सेवा का संकल्प।',
       image: '/5.png',
       fallbackImage: '/1.png',
       primaryCta: {
-        label: 'विद्यादान सेवा (₹२,५००)',
+        label: 'विद्यादान सेवा (₹2,500)',
         onClick: () => onOpenDonate('gurukul-expansion-seva', 2500)
       },
       secondaryCta: {
@@ -144,9 +144,9 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     },
     {
       id: 'nasha-mukti',
-      tabLabel: '६. नशा मुक्ति',
-      tag: 'महाअभियान ६ • समाज जागरण व युवा शक्ति',
-      title: '६. नशा मुक्ति अभियान',
+      tabLabel: '6. नशा मुक्ति',
+      tag: 'महाअभियान 6 • समाज जागरण व युवा शक्ति',
+      title: '6. नशा मुक्ति अभियान',
       subtitle: '"नशा मुक्त समाज, सशक्त युवा" — व्यसन के अंधकार से मुक्ति',
       desc: 'गाँव-गाँव में चौपाल, नशा मुक्ति गोष्ठी, आयुर्वेदिक उपचार एवं मनोवैज्ञानिक संबल द्वारा युवाओं को व्यसनमुक्त कर राष्ट्र व धर्म निर्माण से जोड़ना।',
       image: '/Temple Masterplan.png',

@@ -13,6 +13,7 @@ import { MobileStickyBar } from './components/MobileStickyBar';
 import { ScrollToTop } from './components/ScrollToTop';
 import { BackgroundAudioPlayer } from './components/BackgroundAudioPlayer';
 import { SocialProofToast } from './components/SocialProofToast';
+import { Preloader } from './components/Preloader';
 import { LanguageProvider } from './context/LanguageContext';
 import { AudioProvider } from './context/AudioContext';
 
@@ -88,6 +89,9 @@ function AppLayout() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#1E293B] selection:bg-[#5B2A1B] selection:text-white">
+      {/* Initial Website GIF Preloader */}
+      <Preloader />
+
       {/* Scroll restoration on route change */}
       <ScrollToTop />
 

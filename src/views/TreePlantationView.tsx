@@ -142,7 +142,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
           {/* Top Announcement Badge */}
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#112F19]/80 backdrop-blur-xs text-[#E5C158] text-xs sm:text-sm font-bold uppercase tracking-wider border border-[#E5C158]/30">
             <TreeDeciduous className="w-4 h-4 text-[#A3E635]" />
-            <span>अभियान प्रारंभ — प्रथम चरण में ₹२.३६ लाख+ जनसहयोग प्राप्त</span>
+            <span>अभियान प्रारंभ — प्रथम चरण में ₹2.36 लाख+ जनसहयोग प्राप्त</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-tight drop-shadow-md">
@@ -150,7 +150,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
           </h1>
 
           <p className="font-serif text-xl sm:text-2xl lg:text-3xl text-[#FEF08A] font-medium">
-            ११,००० वृक्षों का पावन संकल्प • प्रथम चरण: १,१०० वृक्ष (सफलतापूर्वक संचालित)
+            11,000 वृक्षों का पावन संकल्प • प्रथम चरण: 1,100 वृक्ष (सफलतापूर्वक संचालित)
           </p>
 
           <p className="text-sm sm:text-base lg:text-lg text-[#E8F5E9] leading-relaxed font-sans max-w-2xl">
@@ -327,7 +327,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
         {/* Cost Breakdown Callout Banner (Rule #21 verified from Antigravity) */}
         <div className="bg-[#E8F5E9] border-2 border-[#2E7D32]/30 rounded-2xl p-5 sm:p-6 text-center max-w-2xl mx-auto shadow-xs space-y-1.5">
           <span className="text-xs font-bold uppercase tracking-wider text-[#1B5E20]">
-            पारदर्शी लागत संरचना (१ वृक्ष = ₹१,००१)
+            पारदर्शी लागत संरचना (1 वृक्ष = ₹1,001)
           </span>
           <div className="font-serif text-2xl sm:text-3xl font-bold text-[#1B5E20]">
             ₹501 पौधा मूल्य + ₹500 5 वर्ष संरक्षण = ₹1,001
@@ -436,7 +436,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#E7D7C4] pb-4">
           <div>
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#2E7D32] mb-2">
-              चरण १: सुरक्षित सेवा समर्पण
+              चरण 1: सुरक्षित सेवा समर्पण
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#5B2A1B] leading-normal mt-1">
               वृक्ष सेवा के लिए अपना योगदान दें
@@ -562,7 +562,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
       <section className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E7D7C4] shadow-xs space-y-6">
         <div>
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#793A27] mb-2">
-            चरण २: पावती एवं रसीद
+            चरण 2: पावती एवं रसीद
           </span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#5B2A1B] leading-normal mt-1">
             भुगतान की पुष्टि करें (Payment Confirmation)
@@ -790,27 +790,27 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
           <div className="bg-white p-5 rounded-2xl border border-slate-200 text-center space-y-1.5 shadow-xs">
             <span className="text-xs uppercase font-bold text-[#793A27]">प्रथम चरण लक्ष्य</span>
             <div className="font-serif text-2xl sm:text-3xl font-bold text-[#5B2A1B]">
-              १,१०० वृक्ष
+              1,100 वृक्ष
             </div>
             <p className="text-[11px] text-stone-500">
-              ११ अक्टूबर २०२६ • शारदीय नवरात्रि
+              11 अक्टूबर 2026 • शारदीय नवरात्रि
             </p>
           </div>
 
           <div className="bg-emerald-50 p-5 rounded-2xl border border-emerald-300 text-center space-y-1.5 shadow-xs">
             <span className="text-xs uppercase font-bold text-emerald-800">अब तक प्राप्त सहयोग</span>
             <div className="font-serif text-2xl sm:text-3xl font-bold text-emerald-900">
-              ₹२.३६ लाख+
+              ₹2.36 लाख+
             </div>
             <p className="text-[11px] text-emerald-700 font-semibold">
-              २३६+ वृक्ष समर्पित • अभियान तीव्र गति से सक्रिय
+              236+ वृक्ष समर्पित • अभियान तीव्र गति से सक्रिय
             </p>
           </div>
 
           <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-center space-y-1.5 shadow-xs">
             <span className="text-xs uppercase font-bold text-stone-700">अखंड महासंकल्प</span>
             <div className="font-serif text-2xl sm:text-3xl font-bold text-[#5B2A1B]">
-              ११,००० वृक्ष
+              11,000 वृक्ष
             </div>
             <p className="text-[11px] text-stone-600">
               संपूर्ण परिसर एवं ग्राम–पासुन क्षेत्र

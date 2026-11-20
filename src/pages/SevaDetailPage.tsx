@@ -233,7 +233,7 @@ export const SevaDetailPage: React.FC = () => {
             इस सेवा में अपना पावन योगदान करें
           </h2>
           <p className="text-xs sm:text-sm text-stone-600 mt-1">
-            १. बैंक अथवा यूपीआई के माध्यम से सहयोग राशि प्रेषित करें → २. नीचे दिए फॉर्म में पुष्टि विवरण दर्ज करें
+            1. बैंक अथवा यूपीआई के माध्यम से सहयोग राशि प्रेषित करें → 2. नीचे दिए फॉर्म में पुष्टि विवरण दर्ज करें
           </p>
         </div>
 
@@ -242,7 +242,7 @@ export const SevaDetailPage: React.FC = () => {
           <div className="flex items-center space-x-2 text-[#265B33]">
             <ShieldCheck className="w-5 h-5 text-[#265B33]" />
             <h3 className="font-serif font-bold text-base sm:text-lg text-[#5B2A1B]">
-              चरण १: अधिकृत बैंक एवं UPI विवरण
+              चरण 1: अधिकृत बैंक एवं UPI विवरण
             </h3>
           </div>
 
@@ -362,7 +362,7 @@ export const SevaDetailPage: React.FC = () => {
           <div className="flex items-center space-x-2 text-[#5B2A1B]">
             <CheckCircle2 className="w-5 h-5 text-[#265B33]" />
             <h3 className="font-serif font-bold text-base sm:text-lg text-[#5B2A1B]">
-              चरण २: सेवा समर्पण पुष्टि फॉर्म
+              चरण 2: सेवा समर्पण पुष्टि फॉर्म
             </h3>
           </div>
 

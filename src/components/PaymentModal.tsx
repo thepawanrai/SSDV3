@@ -178,7 +178,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                       : 'border-transparent text-stone-500 hover:text-[#5B2A1B]'
                   }`}
                 >
-                  १. बैंक एवं यूपीआई विवरण (Step 1)
+                  1. बैंक एवं यूपीआई विवरण (Step 1)
                 </button>
                 <button
                   type="button"
@@ -189,7 +189,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                       : 'border-transparent text-stone-500 hover:text-[#5B2A1B]'
                   }`}
                 >
-                  २. भुगतान पुष्टि फॉर्म (Step 2)
+                  2. भुगतान पुष्टि फॉर्म (Step 2)
                 </button>
               </div>
 

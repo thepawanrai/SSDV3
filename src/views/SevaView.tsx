@@ -15,7 +15,7 @@ export const SevaView: React.FC<SevaViewProps> = ({ onOpenDonate }) => {
   const categories = [
     { id: 'all', label: 'सभी सेवाएँ (All)' },
     { id: 'general', label: 'मुख्य सेवाएँ' },
-    { id: 'construction', label: 'निर्माण कार्य सेवा (३६)' },
+    { id: 'construction', label: 'निर्माण कार्य सेवा (36)' },
     { id: 'temple', label: 'मंदिर दैनिक सेवा' },
     { id: 'bhagwat', label: 'भागवत सेवा' },
     { id: 'community', label: 'साधु, गौ व अन्न दान' },

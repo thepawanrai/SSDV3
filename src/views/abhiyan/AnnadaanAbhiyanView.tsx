@@ -13,30 +13,30 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
   const annaTiers = [
     {
       id: 'anna-daan-11-devotees',
-      title: '११ भक्तों का सात्विक प्रसादम',
+      title: '11 भक्तों का सात्विक प्रसादम',
       amount: 501,
-      description: 'धाम में आने वाले ११ दर्शनार्थियों हेतु पूर्ण महाप्रसाद की सेवा।',
+      description: 'धाम में आने वाले 11 दर्शनार्थियों हेतु पूर्ण महाप्रसाद की सेवा।',
       popular: false,
     },
     {
       id: 'anna-daan-25-devotees',
-      title: '२५ भक्तों का सात्विक प्रसादम',
+      title: '25 भक्तों का सात्विक प्रसादम',
       amount: 1100,
       description: 'दाल, चावल, रोटी, मौसमी सब्जी, खीर/हलवा प्रसाद वितरण।',
       popular: false,
     },
     {
       id: 'anna-daan-51-devotees',
-      title: '५१ भक्तों का सात्विक प्रसादम',
+      title: '51 भक्तों का सात्विक प्रसादम',
       amount: 2500,
       description: 'संत-साधु, तीर्थयात्री एवं निर्धन बंधुओं को पौष्टिक आहार।',
       popular: true,
     },
     {
       id: 'anna-daan-101-devotees',
-      title: '१०१ भक्तों का एक समय का संपूर्ण भंडारा',
+      title: '101 भक्तों का एक समय का संपूर्ण भंडारा',
       amount: 5100,
-      description: 'पावन एकादशी, पूर्णिमा या पर्वों पर १००+ भक्तों का विशेष भंडारा।',
+      description: 'पावन एकादशी, पूर्णिमा या पर्वों पर 100+ भक्तों का विशेष भंडारा।',
       popular: false,
     },
     {
@@ -50,7 +50,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
       id: 'sadhu-bhandara-full',
       title: 'साधु सेवा एवं संत भंडारा (पूर्ण दिवस)',
       amount: 21000,
-      description: 'धाम पधारने वाले ५१+ तपस्वी साधु-महात्माओं का विशिष्ट सत्कार व प्रसादम।',
+      description: 'धाम पधारने वाले 51+ तपस्वी साधु-महात्माओं का विशिष्ट सत्कार व प्रसादम।',
       popular: false,
     },
   ];
@@ -61,7 +61,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
       <section className="relative bg-gradient-to-b from-[#1C0B06] via-[#2F140A] to-[#1C0B06] text-[#FAF7F2] py-14 sm:py-20 border-b border-[#DFB25A]/30 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-md bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase">
-            <span>महाअभियान • प्रकल्प ४</span>
+            <span>महाअभियान • प्रकल्प 4</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md">
@@ -89,7 +89,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
               to="/mahabhiyan"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-[#FAF7F2] font-semibold text-sm rounded-md transition-all border border-white/20"
             >
-              ← सभी ६ महाअभियान देखें
+              ← सभी 6 महाअभियान देखें
             </Link>
           </div>
         </div>
@@ -104,7 +104,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
             <p className="text-[11px] text-stone-500 mt-0.5">नित्य प्रसादम व्यवस्था</p>
           </div>
           <div className="p-5 bg-white rounded-xl border border-[#E7D7C4] text-center shadow-xs">
-            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#265B33]">१००% सात्विक</span>
+            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#265B33]">100% सात्विक</span>
             <p className="text-xs font-semibold text-[#793A27] mt-1">शुद्ध देसी आहार</p>
             <p className="text-[11px] text-stone-500 mt-0.5">स्वच्छता एवं मर्यादा सहित</p>
           </div>
@@ -131,7 +131,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
             <blockquote className="p-4 bg-white rounded-xl border-l-4 border-[#DFB25A] italic text-stone-800 font-serif text-sm">
               "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसंभवः । यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥"
               <span className="block not-italic text-xs text-stone-500 mt-1 font-sans">
-                — श्रीमद्भगवद्गीता (अध्याय ३, श्लोक १४)
+                — श्रीमद्भगवद्गीता (अध्याय 3, श्लोक 14)
               </span>
             </blockquote>
             <p>

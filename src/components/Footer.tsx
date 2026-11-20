@@ -190,37 +190,37 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/mahabhiyan" className="hover:text-[#DFB25A] transition-colors flex items-center font-bold text-[#DFB25A]">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> महाअभियान (६ प्रमुख प्रकल्प)
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> महाअभियान (6 प्रमुख प्रकल्प)
                 </Link>
               </li>
               <li>
                 <Link to="/tree-plantation" className="hover:text-[#DFB25A] transition-colors flex items-center text-[#E2EEDF]">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> १. वृक्षारोपण महाअभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 1. वृक्षारोपण महाअभियान
                 </Link>
               </li>
               <li>
                 <Link to="/mahabhiyan/gau-seva" className="hover:text-[#DFB25A] transition-colors flex items-center">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> २. गौ सेवा महाअभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 2. गौ सेवा महाअभियान
                 </Link>
               </li>
               <li>
                 <Link to="/mahabhiyan/mandir-nirman" className="hover:text-[#DFB25A] transition-colors flex items-center">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> ३. मंदिर निर्माण अभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 3. मंदिर निर्माण अभियान
                 </Link>
               </li>
               <li>
                 <Link to="/mahabhiyan/annadaan" className="hover:text-[#DFB25A] transition-colors flex items-center">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> ४. अन्नदान महाअभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 4. अन्नदान महाअभियान
                 </Link>
               </li>
               <li>
                 <Link to="/mahabhiyan/gurukul" className="hover:text-[#DFB25A] transition-colors flex items-center">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> ५. गुरुकुल अभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 5. गुरुकुल अभियान
                 </Link>
               </li>
               <li>
                 <Link to="/mahabhiyan/nasha-mukti" className="hover:text-[#DFB25A] transition-colors flex items-center">
-                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> ६. नशा मुक्ति अभियान
+                  <ArrowRight className="w-3 h-3 mr-1.5 text-[#DFB25A]" /> 6. नशा मुक्ति अभियान
                 </Link>
               </li>
               <li>

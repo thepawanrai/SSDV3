@@ -115,7 +115,7 @@ export const DonatePage: React.FC = () => {
           {/* Seva selector */}
           <div className="bg-white p-5 rounded-2xl border border-[#E7D7C4] shadow-xs space-y-4">
             <h3 className="font-serif font-bold text-base text-[#5B2A1B]">
-              १. सेवा एवं राशि चयन
+              1. सेवा एवं राशि चयन
             </h3>
 
             <div>
@@ -192,7 +192,7 @@ export const DonatePage: React.FC = () => {
             <div className="flex items-center space-x-2 text-[#265B33]">
               <ShieldCheck className="w-5 h-5 text-[#265B33]" />
               <h3 className="font-serif font-bold text-base text-[#5B2A1B]">
-                २. अधिकृत बैंक खाता विवरण
+                2. अधिकृत बैंक खाता विवरण
               </h3>
             </div>
 
@@ -308,7 +308,7 @@ export const DonatePage: React.FC = () => {
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <div>
                 <h3 className="font-serif font-bold text-xl text-[#5B2A1B]">
-                  ३. भुगतान पुष्टि फॉर्म (Payment Confirmation Form)
+                  3. भुगतान पुष्टि फॉर्म (Payment Confirmation Form)
                 </h3>
                 <p className="text-xs text-stone-500 mt-0.5">
                   बैंक अथवा UPI से राशि भेजने के उपरांत यह विवरण भरें।

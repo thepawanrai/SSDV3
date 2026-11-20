@@ -24,14 +24,14 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
     },
     {
       id: 'mandir-sqft-1',
-      title: '१ वर्ग फीट मंदिर निर्माण सेवा',
+      title: '1 वर्ग फीट मंदिर निर्माण सेवा',
       amount: 5100,
-      description: 'स्तंभ, परिक्रमा पथ व मंडप के १ वर्ग फीट का पूर्ण पाषाण निर्माण।',
+      description: 'स्तंभ, परिक्रमा पथ व मंडप के 1 वर्ग फीट का पूर्ण पाषाण निर्माण।',
       popular: true,
     },
     {
       id: 'mandir-sqft-2',
-      title: '२ वर्ग फीट मंदिर निर्माण सेवा',
+      title: '2 वर्ग फीट मंदिर निर्माण सेवा',
       amount: 11000,
       description: 'कलात्मक नक्काशीदार शिखर व स्तंभ निर्माण में पावन सहभागिता।',
       popular: false,
@@ -40,7 +40,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
       id: 'mandir-stambh-seva',
       title: 'दिव्य नक्काशीदार स्तंभ सेवा (Carved Pillar)',
       amount: 51000,
-      description: '१०८ भव्य नक्काशीदार स्तंभों में से एक स्तंभ के निर्माण में नाम समर्पण।',
+      description: '108 भव्य नक्काशीदार स्तंभों में से एक स्तंभ के निर्माण में नाम समर्पण।',
       popular: false,
     },
     {
@@ -73,7 +73,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-md bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase">
-            <span>महाअभियान • प्रकल्प ३</span>
+            <span>महाअभियान • प्रकल्प 3</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md">
@@ -81,7 +81,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-medium max-w-3xl mx-auto">
-            श्री श्री राधा कृष्ण बिहारी जी का २५,००० वर्ग फीट का भव्य नागर शैली धाम
+            श्री श्री राधा कृष्ण बिहारी जी का 25,000 वर्ग फीट का भव्य नागर शैली धाम
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">
@@ -111,9 +111,9 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-5 bg-white rounded-xl border border-[#E7D7C4] text-center shadow-xs">
-            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#5B2A1B]">२५,०००</span>
+            <span className="text-2xl sm:text-3xl font-serif font-bold text-[#5B2A1B]">25,000</span>
             <p className="text-xs font-semibold text-[#793A27] mt-1">वर्ग फीट विस्तीर्ण संकुल</p>
-            <p className="text-[11px] text-stone-500 mt-0.5">१००' x २५०' भूखंड आयाम</p>
+            <p className="text-[11px] text-stone-500 mt-0.5">100' x 250' भूखंड आयाम</p>
           </div>
           <div className="p-5 bg-white rounded-xl border border-[#E7D7C4] text-center shadow-xs">
             <span className="text-2xl sm:text-3xl font-serif font-bold text-[#5B2A1B]">बंसी पहाड़पुर</span>
@@ -155,7 +155,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
               src="/2.png"
               alt="परिसर एवं उद्यान विहंगम दृश्य"
               className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-              onClick={() => onOpenLightbox && onOpenLightbox('/2.png', 'परिसर एवं उद्यान विहंगम दृश्य', '२५,००० वर्ग फीट संकुल')}
+              onClick={() => onOpenLightbox && onOpenLightbox('/2.png', 'परिसर एवं उद्यान विहंगम दृश्य', '25,000 वर्ग फीट संकुल')}
             />
             <div className="p-3 text-center text-xs font-semibold text-[#5B2A1B] bg-white">
               परिसर एवं उद्यान विहंगम रूप
@@ -166,7 +166,7 @@ export const MandirNirmanAbhiyanView: React.FC<MandirNirmanAbhiyanViewProps> = (
               src="/Temple Masterplan.png"
               alt="मास्टरप्लान एवं वास्तु विन्यास"
               className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-              onClick={() => onOpenLightbox && onOpenLightbox('/Temple Masterplan.png', 'मास्टरप्लान एवं वास्तु विन्यास', '१०० x २५० फीट लेआउट')}
+              onClick={() => onOpenLightbox && onOpenLightbox('/Temple Masterplan.png', 'मास्टरप्लान एवं वास्तु विन्यास', '100 x 250 फीट लेआउट')}
             />
             <div className="p-3 text-center text-xs font-semibold text-[#5B2A1B] bg-white">
               मास्टरप्लान एवं वास्तु विन्यास

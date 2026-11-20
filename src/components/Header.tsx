@@ -70,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
               - Displayed prominently on mobile and desktop */}
           <Link
             to="/"
-            className="flex items-center space-x-2.5 sm:space-x-3 text-left group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5B2A1B] flex-shrink-0"
+            className="flex items-center space-x-2.5 sm:space-x-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5B2A1B] flex-shrink-0"
             aria-label="सत्य सनातन धाम मुख्य पृष्ठ"
           >
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 flex items-center justify-center transition-transform group-hover:scale-105">
@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
               />
             </div>
             {/* Name & Tagline: Visible across mobile and desktop */}
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center text-center">
               <span className="font-serif font-bold text-base sm:text-xl text-[#5B2A1B] leading-tight tracking-tight">
                 {siteConfig.name}
               </span>
@@ -229,14 +229,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
                     </span>
                     <span className="font-serif font-bold text-sm">महाअभियान</span>
                   </div>
-                  <span className="text-xs text-[#265B33] font-semibold">६ महाप्रकल्प</span>
+                  <span className="text-xs text-[#265B33] font-semibold">6 महाप्रकल्प</span>
                 </NavLink>
               </div>
 
               {/* Sub-menu of 6 Mahabhiyans in Drawer */}
               <div className="p-3 bg-white rounded-xl border border-[#E7D7C4] space-y-1.5 mt-2">
                 <span className="text-[11px] font-bold text-[#793A27] uppercase tracking-wider block">
-                  संस्था के ६ महाअभियान:
+                  संस्था के 6 महाअभियान:
                 </span>
                 <div className="grid grid-cols-2 gap-1.5 text-xs">
                   <Link
@@ -244,42 +244,42 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDonate }) => {
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#194023] font-medium"
                   >
-                    १. वृक्षारोपण
+                    1. वृक्षारोपण
                   </Link>
                   <Link
                     to="/mahabhiyan/gau-seva"
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#5B2A1B] font-medium"
                   >
-                    २. गौ सेवा
+                    2. गौ सेवा
                   </Link>
                   <Link
                     to="/mahabhiyan/mandir-nirman"
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#5B2A1B] font-medium"
                   >
-                    ३. मंदिर निर्माण
+                    3. मंदिर निर्माण
                   </Link>
                   <Link
                     to="/mahabhiyan/annadaan"
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#5B2A1B] font-medium"
                   >
-                    ४. अन्नदान
+                    4. अन्नदान
                   </Link>
                   <Link
                     to="/mahabhiyan/gurukul"
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#5B2A1B] font-medium"
                   >
-                    ५. गुरुकुल
+                    5. गुरुकुल
                   </Link>
                   <Link
                     to="/mahabhiyan/nasha-mukti"
                     onClick={() => setMobileMenuOpen(false)}
                     className="p-1.5 hover:bg-[#FAF0E4] rounded text-[#5B2A1B] font-medium"
                   >
-                    ६. नशा मुक्ति
+                    6. नशा मुक्ति
                   </Link>
                 </div>
               </div>

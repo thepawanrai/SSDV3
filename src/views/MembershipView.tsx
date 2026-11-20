@@ -159,7 +159,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
 
     const cleanPhone = phone.replace(/\D/g, '');
     if (!cleanPhone || cleanPhone.length < 10) {
-      newErrors.phone = 'कृपया मान्य १० अंकों का मोबाइल नंबर दर्ज करें';
+      newErrors.phone = 'कृपया मान्य 10 अंकों का मोबाइल नंबर दर्ज करें';
     }
 
     // Aadhaar is strictly MANDATORY (12 digits)
@@ -167,7 +167,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
     if (!cleanAadhaar) {
       newErrors.aadhaar = 'आधार संख्या अनिवार्य है (Mandatory)';
     } else if (cleanAadhaar.length !== 12) {
-      newErrors.aadhaar = 'कृपया सही १२ अंकों की आधार संख्या दर्ज करें';
+      newErrors.aadhaar = 'कृपया सही 12 अंकों की आधार संख्या दर्ज करें';
     }
 
     if (!district.trim()) {
@@ -179,7 +179,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
     }
 
     if (!pincode.trim() || pincode.replace(/\D/g, '').length !== 6) {
-      newErrors.pincode = 'कृपया सही ६ अंकों का पिनकोड दर्ज करें';
+      newErrors.pincode = 'कृपया सही 6 अंकों का पिनकोड दर्ज करें';
     }
 
     if (selectedSevas.length === 0) {
@@ -308,7 +308,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Badge: 100% Free Volunteer Membership */}
           <div className="inline-flex items-center px-3.5 py-1 rounded-md bg-black/25 border border-white/20 text-[#DFB25A] text-xs sm:text-sm font-semibold mb-4">
-            <span>१००% निःशुल्क सेवादार सदस्यता (Zero Fee Volunteering)</span>
+            <span>100% निःशुल्क सेवादार सदस्यता (Zero Fee Volunteering)</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight text-[#FAF7F2] mb-4">
@@ -335,7 +335,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
               <p className="text-[11px] text-white/80">सुरक्षित व प्रामाणिक सेवादार मंडल</p>
             </div>
             <div className="p-3 rounded-lg bg-black/25 border border-white/10 backdrop-blur-xs">
-              <p className="text-[#DFB25A] text-xs font-bold font-serif">६ महाअभियान</p>
+              <p className="text-[#DFB25A] text-xs font-bold font-serif">6 महाअभियान</p>
               <p className="text-[11px] text-white/80">रुचि अनुसार सेवा का पावन अवसर</p>
             </div>
           </div>
@@ -536,7 +536,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 </div>
                 <div>
                   <h3 className="font-serif font-bold text-[#5B2A1B] text-base sm:text-lg">
-                    सत्य सनातन सेवादार सदस्यता — १००% निःशुल्क
+                    सत्य सनातन सेवादार सदस्यता — 100% निःशुल्क
                   </h3>
                   <p className="text-xs sm:text-sm text-[#793A27]">
                     हम किसी भी प्रकार का शुल्क नहीं लेते। केवल तन, मन और समय से धर्म-सेवा का संकल्प चाहिए।
@@ -545,7 +545,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
               </div>
               <div className="flex-shrink-0 text-center sm:text-right">
                 <span className="inline-block px-3 py-1 bg-[#265B33] text-white text-xs font-bold rounded-md">
-                  शुल्क: ₹० (शून्य)
+                  शुल्क: ₹0 (शून्य)
                 </span>
               </div>
             </div>
@@ -560,7 +560,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 <div className="flex items-center space-x-2.5 pb-3 border-b border-[#E7D7C4]">
                   <User className="w-5 h-5 text-[#5B2A1B]" />
                   <h3 className="font-serif font-bold text-lg text-[#5B2A1B]">
-                    १. व्यक्तिगत विवरण (Personal Details)
+                    1. व्यक्तिगत विवरण (Personal Details)
                   </h3>
                 </div>
 
@@ -722,7 +722,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                   <ShieldCheck className="w-5 h-5 text-[#265B33]" />
                   <div>
                     <h3 className="font-serif font-bold text-base sm:text-lg text-[#5B2A1B]">
-                      २. पहचान एवं प्रमाणीकरण (Identity Verification)
+                      2. पहचान एवं प्रमाणीकरण (Identity Verification)
                     </h3>
                     <p className="text-[11px] text-[#793A27]">
                       सत्य सनातन धाम की सुरक्षा व अनुशासन हेतु आधार संख्या अनिवार्य है। पासपोर्ट फोटो जोड़ना पूर्णतः वैकल्पिक है।
@@ -743,7 +743,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                     </div>
 
                     <p className="text-[11px] text-[#793A27] mb-2.5 leading-normal">
-                      कृपया अपनी १२ अंकों की वैध आधार संख्या दर्ज करें। यह केवल सेवादार सत्यापन हेतु सुरक्षित रखी जाती है।
+                      कृपया अपनी 12 अंकों की वैध आधार संख्या दर्ज करें। यह केवल सेवादार सत्यापन हेतु सुरक्षित रखी जाती है।
                     </p>
 
                     <input
@@ -751,7 +751,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                       maxLength={14}
                       value={formatAadhaarDisplay(aadhaar)}
                       onChange={handleAadhaarChange}
-                      placeholder="XXXX XXXX XXXX (१२ अंक)"
+                      placeholder="XXXX XXXX XXXX (12 अंक)"
                       className={`w-full px-3.5 py-2.5 text-base font-mono font-semibold tracking-wider rounded-lg border bg-[#FAF7F2]/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#5B2A1B] transition-all ${
                         errors.aadhaar ? 'border-red-500' : 'border-[#5B2A1B]/40'
                       }`}
@@ -840,7 +840,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 <div className="flex items-center space-x-2.5 pb-3 border-b border-[#E7D7C4]">
                   <MapPin className="w-5 h-5 text-[#5B2A1B]" />
                   <h3 className="font-serif font-bold text-lg text-[#5B2A1B]">
-                    ३. स्थायी पता एवं स्थान (Address & Location)
+                    3. स्थायी पता एवं स्थान (Address & Location)
                   </h3>
                 </div>
 
@@ -979,7 +979,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 <div className="flex items-center space-x-2.5 pb-3 border-b border-[#E7D7C4]">
                   <Layers className="w-5 h-5 text-[#5B2A1B]" />
                   <h3 className="font-serif font-bold text-lg text-[#5B2A1B]">
-                    ४. सेवा प्रभाग एवं समय उपलब्धता (Seva Interest & Availability)
+                    4. सेवा प्रभाग एवं समय उपलब्धता (Seva Interest & Availability)
                   </h3>
                 </div>
 
@@ -1037,7 +1037,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                       <option value="प्रतिदिन (Daily)">प्रतिदिन (Daily)</option>
                       <option value="सप्ताहांत (शनिवार व रविवार)">सप्ताहांत (शनिवार व रविवार)</option>
                       <option value="पूर्णिमा, एकादशी व पावन त्योहारों पर">पूर्णिमा, एकादशी व पावन त्योहारों पर</option>
-                      <option value="माह में १-२ दिन">माह में १-२ दिन</option>
+                      <option value="माह में 1-2 दिन">माह में 1-2 दिन</option>
                       <option value="विशेष आयोजनों व बुलावे पर">विशेष आयोजनों व बुलावे पर</option>
                     </select>
                   </div>
@@ -1133,7 +1133,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
               आधार सत्यापन क्यों?
             </h4>
             <p className="text-xs text-[#793A27] leading-relaxed">
-              धाम के सभी ६ महाअभियान, गौशाला व मंदिर परिसरों में सेवादारों की प्रामाणिकता, सुरक्षा एवं अनुशासन सुनिश्चित करने हेतु आधार संख्या आवश्यक है।
+              धाम के सभी 6 महाअभियान, गौशाला व मंदिर परिसरों में सेवादारों की प्रामाणिकता, सुरक्षा एवं अनुशासन सुनिश्चित करने हेतु आधार संख्या आवश्यक है।
             </p>
           </div>
 

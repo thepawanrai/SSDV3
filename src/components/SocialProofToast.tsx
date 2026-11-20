@@ -11,13 +11,12 @@ interface SocialProofItem {
   id: string;
   kind: NotificationKind;
   name?: string;
-  initials?: string;
+  avatarSrc?: string;
   city?: string;
   actionPrefix?: string;
   highlightText: string;
   liveCount?: string;
   timeAgo?: string;
-  avatarBg?: string;
 }
 
 const SOCIAL_PROOF_ITEMS: SocialProofItem[] = [
@@ -25,17 +24,16 @@ const SOCIAL_PROOF_ITEMS: SocialProofItem[] = [
     id: 'seva-gau',
     kind: 'seva',
     name: 'राजेश शर्मा',
-    initials: 'रा',
+    avatarSrc: '/images/social-proof/rajesh.png',
     city: 'अयोध्या',
     actionPrefix: 'ने अभी',
-    highlightText: 'गौ सेवा हेतु ₹२,१०० समर्पित किए',
-    timeAgo: '५ मिनट पहले',
-    avatarBg: 'from-[#5B2A1B] to-[#8C3B22]',
+    highlightText: 'गौ सेवा हेतु ₹2,100 समर्पित किए',
+    timeAgo: '5 मिनट पहले',
   },
   {
     id: 'live-1',
     kind: 'live',
-    liveCount: '३७ श्रद्धालु',
+    liveCount: '37 श्रद्धालु',
     actionPrefix: 'अभी',
     highlightText: 'इस पृष्ठ को देख रहे हैं',
   },
@@ -43,27 +41,25 @@ const SOCIAL_PROOF_ITEMS: SocialProofItem[] = [
     id: 'member-pawan',
     kind: 'member',
     name: 'पवन जी',
-    initials: 'प',
+    avatarSrc: '/images/social-proof/pawan.png',
     actionPrefix: 'अभी',
     highlightText: 'सत्य सनातन धाम के सदस्य बने',
-    timeAgo: '२ मिनट पहले',
-    avatarBg: 'from-[#D86318] to-[#996C1B]',
+    timeAgo: '2 मिनट पहले',
   },
   {
     id: 'seva-mandir',
     kind: 'seva',
     name: 'अनिता देवी',
-    initials: 'अ',
+    avatarSrc: '/images/social-proof/anita.png',
     city: 'वाराणसी',
     actionPrefix: 'ने अभी',
-    highlightText: 'मंदिर निर्माण शिला सेवा हेतु ₹५,१०० समर्पित किए',
-    timeAgo: '८ मिनट पहले',
-    avatarBg: 'from-[#3E1B10] to-[#5B2A1B]',
+    highlightText: 'मंदिर निर्माण शिला सेवा हेतु ₹5,100 समर्पित किए',
+    timeAgo: '8 मिनट पहले',
   },
   {
     id: 'live-2',
     kind: 'live',
-    liveCount: '४२ श्रद्धालु',
+    liveCount: '42 श्रद्धालु',
     actionPrefix: 'अभी',
     highlightText: 'इस वेबसाइट से जुड़े हैं',
   },
@@ -71,44 +67,30 @@ const SOCIAL_PROOF_ITEMS: SocialProofItem[] = [
     id: 'seva-annadaan',
     kind: 'seva',
     name: 'महेश अग्रवाल',
-    initials: 'म',
+    avatarSrc: '/images/social-proof/mahesh.png',
     city: 'दिल्ली',
     actionPrefix: 'ने अभी',
-    highlightText: 'अन्नदान महाअभियान हेतु ₹२,५०० समर्पित किए',
-    timeAgo: '११ मिनट पहले',
-    avatarBg: 'from-[#265B33] to-[#194023]',
+    highlightText: 'अन्नदान महाअभियान हेतु ₹2,500 समर्पित किए',
+    timeAgo: '11 मिनट पहले',
   },
   {
     id: 'seva-vriksh',
     kind: 'seva',
     name: 'सुनीता मिश्रा',
-    initials: 'सु',
+    avatarSrc: '/images/social-proof/sunita.png',
     city: 'प्रयागराज',
     actionPrefix: 'ने अभी',
-    highlightText: 'वृक्षारोपण सेवा हेतु ₹१,००१ समर्पित किए',
-    timeAgo: '१४ मिनट पहले',
-    avatarBg: 'from-[#194023] to-[#3D7A4D]',
+    highlightText: 'वृक्षारोपण सेवा हेतु ₹1,001 समर्पित किए',
+    timeAgo: '14 मिनट पहले',
   },
   {
     id: 'member-pawan-2',
     kind: 'member',
     name: 'पवन जी',
-    initials: 'प',
+    avatarSrc: '/images/social-proof/pawan.png',
     actionPrefix: 'सत्य सनातन धाम के',
     highlightText: 'गौरवशाली सदस्य के रूप में जुड़े',
     timeAgo: 'अभी',
-    avatarBg: 'from-[#D86318] to-[#5B2A1B]',
-  },
-  {
-    id: 'seva-gurukul',
-    kind: 'seva',
-    name: 'राकेश तिवारी',
-    initials: 'रा',
-    city: 'लखनऊ',
-    actionPrefix: 'ने अभी',
-    highlightText: 'गुरुकुल विद्यादान सेवा हेतु ₹२,५०० समर्पित किए',
-    timeAgo: '१८ मिनट पहले',
-    avatarBg: 'from-[#996C1B] to-[#5B2A1B]',
   },
 ];
 
@@ -195,16 +177,11 @@ export const SocialProofToast: React.FC<SocialProofToastProps> = ({ suspended = 
             <span className="relative w-3 h-3 rounded-full bg-emerald-600 shadow-sm shadow-emerald-600/40" />
           </div>
         ) : (
-          <div
-            className={`relative shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br ${
-              item.avatarBg || 'from-[#5B2A1B] to-[#3E1B10]'
-            } text-[#DFB25A] flex items-center justify-center font-serif font-bold text-base border-2 border-[#DFB25A]/50 shadow-sm`}
-          >
-            <span>{item.initials}</span>
+          <div className="relative shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-[#E7D7C4] shadow-xs bg-[#FAF7F2]">
             <img
-              src="/ssd-logo-transparent.png"
-              alt=""
-              className="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-white p-0.5 border border-[#E7D7C4] object-contain"
+              src={item.avatarSrc}
+              alt={item.name || ''}
+              className="w-full h-full object-cover object-top"
             />
           </div>
         )}

@@ -38,7 +38,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#DFB25A]/20 border border-[#DFB25A]/40 text-xs font-bold text-[#FEF08A] tracking-wider uppercase mb-3">
-            <span>🚩 सत्य सनातन धाम के ६ पावन महाप्रकल्प</span>
+            <span>🚩 सत्य सनातन धाम के 6 पावन महाप्रकल्प</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white drop-shadow-md leading-normal pt-1">
@@ -52,7 +52,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">
             सत्य सनातन धाम के प्रमुख उद्देश्य भारतवर्ष में प्रत्येक राज्य में प्रत्येक जिले में एक भव्य मंदिर
             स्थापित करना तथा समाज के अंतिम व्यक्ति तक सनातन संस्कृति के सेवा मूल्यों का विस्तार करना है।
-            नीचे संस्था के सभी ६ सक्रिय अभियानों का विस्तृत विवरण प्रस्तुत है।
+            नीचे संस्था के सभी 6 सक्रिय अभियानों का विस्तृत विवरण प्रस्तुत है।
           </p>
 
           {/* Quick jump anchor strip */}
@@ -61,37 +61,37 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
               href="#vriksharopan"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              १. वृक्षारोपण
+              1. वृक्षारोपण
             </a>
             <a
               href="#gau-seva"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              २. गौ सेवा
+              2. गौ सेवा
             </a>
             <a
               href="#mandir-nirman"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              ३. मंदिर निर्माण
+              3. मंदिर निर्माण
             </a>
             <a
               href="#annadaan"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              ४. अन्नदान
+              4. अन्नदान
             </a>
             <a
               href="#gurukul"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              ५. गुरुकुल
+              5. गुरुकुल
             </a>
             <a
               href="#nasha-mukti"
               className="px-3 py-1.5 bg-white/10 hover:bg-[#DFB25A] hover:text-[#3E1B10] rounded-md transition-colors border border-white/20"
             >
-              ६. नशा मुक्ति
+              6. नशा मुक्ति
             </a>
           </div>
         </div>
@@ -106,19 +106,19 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#265B33] text-[#A3E635] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
                 <TreeDeciduous className="w-4 h-4 mr-1" />
-                <span>महाअभियान १ • पर्यावरण एवं धरा संरक्षण</span>
+                <span>महाअभियान 1 • पर्यावरण एवं धरा संरक्षण</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-normal pt-1">
-                १. वृक्षारोपण महाअभियान
+                1. वृक्षारोपण महाअभियान
               </h2>
 
               <p className="font-serif text-lg sm:text-xl text-[#A3E635]">
-                ११,००० वृक्षों का संकल्प • प्रथम चरण: १,१०० वृक्ष (११ अक्टूबर २०२६, शारदीय नवरात्रि)
+                11,000 वृक्षों का संकल्प • प्रथम चरण: 1,100 वृक्ष (11 अक्टूबर 2026, शारदीय नवरात्रि)
               </p>
 
               <div className="p-4 bg-[#112F19] rounded-xl border border-[#265B33] text-xs sm:text-sm text-[#E2EEDF] space-y-1.5">
-                <p><strong>लागत विभाजन:</strong> ₹५०१ प्रति पौधा + ₹५०० ५ वर्षों का पूर्ण संरक्षण, ट्री-गार्ड एवं जल प्रबंधन = <strong>₹१,००१ प्रति वृक्ष</strong></p>
+                <p><strong>लागत विभाजन:</strong> ₹501 प्रति पौधा + ₹500 5 वर्षों का पूर्ण संरक्षण, ट्री-गार्ड एवं जल प्रबंधन = <strong>₹1,001 प्रति वृक्ष</strong></p>
                 <p><strong>स्थान:</strong> सत्य सनातन धाम, ग्राम – पासुन, मौदहा, हमीरपुर (उ.प्र.)</p>
                 <p><strong>प्रजाति:</strong> नीम, पीपल, बरगद, आम, जामुन, बेलपत्र, आंवला एवं औषधीय पादप</p>
               </div>
@@ -142,7 +142,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('vriksharopan-seva', 1001)}
                 className="px-6 py-3 bg-white text-[#194023] hover:bg-stone-100 font-bold text-xs sm:text-sm rounded-md transition-colors cursor-pointer"
               >
-                १ वृक्ष समर्पित करें (₹१,००१)
+                1 वृक्ष समर्पित करें (₹1,001)
               </button>
             </div>
           </div>
@@ -187,11 +187,11 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#FAF0E4] text-[#793A27] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
-                <span>महाअभियान २ • गोवंश संरक्षण व संवर्धन</span>
+                <span>महाअभियान 2 • गोवंश संरक्षण व संवर्धन</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal pt-1">
-                २. गौ सेवा महाअभियान
+                2. गौ सेवा महाअभियान
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
@@ -200,22 +200,22 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
                 सत्य सनातन धाम की सुरभि गौशाला में गिर, साहीवाल और थारपारकर जैसी पवित्र देशी नस्लों
-                का पालन-पोषण किया जा रहा है। प्रतिदिन ताजा हरा चारा, दलिया, गुड़, खली तथा २४ घंटे
+                का पालन-पोषण किया जा रहा है। प्रतिदिन ताजा हरा चारा, दलिया, गुड़, खली तथा 24 घंटे
                 पशु-चिकित्सक की सुविधा उपलब्ध है। वृद्ध एवं असहाय गायों के लिए सुरक्षित शेड का निर्माण
                 किया जा रहा है।
               </p>
 
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹१००</span>
-                  <span className="text-[10px] text-stone-500">१ दिन का चारा</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹100</span>
+                  <span className="text-[10px] text-stone-500">1 दिन का चारा</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹२,१००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹2,100</span>
                   <span className="text-[10px] text-stone-500">मासिक पोषण</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹११,०००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹11,000</span>
                   <span className="text-[10px] text-stone-500">शेड निर्माण</span>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('gau-mata-seva', 2100)}
                 className="px-5 py-3 bg-[#F4EDE1] hover:bg-[#EADDC9] text-[#5B2A1B] font-bold text-xs sm:text-sm rounded-md transition-colors border border-[#DFB25A]/60 cursor-pointer"
               >
-                गौ सेवा समर्पित करें (₹२,१००)
+                गौ सेवा समर्पित करें (₹2,100)
               </button>
             </div>
           </div>
@@ -248,34 +248,34 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#FEF3C7] text-[#92400E] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
-                <span>महाअभियान ३ • दिव्य अधिष्ठान निर्माण</span>
+                <span>महाअभियान 3 • दिव्य अधिष्ठान निर्माण</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal pt-1">
-                ३. मंदिर निर्माण अभियान
+                3. मंदिर निर्माण अभियान
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
-                श्री श्री राधा कृष्ण बिहारी जी मंदिर — २५,००० वर्ग फीट नागर शैली पाषाण संकुल
+                श्री श्री राधा कृष्ण बिहारी जी मंदिर — 25,000 वर्ग फीट नागर शैली पाषाण संकुल
               </p>
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
                 राजस्थान के बंसी पहाड़पुर लाल बलुआ पत्थर (सैंडस्टोन) से निर्मित हो रहा यह भव्य मंदिर
                 सैकड़ों वर्षों तक सनातन धर्म की आध्यात्मिक आभा का केंद्र बनेगा। मंदिर में परंपरागत
-                नागर शिखर, नक्काशीदार १०८ स्तंभ, सभामंडप तथा अष्टकोणीय नक्षत्र फव्वारा स्थापित किया जा रहा है।
+                नागर शिखर, नक्काशीदार 108 स्तंभ, सभामंडप तथा अष्टकोणीय नक्षत्र फव्वारा स्थापित किया जा रहा है।
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹२,१००</span>
-                  <span className="text-[10px] text-stone-500">१ पावन शिला</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹2,100</span>
+                  <span className="text-[10px] text-stone-500">1 पावन शिला</span>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹५,१००</span>
-                  <span className="text-[10px] text-stone-500">१ वर्ग फीट निर्माण</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹5,100</span>
+                  <span className="text-[10px] text-stone-500">1 वर्ग फीट निर्माण</span>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹५१,०००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹51,000</span>
                   <span className="text-[10px] text-stone-500">नक्काशीदार स्तंभ</span>
                 </div>
               </div>
@@ -293,7 +293,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('mandir-nirman-seva', 5100)}
                 className="px-5 py-3 bg-[#DFB25A] hover:bg-[#C49033] text-[#3E1B10] font-bold text-xs sm:text-sm rounded-md transition-colors cursor-pointer shadow-xs"
               >
-                शिला सेवा समर्पित करें (₹५,१००)
+                शिला सेवा समर्पित करें (₹5,100)
               </button>
             </div>
           </div>
@@ -304,12 +304,12 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 src="/images/temple/temple-main-hero.jpg"
                 alt="श्री श्री राधा कृष्ण बिहारी जी मंदिर"
                 className="w-full aspect-[16/9] object-cover object-top group-hover:scale-105 transition-transform duration-500 cursor-pointer"
-                onClick={() => onOpenLightbox && onOpenLightbox('/images/temple/temple-main-hero.jpg', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर', '२५,००० वर्ग फीट संकुल')}
+                onClick={() => onOpenLightbox && onOpenLightbox('/images/temple/temple-main-hero.jpg', 'श्री श्री राधा कृष्ण बिहारी जी मंदिर', '25,000 वर्ग फीट संकुल')}
               />
             </div>
             <div className="mt-3 p-3 bg-[#FAF7F2] rounded-lg border border-[#E7D7C4] text-center">
               <span className="font-serif font-bold text-xs text-[#5B2A1B]">
-                २५,००० वर्ग फीट का विस्तीर्ण संकुल • १००' x २५०' भूखंड
+                25,000 वर्ग फीट का विस्तीर्ण संकुल • 100' x 250' भूखंड
               </span>
             </div>
           </div>
@@ -341,11 +341,11 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#FAF0E4] text-[#793A27] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
-                <span>महाअभियान ४ • प्रसादम एवं अक्षय भंडारा</span>
+                <span>महाअभियान 4 • प्रसादम एवं अक्षय भंडारा</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal pt-1">
-                ४. अन्नदान महाअभियान
+                4. अन्नदान महाअभियान
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
@@ -360,15 +360,15 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
 
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹५०१</span>
-                  <span className="text-[10px] text-stone-500">११ भक्त प्रसादम</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹501</span>
+                  <span className="text-[10px] text-stone-500">11 भक्त प्रसादम</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹२,५००</span>
-                  <span className="text-[10px] text-stone-500">५१ भक्त प्रसादम</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹2,500</span>
+                  <span className="text-[10px] text-stone-500">51 भक्त प्रसादम</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹११,०००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹11,000</span>
                   <span className="text-[10px] text-stone-500">पूर्ण दिवस भंडारा</span>
                 </div>
               </div>
@@ -386,7 +386,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('anna-daan-seva', 2500)}
                 className="px-5 py-3 bg-[#F4EDE1] hover:bg-[#EADDC9] text-[#5B2A1B] font-bold text-xs sm:text-sm rounded-md transition-colors border border-[#DFB25A]/60 cursor-pointer"
               >
-                अन्नदान समर्पित करें (₹२,५००)
+                अन्नदान समर्पित करें (₹2,500)
               </button>
             </div>
           </div>
@@ -402,11 +402,11 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#E2EEDF] text-[#194023] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
                 <BookOpen className="w-3.5 h-3.5 mr-1" />
-                <span>महाअभियान ५ • वैदिक शिक्षा व संस्कार</span>
+                <span>महाअभियान 5 • वैदिक शिक्षा व संस्कार</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal pt-1">
-                ५. गुरुकुल अभियान
+                5. गुरुकुल अभियान
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
@@ -422,15 +422,15 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
 
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹१,१००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹1,100</span>
                   <span className="text-[10px] text-stone-500">पुस्तकें व वस्त्र</span>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹२,५००</span>
-                  <span className="text-[10px] text-stone-500">१ माह का शिक्षण</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹2,500</span>
+                  <span className="text-[10px] text-stone-500">1 माह का शिक्षण</span>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹३१,०००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹31,000</span>
                   <span className="text-[10px] text-stone-500">वार्षिक विद्यादान</span>
                 </div>
               </div>
@@ -448,7 +448,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('gurukul-expansion-seva', 2500)}
                 className="px-5 py-3 bg-[#F4EDE1] hover:bg-[#EADDC9] text-[#5B2A1B] font-bold text-xs sm:text-sm rounded-md transition-colors border border-[#DFB25A]/60 cursor-pointer"
               >
-                विद्यादान सेवा समर्पित करें (₹२,५००)
+                विद्यादान सेवा समर्पित करें (₹2,500)
               </button>
             </div>
           </div>
@@ -497,11 +497,11 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 space-y-5 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded bg-[#FAF0E4] text-[#793A27] text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
-                <span>महाअभियान ६ • समाज जागरण एवं नशा मुक्ति</span>
+                <span>महाअभियान 6 • समाज जागरण एवं नशा मुक्ति</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#5B2A1B] leading-normal pt-1">
-                ६. नशा मुक्ति अभियान
+                6. नशा मुक्ति अभियान
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
@@ -516,15 +516,15 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
 
               <div className="grid grid-cols-3 gap-3 pt-2">
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹५०१</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹501</span>
                   <span className="text-[10px] text-stone-500">जागरूकता पत्रक</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹२,१००</span>
-                  <span className="text-[10px] text-stone-500">१ गाँव शिविर</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹2,100</span>
+                  <span className="text-[10px] text-stone-500">1 गाँव शिविर</span>
                 </div>
                 <div className="p-3 bg-[#FCFAF6] rounded-lg border border-[#E7D7C4] text-center">
-                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹११,०००</span>
+                  <span className="block font-serif font-bold text-sm text-[#5B2A1B]">₹11,000</span>
                   <span className="text-[10px] text-stone-500">परिवार पुनर्वास</span>
                 </div>
               </div>
@@ -542,7 +542,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
                 onClick={() => onOpenDonate('nasha-mukti-counseling-camp', 2100)}
                 className="px-5 py-3 bg-[#F4EDE1] hover:bg-[#EADDC9] text-[#5B2A1B] font-bold text-xs sm:text-sm rounded-md transition-colors border border-[#DFB25A]/60 cursor-pointer"
               >
-                शिविर सहयोग समर्पित करें (₹२,१००)
+                शिविर सहयोग समर्पित करें (₹2,100)
               </button>
             </div>
           </div>
