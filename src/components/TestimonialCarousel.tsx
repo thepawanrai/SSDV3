@@ -400,9 +400,19 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
                 {/* Author Block */}
                 <div className="pt-4 border-t border-[#E7D7C4] flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full bg-[#FAF0E4] border border-[#E7D7C4] flex items-center justify-center font-serif font-bold text-sm text-[#5B2A1B] shrink-0">
-                      {currentItem.hindiName.slice(0, 2)}
-                    </div>
+                    {currentItem.avatarSrc ? (
+                      <div className="w-11 h-11 rounded-full overflow-hidden border border-[#E7D7C4] bg-[#FAF0E4] shrink-0 shadow-xs">
+                        <img
+                          src={currentItem.avatarSrc}
+                          alt={currentItem.hindiName}
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-11 h-11 rounded-full bg-[#FAF0E4] border border-[#E7D7C4] flex items-center justify-center font-serif font-bold text-sm text-[#5B2A1B] shrink-0">
+                        {currentItem.hindiName.slice(0, 2)}
+                      </div>
+                    )}
                     <div>
                       <h4 className="font-serif font-bold text-sm text-[#5B2A1B]">
                         {currentItem.hindiName}
@@ -467,9 +477,19 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 
                 <div className="pt-4 border-t border-[#E7D7C4] flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full bg-white border border-[#E7D7C4] flex items-center justify-center font-serif font-bold text-sm text-[#5B2A1B] shrink-0">
-                      {secondaryItem.hindiName.slice(0, 2)}
-                    </div>
+                    {secondaryItem.avatarSrc ? (
+                      <div className="w-11 h-11 rounded-full overflow-hidden border border-[#E7D7C4] bg-white shrink-0 shadow-xs">
+                        <img
+                          src={secondaryItem.avatarSrc}
+                          alt={secondaryItem.hindiName}
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-11 h-11 rounded-full bg-white border border-[#E7D7C4] flex items-center justify-center font-serif font-bold text-sm text-[#5B2A1B] shrink-0">
+                        {secondaryItem.hindiName.slice(0, 2)}
+                      </div>
+                    )}
                     <div>
                       <h4 className="font-serif font-bold text-sm text-[#5B2A1B]">
                         {secondaryItem.hindiName}

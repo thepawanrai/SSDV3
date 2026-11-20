@@ -536,7 +536,7 @@ export const MembershipView: React.FC<MembershipViewProps> = () => {
                 </div>
                 <div>
                   <h3 className="font-serif font-bold text-[#5B2A1B] text-base sm:text-lg">
-                    सत्य सनातन सेवादार सदस्यता — 100% निःशुल्क
+                    सत्य सनातन सेवादार सदस्यता - 100% निःशुल्क
                   </h3>
                   <p className="text-xs sm:text-sm text-[#793A27]">
                     हम किसी भी प्रकार का शुल्क नहीं लेते। केवल तन, मन और समय से धर्म-सेवा का संकल्प चाहिए।

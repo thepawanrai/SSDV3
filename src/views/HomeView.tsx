@@ -141,7 +141,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     '/2.png',
                     'मंदिर संकुल मास्टर दृश्य',
                     'श्री श्री राधा कृष्ण बिहारी जी मंदिर परिसर',
-                    '25,000 वर्ग फीट का संपूर्ण आध्यात्मिक एवं सेवा परिसर — पासुन, मौदहा'
+                    '25,000 वर्ग फीट का संपूर्ण आध्यात्मिक एवं सेवा परिसर - पासुन, मौदहा'
                   )
                 }
                 onError={(e) => {
@@ -248,7 +248,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <div className="flex flex-wrap items-center gap-2">
                 <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded bg-[#265B33] text-[#A3E635] text-xs font-bold uppercase tracking-wider">
                   <TreeDeciduous className="w-4 h-4 mr-1" />
-                  <span>अभियान प्रारंभ — भव्य प्रगति पर</span>
+                  <span>अभियान प्रारंभ - भव्य प्रगति पर</span>
                 </div>
                 <div className="inline-flex items-center px-2.5 py-1 rounded bg-black/30 border border-emerald-400/40 text-xs font-semibold text-emerald-200">
                   <span>₹2.36 लाख+ जनसहयोग प्राप्त</span>
@@ -470,7 +470,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 अन्नदान महाअभियान
               </h3>
               <p className="text-xs text-stone-600 leading-relaxed font-sans">
-                "अन्नं परब्रह्म" — तीर्थयात्रियों, साधु-संतों एवं निर्धनों हेतु नित्य अक्षय पात्र महाप्रसादम भंडारा।
+                "अन्नं परब्रह्म" - तीर्थयात्रियों, साधु-संतों एवं निर्धनों हेतु नित्य अक्षय पात्र महाप्रसादम भंडारा।
               </p>
             </div>
             <div className="pt-2 flex items-center justify-between border-t border-[#E7D7C4]">
@@ -700,7 +700,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   '/images/temple/temple-main-2.png',
                   'मंदिर परिसर का विहंगम दृश्य (View 2)',
                   'मास्टर एरियल विहंगम दृष्टिकोण',
-                  '25,000 वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास — अधिकृत छायाचित्र।'
+                  '25,000 वर्ग फीट के सम्पूर्ण भूखंड पर परिक्रमा पथ, कलात्मक छतरियां एवं उद्यान विन्यास - अधिकृत छायाचित्र।'
                 )
               }
             >
@@ -746,7 +746,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   '/images/temple/temple-main-4.png',
                   'नक्काशीदार जाली व स्तंभ (View 4)',
                   'पारंपरिक पत्थर की नक्काशी',
-                  'भारतीय कारीगरी का उत्कृष्ट उदाहरण — लाल पत्थर पर जालीदार वातायन, नक्काशीदार मेहराब व अलंकृत स्तंभ।'
+                  'भारतीय कारीगरी का उत्कृष्ट उदाहरण - लाल पत्थर पर जालीदार वातायन, नक्काशीदार मेहराब व अलंकृत स्तंभ।'
                 )
               }
             >

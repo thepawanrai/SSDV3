@@ -75,7 +75,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       tabLabel: '2. गौ सेवा',
       tag: 'महाअभियान 2 • गावो विश्वस्य मातरः',
       title: '2. गौ सेवा महाअभियान',
-      subtitle: 'सुरभि गौशाला — निराश्रित एवं देशी गोवंश का आजीवन वात्सल्यपूर्ण संवर्धन',
+      subtitle: 'सुरभि गौशाला - निराश्रित एवं देशी गोवंश का आजीवन वात्सल्यपूर्ण संवर्धन',
       desc: 'गिर, साहीवाल जैसी पवित्र देशी नस्लों का पालन-पोषण। प्रतिदिन ताजा हरा चारा, दलिया, गुड़, खली तथा 24 घंटे पशु-चिकित्सा सेवा उपलब्ध है।',
       image: '/2.png',
       fallbackImage: '/assets/temple-hero.jpg',
@@ -111,7 +111,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       tabLabel: '4. अन्नदान',
       tag: 'महाअभियान 4 • प्रसादम एवं अक्षय भंडारा',
       title: '4. अन्नदान महाअभियान',
-      subtitle: '"अन्नं परब्रह्म" — सत्य सनातन धाम का नित्य अक्षय अन्नक्षेत्र',
+      subtitle: '"अन्नं परब्रह्म" - सत्य सनातन धाम का नित्य अक्षय अन्नक्षेत्र',
       desc: 'तीर्थयात्रियों, साधु-संतों एवं असहायों को नित्य सम्मानपूर्वक शुद्ध सात्विक महाप्रसादम। कोई भी व्यक्ति धाम से भूखा न लौटे।',
       image: '/4.png',
       fallbackImage: '/1.png',
@@ -129,7 +129,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       tabLabel: '5. गुरुकुल',
       tag: 'महाअभियान 5 • वैदिक शिक्षा व संस्कार',
       title: '5. गुरुकुल अभियान',
-      subtitle: '"सा विद्या या विमुक्तये" — वैदिक ऋचाओं एवं आधुनिक विज्ञान का संगम',
+      subtitle: '"सा विद्या या विमुक्तये" - वैदिक ऋचाओं एवं आधुनिक विज्ञान का संगम',
       desc: 'ग्रामीण व निर्धन विद्यार्थियों को निःशुल्क आवासीय शिक्षा, वेद, संस्कृत, नीतिशास्त्र एवं कंप्यूटर शिक्षा द्वारा चरित्र निर्माण एवं राष्ट्र सेवा का संकल्प।',
       image: '/5.png',
       fallbackImage: '/1.png',
@@ -147,7 +147,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       tabLabel: '6. नशा मुक्ति',
       tag: 'महाअभियान 6 • समाज जागरण व युवा शक्ति',
       title: '6. नशा मुक्ति अभियान',
-      subtitle: '"नशा मुक्त समाज, सशक्त युवा" — व्यसन के अंधकार से मुक्ति',
+      subtitle: '"नशा मुक्त समाज, सशक्त युवा" - व्यसन के अंधकार से मुक्ति',
       desc: 'गाँव-गाँव में चौपाल, नशा मुक्ति गोष्ठी, आयुर्वेदिक उपचार एवं मनोवैज्ञानिक संबल द्वारा युवाओं को व्यसनमुक्त कर राष्ट्र व धर्म निर्माण से जोड़ना।',
       image: '/Temple Masterplan.png',
       fallbackImage: '/1.png',
@@ -164,7 +164,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
 
   const totalSlides = slides.length;
 
-  // Autoplay timer (6.5 seconds per slide)
+  // Autoplay timer (6.5 seconds per slide, resets on manual navigation)
   useEffect(() => {
     if (isPaused) return;
 
@@ -173,17 +173,19 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
     }, 6500);
 
     return () => clearInterval(interval);
-  }, [isPaused, totalSlides]);
+  }, [isPaused, totalSlides, currentSlide]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
-  const nextSlide = () => {
+  const nextSlide = (e?: React.MouseEvent | React.TouchEvent) => {
+    e?.stopPropagation();
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
 
-  const prevSlide = () => {
+  const prevSlide = (e?: React.MouseEvent | React.TouchEvent) => {
+    e?.stopPropagation();
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
@@ -211,7 +213,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
 
   return (
     <section
-      className="relative flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-[#1C0B06] min-h-[560px] sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]"
+      className="relative isolate flex flex-col justify-end overflow-hidden border-b border-slate-200 select-none bg-[#1C0B06] min-h-[560px] sm:min-h-[600px] lg:min-h-[min(55.7vw,840px)]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -261,7 +263,9 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       <button
         type="button"
         onClick={prevSlide}
-        className="flex absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
+        onTouchStart={(e) => e.stopPropagation()}
+        onTouchEnd={(e) => e.stopPropagation()}
+        className="flex absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/80 active:scale-95 text-white/90 hover:text-white border border-white/25 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
         aria-label="पिछली स्लाइड"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -270,7 +274,9 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       <button
         type="button"
         onClick={nextSlide}
-        className="flex absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/40 hover:bg-black/75 text-white/80 hover:text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
+        onTouchStart={(e) => e.stopPropagation()}
+        onTouchEnd={(e) => e.stopPropagation()}
+        className="flex absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-black/80 active:scale-95 text-white/90 hover:text-white border border-white/25 backdrop-blur-md items-center justify-center transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#DFB25A] shadow-lg"
         aria-label="अगली स्लाइड"
       >
         <ChevronRight className="w-6 h-6" />
@@ -279,13 +285,13 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
       {/* Slide Content Box: 
           On the temple slide: Text is removed so the magnificent temple architecture and top flag are showcased clearly without obstruction.
           On the 6 Mahabhiyan slides: Crisp, non-messy informative details are displayed cleanly. */}
-      <div className="relative z-20 w-full pb-6 sm:pb-8 pt-16">
+      <div className="relative z-20 w-full pb-6 sm:pb-8 pt-16 pointer-events-none">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-3 sm:space-y-4">
           {current.id === 'temple' ? (
             /* Temple Main Slide: Unobstructed view of temple image & top flag, with clean compact CTAs */
             <div className="space-y-3 sm:pt-14">
               {/* Action Buttons: Clean 'सेवा करें' (no emoji) & 'मंदिर दर्शन' */}
-              <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="pointer-events-auto inline-flex flex-wrap items-center justify-center gap-3">
                 <Link
                   to={current.primaryCta.to || '/donate'}
                   className="px-6 sm:px-7 py-2.5 sm:py-3 bg-[#5B2A1B] hover:bg-[#3E1B10] text-[#FAF7F2] font-bold text-sm sm:text-base rounded-md transition-all shadow-xl hover:shadow-2xl cursor-pointer border border-[#DFB25A]/60 transform hover:-translate-y-0.5 inline-flex items-center justify-center"
@@ -326,7 +332,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
               </p>
 
               {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+              <div className="pt-2 pointer-events-auto inline-flex flex-wrap items-center justify-center gap-3">
                 {current.primaryCta.to ? (
                   <Link
                     to={current.primaryCta.to}
@@ -359,7 +365,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
         {/* Slide Indicator Bar / Navigation Tabs */}
         <div className="mt-6 max-w-4xl mx-auto px-4">
           {/* Desktop/Tablet Horizontal Tabs with Animated Active Indicator */}
-          <div className="hidden sm:grid grid-cols-7 gap-1.5 p-1 bg-black/40 backdrop-blur-md rounded-lg border border-white/10">
+          <div className="pointer-events-auto hidden sm:grid grid-cols-7 gap-1.5 p-1 bg-black/40 backdrop-blur-md rounded-lg border border-white/10">
             {slides.map((s, idx) => {
               const isActive = idx === currentSlide;
               return (
@@ -381,7 +387,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onOpenDonate, onOpenLigh
           </div>
 
           {/* Mobile Dot Navigation */}
-          <div className="flex sm:hidden items-center justify-center space-x-2 pt-2">
+          <div className="pointer-events-auto flex sm:hidden items-center justify-center space-x-2 pt-2">
             {slides.map((s, idx) => {
               const isActive = idx === currentSlide;
               return (

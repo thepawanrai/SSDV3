@@ -77,7 +77,7 @@ export const GauSevaAbhiyanView: React.FC<GauSevaAbhiyanViewProps> = ({ onOpenDo
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-medium max-w-3xl mx-auto">
-            "गावो विश्वस्य मातरः" — समस्त जगत की जननी सुरभित देशी गोवंश का संरक्षण एवं संवर्धन
+            "गावो विश्वस्य मातरः" - समस्त जगत की जननी सुरभित देशी गोवंश का संरक्षण एवं संवर्धन
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">

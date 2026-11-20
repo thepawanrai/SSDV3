@@ -69,7 +69,7 @@ export const NashaMuktiAbhiyanView: React.FC<NashaMuktiAbhiyanViewProps> = ({ on
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-medium max-w-3xl mx-auto">
-            "स्वस्थ युवा, सशक्त समाज, संस्कारित भारत" — व्यसन के अंधकार से मुक्ति का पावन महासंकल्प
+            "स्वस्थ युवा, सशक्त समाज, संस्कारित भारत" - व्यसन के अंधकार से मुक्ति का पावन महासंकल्प
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">

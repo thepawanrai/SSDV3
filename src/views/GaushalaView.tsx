@@ -28,7 +28,7 @@ export const GaushalaView: React.FC<GaushalaViewProps> = ({ onOpenDonate }) => {
           गौशाला एवं गौ सेवा
         </h1>
         <p className="text-sm sm:text-base text-stone-600 font-serif">
-          गौमाता की सेवा — सनातन संस्कृति एवं आध्यात्मिक शुचिता का मूलाधार
+          गौमाता की सेवा - सनातन संस्कृति एवं आध्यात्मिक शुचिता का मूलाधार
         </p>
       </div>
 

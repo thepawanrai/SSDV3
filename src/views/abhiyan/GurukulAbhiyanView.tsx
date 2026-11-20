@@ -69,7 +69,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-medium max-w-3xl mx-auto">
-            "सा विद्या या विमुक्तये" — वैदिक संस्कार, प्राचीन ज्ञान एवं आधुनिक विज्ञान का दिव्य समन्वय
+            "सा विद्या या विमुक्तये" - वैदिक संस्कार, प्राचीन ज्ञान एवं आधुनिक विज्ञान का दिव्य समन्वय
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">
@@ -152,7 +152,7 @@ export const GurukulAbhiyanView: React.FC<GurukulAbhiyanViewProps> = ({ onOpenDo
             विद्यादान सेवा समर्पण विकल्प
           </h2>
           <p className="text-xs sm:text-sm text-stone-600">
-            "विद्यादानं महत् पुण्यम्" — गुरुकुल के विस्तार एवं विद्यार्थियों के अध्ययन में सहभागी बनें
+            "विद्यादानं महत् पुण्यम्" - गुरुकुल के विस्तार एवं विद्यार्थियों के अध्ययन में सहभागी बनें
           </p>
         </div>
 

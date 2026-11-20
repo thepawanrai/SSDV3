@@ -69,7 +69,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-medium max-w-3xl mx-auto">
-            "अन्नं परब्रह्म स्वरूपम्" — कोई भी भूखा न सोए, हर आगंतुक को मिले आदरपूर्वक प्रसाद
+            "अन्नं परब्रह्म स्वरूपम्" - कोई भी भूखा न सोए, हर आगंतुक को मिले आदरपूर्वक प्रसाद
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">
@@ -131,7 +131,7 @@ export const AnnadaanAbhiyanView: React.FC<AnnadaanAbhiyanViewProps> = ({ onOpen
             <blockquote className="p-4 bg-white rounded-xl border-l-4 border-[#DFB25A] italic text-stone-800 font-serif text-sm">
               "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसंभवः । यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥"
               <span className="block not-italic text-xs text-stone-500 mt-1 font-sans">
-                — श्रीमद्भगवद्गीता (अध्याय 3, श्लोक 14)
+                - श्रीमद्भगवद्गीता (अध्याय 3, श्लोक 14)
               </span>
             </blockquote>
             <p>

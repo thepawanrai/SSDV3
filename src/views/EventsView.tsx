@@ -37,7 +37,7 @@ export const EventsView: React.FC<EventsViewProps> = ({ onNavigate, onOpenDonate
             </div>
 
             <h4 className="font-serif text-2xl font-bold text-[#5B2A1B]">
-              वृक्षारोपण महाअभियान (प्रथम चरण — 1,100 वृक्ष)
+              वृक्षारोपण महाअभियान (प्रथम चरण - 1,100 वृक्ष)
             </h4>
 
             <p className="text-xs sm:text-sm text-stone-600 font-sans leading-relaxed">

@@ -42,8 +42,8 @@ export const CAMPAIGN_GOALS: CampaignGoal[] = [
     id: 'tree-campaign',
     sevaId: 'vriksharopan-seva',
     title: 'वृक्षारोपण महाअभियान (प्रथम चरण)',
-    englishTitle: 'वृक्षारोपण महाअभियान — प्रथम चरण',
-    badge: 'अभियान प्रारंभ — भव्य प्रगति पर',
+    englishTitle: 'वृक्षारोपण महाअभियान - प्रथम चरण',
+    badge: 'अभियान प्रारंभ - भव्य प्रगति पर',
     iconType: 'tree',
     targetAmount: 1101100, // 1,100 trees * 1001
     raisedAmount: 236800, // North of ₹2.36 lakh received till now
@@ -52,7 +52,7 @@ export const CAMPAIGN_GOALS: CampaignGoal[] = [
     unitLabel: 'वृक्ष',
     donorsCount: 184,
     milestoneDate: '11 अक्टूबर 2026 (शारदीय नवरात्रि)',
-    subtitle: '11,000 वृक्षों के पावन महासंकल्प का प्रथम चरण — 5 वर्षों के पोषण व संरक्षण सहित',
+    subtitle: '11,000 वृक्षों के पावन महासंकल्प का प्रथम चरण - 5 वर्षों के पोषण व संरक्षण सहित',
     impactMessage: 'प्रथम चरण में अब तक ₹2.36 लाख से अधिक (236+ वृक्ष) का पावन सहयोग प्राप्त हो चुका है! अभियान तीव्र गति से निरंतर प्रगति पर है। शेष वृक्षों के संकल्प हेतु आप भी सहभागी बनें।',
     suggestedTiers: [
       { amount: 1001, label: '1 वृक्ष (₹1,001)' },
@@ -79,7 +79,7 @@ export const CAMPAIGN_GOALS: CampaignGoal[] = [
     unitLabel: 'वर्ग फीट',
     donorsCount: 564,
     milestoneDate: 'दिसंबर 2026 (आधारशिला पूर्णता)',
-    subtitle: 'पारंपरिक नागर शैली का दिव्य शिखर मंदिर — गर्भगृह व आधार स्तंभों का पावन निर्माण',
+    subtitle: 'पारंपरिक नागर शैली का दिव्य शिखर मंदिर - गर्भगृह व आधार स्तंभों का पावन निर्माण',
     impactMessage: 'प्रथम चरण में केवल 280 वर्ग फीट शिला सेवा शेष है। ठाकुर जी के गर्भगृह में अपने नाम की पावन शिला समर्पित करें।',
     suggestedTiers: [
       { amount: 2600, label: 'आधा वर्ग फीट (₹2,600)' },

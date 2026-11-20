@@ -142,7 +142,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
           {/* Top Announcement Badge */}
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#112F19]/80 backdrop-blur-xs text-[#E5C158] text-xs sm:text-sm font-bold uppercase tracking-wider border border-[#E5C158]/30">
             <TreeDeciduous className="w-4 h-4 text-[#A3E635]" />
-            <span>अभियान प्रारंभ — प्रथम चरण में ₹2.36 लाख+ जनसहयोग प्राप्त</span>
+            <span>अभियान प्रारंभ - प्रथम चरण में ₹2.36 लाख+ जनसहयोग प्राप्त</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-tight drop-shadow-md">
@@ -926,7 +926,7 @@ export const TreePlantationView: React.FC<TreePlantationViewProps> = ({
               <span>प्रत्यक्ष कार्यक्षेत्र छायाचित्र दीर्घा</span>
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#5B2A1B] leading-normal mt-1">
-              वृक्षारोपण महाअभियान — वास्तविक झलकियाँ
+              वृक्षारोपण महाअभियान - वास्तविक झलकियाँ
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 mt-1">
               सत्य सनातन धाम, पासुन (मौदहा, हमीरपुर) में धरा संवर्धन एवं पौधारोपण के वास्तविक व आधिकारिक छायाचित्र (12 Photographs)

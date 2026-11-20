@@ -226,7 +226,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                     <div className="mt-3 space-y-2">
                       <div className="flex-1">
                         <label className="block text-xs font-medium text-stone-600 mb-1">
-                          सहयोग राशि (Contribution Amount ₹) — QR राशि स्वतः अपडेट होगी
+                          सहयोग राशि (Contribution Amount ₹) - QR राशि स्वतः अपडेट होगी
                         </label>
                         <div className="relative">
                           <span className="absolute left-3 top-2.5 text-stone-500 font-bold">₹</span>

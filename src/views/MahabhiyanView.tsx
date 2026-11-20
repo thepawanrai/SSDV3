@@ -46,7 +46,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
           </h1>
 
           <p className="font-serif text-lg sm:text-2xl text-[#DFB25A] font-semibold max-w-3xl mx-auto">
-            "सेवा • संस्कार • सनातन" — प्रकृति, गौवंश, धर्म, शिक्षा और समाज सुधार का युगांतकारी संकल्प
+            "सेवा • संस्कार • सनातन" - प्रकृति, गौवंश, धर्म, शिक्षा और समाज सुधार का युगांतकारी संकल्प
           </p>
 
           <p className="max-w-3xl mx-auto text-xs sm:text-sm lg:text-base text-stone-300 leading-relaxed font-sans">
@@ -157,7 +157,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
               }}
             />
             <span className="text-[11px] text-[#A3E635] text-center mt-2 font-mono">
-              धाम का वास्तविक सेटेलाइट दृश्य — हरित संकुल विकास क्षेत्र
+              धाम का वास्तविक सेटेलाइट दृश्य - हरित संकुल विकास क्षेत्र
             </span>
           </div>
         </div>
@@ -179,7 +179,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
             </div>
             <div className="mt-3 p-3 bg-[#FAF0E4] rounded-lg border border-[#DFB25A]/40 text-center">
               <span className="font-serif font-bold text-xs text-[#5B2A1B]">
-                "गावो विश्वस्य मातरः" — सुरभि गौशाला प्रकल्प
+                "गावो विश्वस्य मातरः" - सुरभि गौशाला प्रकल्प
               </span>
             </div>
           </div>
@@ -256,7 +256,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
-                श्री श्री राधा कृष्ण बिहारी जी मंदिर — 25,000 वर्ग फीट नागर शैली पाषाण संकुल
+                श्री श्री राधा कृष्ण बिहारी जी मंदिर - 25,000 वर्ग फीट नागर शैली पाषाण संकुल
               </p>
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
@@ -349,7 +349,7 @@ export const MahabhiyanView: React.FC<MahabhiyanViewProps> = ({
               </h2>
 
               <p className="font-serif text-base sm:text-lg text-[#793A27]">
-                भूखे को अन्न और प्यासे को जल — सनातन धर्म का सर्वोपरि धर्म संकल्प
+                भूखे को अन्न और प्यासे को जल - सनातन धर्म का सर्वोपरि धर्म संकल्प
               </p>
 
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed font-sans">
