@@ -88,7 +88,7 @@ function AppLayout() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#1E293B] selection:bg-[#5B2A1B] selection:text-white">
+    <div className="min-h-screen w-full overflow-x-clip flex flex-col bg-[#F8FAFC] text-[#1E293B] selection:bg-[#5B2A1B] selection:text-white">
       {/* Initial Website GIF Preloader */}
       <Preloader />
 

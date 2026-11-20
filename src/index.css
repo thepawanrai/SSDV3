@@ -32,12 +32,15 @@
   html {
     scroll-behavior: smooth;
     font-family: var(--font-sans);
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   body {
     background-color: #F8FAFC;
     color: #1E293B;
-    overflow-x: hidden;
+    overflow-x: clip;
+    max-width: 100%;
   }
 
   h1, h2, h3, h4, .font-heading {

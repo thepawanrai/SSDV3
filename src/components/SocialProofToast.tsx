@@ -159,12 +159,12 @@ export const SocialProofToast: React.FC<SocialProofToastProps> = ({ suspended = 
   return (
     <div
       aria-live="polite"
-      className="fixed bottom-[114px] md:bottom-5 left-3 right-3 sm:right-auto sm:left-5 z-30 pointer-events-none overflow-hidden py-1"
+      className="fixed bottom-[114px] md:bottom-5 left-3 right-3 sm:right-auto sm:left-5 z-30 pointer-events-none overflow-hidden py-1 flex justify-center sm:justify-start"
     >
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className={`pointer-events-auto relative inline-flex items-center gap-3 max-w-[355px] sm:max-w-[390px] rounded-lg bg-white/95 backdrop-blur-md border border-[#E7D7C4] pl-3 pr-8 py-2.5 shadow-[0_10px_28px_-6px_rgba(62,27,16,0.22)] transition-all duration-300 ${
+        className={`pointer-events-auto relative inline-flex items-center gap-3 max-w-[calc(100vw-24px)] sm:max-w-[390px] rounded-lg bg-white/95 backdrop-blur-md border border-[#E7D7C4] pl-3 pr-8 py-2.5 shadow-[0_10px_28px_-6px_rgba(62,27,16,0.22)] transition-all duration-300 ${
           isVisible
             ? 'translate-y-0 opacity-100 ease-out'
             : 'translate-y-[140%] opacity-0 ease-in pointer-events-none'

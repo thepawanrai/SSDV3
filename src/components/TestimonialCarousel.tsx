@@ -247,7 +247,7 @@ export const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 
       {/* 2. CATEGORY SEGMENTED FILTER CONTROLS */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="inline-flex items-center p-1 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs">
+        <div className="flex flex-wrap items-center gap-1 p-1 bg-white rounded-lg border border-[#E7D7C4] shadow-2xs max-w-full">
           <button
             type="button"
             onClick={() => setActiveCategory('all')}

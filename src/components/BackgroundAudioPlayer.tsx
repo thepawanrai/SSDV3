@@ -36,7 +36,7 @@ export const BackgroundAudioPlayer: React.FC = () => {
         >
           {/* Tooltip / Label */}
           <div
-            className={`flex items-center space-x-1.5 mr-2.5 px-3 py-1.5 rounded-full text-xs font-serif font-medium shadow-md transition-all duration-300 pointer-events-none whitespace-nowrap ${
+            className={`hidden sm:flex items-center space-x-1.5 mr-2.5 px-3 py-1.5 rounded-full text-xs font-serif font-medium shadow-md transition-all duration-300 pointer-events-none whitespace-nowrap ${
               isPlaying
                 ? 'bg-[#481E13] text-[#DFB25A] border border-[#DFB25A]/40'
                 : 'bg-white/95 text-[#5B2A1B] border border-[#E7D7C4]'
